@@ -4,7 +4,7 @@ a solutions manual for
 [Set Theory by Thomas Jech](https://www.amazon.com/Set-Theory-Thomas-Jech/dp/3540440852).
 
 ### Part I: Basic Set Theory
-1. [Axioms of Set Theory](https://rawgit.com/9beach/jech-set-theory/master/chap-01.html)
+1. [Axioms of Set Theory](https://rawgit.com/9beach/jech-set-theory-solutions/master/chap-01.html)
 2. Ordinal Numbers
 3. Cardinal Numbers
 4. Real Numbers
