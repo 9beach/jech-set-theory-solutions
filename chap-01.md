@@ -4,7 +4,7 @@ author: 9beach@gmail.com
 
 ---
 
-# A solutions manual for Set Theory by Thomas Jech
+# A solutions manual for Thomas Jech’ Set Theory
 ## 1. Axioms of Set Theory
 ### Exercises
 
@@ -42,40 +42,69 @@ X$; a contradiction of $\in$ as a well-founded relation.$\quad\blacksquare$
 **1.3.** If $X$ is inductive, then the set $\{x ∈ X : x ⊂ X\}$ is inductive.
 Hence $\mathbb{N}$ is transitive, and for each $n, n=\{m∈\mathbb{N} :m<n\}$.
 
-**_Proof._**$\quad$Let $Y = \{x ∈ X : x ⊂ X\}$; let $y \in Y$.
-Since $Y \subset X$, and $X$ is inductive, $y \cup \{y\} \in X$,
-and since $y \in X$, i.e., $\{y\} \subset X$, and $y \subset X$, $y \cup
-\{y\} \subset X$. Thus $y \cup \{y\} \subset Y$. Since $\emptyset \subset
-X$, and $\emptyset \in X$, $\emptyset \in Y$. Therefore, we have that
-$Y$ is inductive.
+**_Proof._**$\quad$Let $Y = \{x ∈ X : x ⊂ X\}$. Since $\emptyset \subset X$,
+and $\emptyset \in X$, $\emptyset \in Y$. Now let $y \in Y$. Since $Y
+\subset X$, and $X$ is inductive, $y \in X$, i.e.,
+$\{y\} \subset X$, and $y \cup \{y\} \in X$, and since $y \subset X$, $y
+\cup \{y\} \subset X$; thus $y \cup \{y\} \in Y$. Therefore, we have
+that $Y$ is inductive.
 <br />$\quad$Let $Y_\mathbb{N} = \{x ∈ \mathbb{N} : x ⊂ \mathbb{N}\}$,
 then $Y_\mathbb{N} \subset \mathbb{N}$, and since $Y_\mathbb{N}$ is
 inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus $\mathbb{N} =
 Y_\mathbb{N}$, and so we have that $x∈\mathbb{N}$ implies $x⊂\mathbb{N}$.
 Therefore, $\mathbb{N}$ is transitive.
-<br />$\quad$First, we prove that there is no $m \in \mathbb{N}$ such that
-$n \lt m \lt n + 1$. Suppose there exists $m$ such that $n \lt m \lt n + 1$,
+<br />$\quad$First, we show that there is no $m \in \mathbb{N}$ such that
+$n \lt m \lt n + 1$ (we asumme that $n \ne n+1$; the proof is in **1.5.**).
+Suppose there exists $m$ such that $n \lt m \lt n + 1$,
 then by transitivity, $n \subsetneq m \subsetneq n \cup \{n\}$, and then
 there exists a nonempty set $a$ such that $m = n \cup a$, and $a \subsetneq
 \{n\}$; thus $n \notin n$ and $n \notin a$ (suppose not, $n \in a$, i.e.,
 $\{n\} \subset a$; a contradiction), and so $n \notin n \cup a = m$;
-a contradiction. Now, Let $P(x)$ be the property “$x = \{m \in \mathbb{N} :
-m < x\}$”.
-<br />$\quad$(a) $P(0)$ holds.
-<br />$\quad$(b) Assume that $P(n)$ holds. $n + 1 = n \cup \{n\} = \{m \in
-\mathbb{N} : m < n\} \cup \{n\}$ $=$ $\{m \in \mathbb{N} : m < n \text{ or }
-m = n\}$; since there is no $m \in \mathbb{N}$ such that $n \lt m \lt n + 1$,
-$\{m \in \mathbb{N} : m < n + 1\} = P(n+1)$ holds. Therefore, for each $n,
-n=\{m∈\mathbb{N} :m<n\}$.$\quad\blacksquare$
+a contradiction. Now let $P(x)$ be the property “$x = \{m \in \mathbb{N} :
+m < x\}$”. $P(0)$ holds, and assume that $P(n)$ holds. $n + 1 = n \cup \{n\}
+= \{m \in \mathbb{N} : m < n\} \cup \{n\}$ $=$ $\{m \in \mathbb{N} : m < n
+\text{ or } m = n\}$; since there is no $m \in \mathbb{N}$ such that $n
+\lt m \lt n + 1$, $\{m \in \mathbb{N} : m < n + 1\} = P(n+1)$ holds.
+Therefore, for each $n, n=\{m∈\mathbb{N} :m<n\}$.$\quad\blacksquare$
 
 **1.4.** If $X$ is inductive, then the set $\{x ∈ X : x \text{ is
 transitive}\}$ is inductive. Hence every $n ∈ \mathbb{N}$ is transitive.
+
+**_Proof._**$\quad$Let $Y = \{x ∈ X : x \text{ is transitive}\}$. Since
+$\emptyset \in X$, and $\emptyset$ is transitive, $\emptyset \in Y$.
+Now let $y \in Y$. Since $Y \subset X$, and $X$ is inductive, $y \in X$,
+and $y \cup \{y\} \in X$. Let $z \in y \cup \{y\}$, then either $z \in y$ or
+$z = y$; since $y$ is transitive, in any case, $z \subset y \cup \{y\}$. Thus
+$y \cup \{y\}$ is transitive, and so $y \cup \{y\} \in Y$. Therefore, we have
+that $Y$ is inductive.
+<br />$\quad$Let $Y_\mathbb{N} = \{x ∈ \mathbb{N} : x \text{ is
+transitive}\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and since
+$Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
+$\mathbb{N} = Y_\mathbb{N}$, and so we have that every $n ∈ \mathbb{N}$ is
+transitive.$\quad\blacksquare$
 
 **1.5.** If $X$ is inductive, then the set $\{x ∈ X : x \text{ is transitive
 and } x \notin x\}$ is inductive. Hence $n \notin n$ and $n \ne n + 1$ for
 each $n ∈ \mathbb{N}$.
 
-**1.6.** If $X$ is inductive, then $\{x ∈ X : x \text{ is transitive and every
+**_Proof._**$\quad$Let $Y = \{x ∈ X : x \text{ is transitive and } x
+\notin x\}$. Since $\emptyset \in X$, and $\emptyset$ is transitive and
+$\emptyset \notin \emptyset$, $\emptyset \in Y$. Now let $y \in Y$. Since
+$Y \subset X$, and $X$ is inductive, $y \in X$, and $y \cup \{y\} \in X$. We
+already have that $y \cup \{y\}$ is transitive. Suppose $y \cup \{y\} \in y
+\cup \{y\}$, then $y \cup \{y\} \in y$, i.e., $y \cup \{y\} \subset y$ or $y
+\cup \{y\} = y$; in any case, $\{y\} \subset y$, i.e., $y \in y$; a
+contradiction. Thus $y \cup \{y\} \notin y \cup \{y\}$, and so $y \cup \{y\}
+\in Y$. Therefore, we have that $Y$ is inductive.
+<br />$\quad$Let $Y_\mathbb{N} = \{x ∈ \mathbb{N} : x \text{ is
+transitive and } x \notin x\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and
+since $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
+$\mathbb{N} = Y_\mathbb{N}$, and so $n \notin n$. Suppose $n+1=n$, i.e.,
+$n\cup\{n\} = n$, then $\{n\}\subset n$, i.e., $n\in n$; a contradiction.
+Therefore, $n \notin n$ and $n \ne n + 1$ for each $n ∈ \mathbb
+{N}$.$\quad\blacksquare$
+
+**1.6.** If $X$ is inductive, then $\{x ∈ X:x \text{ is transitive and every
 nonempty } z ⊂ x \text{ has an ∈-minimal element}\}$ is inductive ($t$ is
 ∈-_minimal_ in $z$ if there is no $s ∈ z$ such that $s ∈ t$).
 
