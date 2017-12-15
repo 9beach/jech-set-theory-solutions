@@ -55,10 +55,12 @@ Y_\mathbb{N}$, and so we have that $x∈\mathbb{N}$ implies $x⊂\mathbb{N}$.
 Therefore, $\mathbb{N}$ is transitive.
 <br />$\quad$First, we prove that there is no $m \in \mathbb{N}$ such that
 $n \lt m \lt n + 1$. Suppose there exists $m$ such that $n \lt m \lt n + 1$,
-then by transitivity, $n \subsetneq m \subsetneq n+1$, and then there exists
-a nonempty set $a$ such that $m = n \cup a$ and $a \subsetneq \{n\}$; and so,
-since $n \notin n$ and $n \notin a$, $n \notin n \cup a = m$; a contradiction.
-Now, Let $P(x)$ be the property “$x = \{m \in \mathbb{N} : m < x\}$”.
+then by transitivity, $n \subsetneq m \subsetneq n \cup \{n\}$, and then
+there exists a nonempty set $a$ such that $m = n \cup a$, and $a \subsetneq
+\{n\}$; thus $n \notin n$ and $n \notin a$ (suppose not, $n \in a$, i.e.,
+$\{n\} \subset a$; a contradiction), and so $n \notin n \cup a = m$;
+a contradiction. Now, Let $P(x)$ be the property “$x = \{m \in \mathbb{N} :
+m < x\}$”.
 <br />$\quad$(a) $P(0)$ holds.
 <br />$\quad$(b) Assume that $P(n)$ holds. $n + 1 = n \cup \{n\} = \{m \in
 \mathbb{N} : m < n\} \cup \{n\}$ $=$ $\{m \in \mathbb{N} : m < n \text{ or }
