@@ -23,7 +23,21 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and
 $d=b$.$\quad\blacksquare$
 
 **1.2.** There is no set $X$ such that $P(X) ⊂ X$.
-<br />$\quad$Let
+
+**_Proof._**$\quad$Suppose that $P(X) \subset X$. Since $X \in P(X)$, $X \in
+X$; a contradiction of $\in$ as a well-founded relation.
+<sup>_FIXME: I'm not sure but I think this proof is not valid,
+since I guess even for ill-founded sets, this theorem holds. So an alternative
+proof is here._</sup>
+<br />$\quad$Let $f$ be a function from $X$ into $P(X)$. The set $Y = \{x∈X :
+x\notin f(x) \}$ is not in the range of $f$. Suppose not. If $z∈X$ were such
+that $f(z)=Y$, then $z∈Y$ if and only if $z \notin Y$, a contradiction. Thus
+$f$ is not a function of $X$ onto $P(X)$. Hence $|P(X)| \neq |X|$.
+<br />$\quad$The function $f(x) = \{x\}$ is a one-to-one function of $X$ into
+$P(X)$ and so $|X| ≤ |P(X)|$. It follows that $|X| <
+|P(X)|$.$\quad\blacksquare$
+
+$\quad$Let
 $$
 \mathbb{N} = \bigcap\{X : X \text{ is inductive}\}.
 $$
@@ -35,9 +49,6 @@ $$
 If $n ∈ \mathbb{N}$, let $n + 1 = n ∪ \{n\}$. Let us define $<$ (on
 $\mathbb{N}$) by $n < m$ if and only if $n ∈ m$.
 <br />$\quad$A set $T$ is transitive if $x∈T$ implies $x⊂T$.
-
-**_Proof._**$\quad$Suppose that $P(X) \subset X$. Since $X \in P(X)$, $X \in
-X$; a contradiction of $\in$ as a well-founded relation.$\quad\blacksquare$
 
 **1.3.** If $X$ is inductive, then the set $\{x ∈ X : x ⊂ X\}$ is inductive.
 Hence $\mathbb{N}$ is transitive, and for each $n, n=\{m∈\mathbb{N} :m<n\}$.
