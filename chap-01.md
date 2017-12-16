@@ -26,9 +26,9 @@ $d=b$.$\quad\blacksquare$
 
 **_Proof._**$\quad$Suppose that $P(X) \subset X$. Since $X \in P(X)$, $X \in
 X$; a contradiction of $\in$ as a well-founded relation.
-<sup>_FIXME: I'm not sure but I think this proof is not valid,
-since I guess even for ill-founded sets, this theorem holds. So an alternative
-proof is here._</sup>
+<sup>_FIXME: I'm not sure but I think this proof is not valid, since I guess
+even for ill-founded sets, this theorem holds. So an alternative proof is
+here._</sup>
 <br />$\quad$Let $f$ be a function from $X$ into $P(X)$. The set $Y = \{x∈X :
 x\notin f(x) \}$ is not in the range of $f$. Suppose not. If $z∈X$ were such
 that $f(z)=Y$, then $z∈Y$ if and only if $z \notin Y$, a contradiction. Thus
@@ -64,18 +64,13 @@ then $Y_\mathbb{N} \subset \mathbb{N}$, and since $Y_\mathbb{N}$ is
 inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus $\mathbb{N} =
 Y_\mathbb{N}$, and so we have that $x∈\mathbb{N}$ implies $x⊂\mathbb{N}$.
 Therefore, $\mathbb{N}$ is transitive.
-<br />$\quad$First, we show that there is no $m \in \mathbb{N}$ such that
-$n \lt m \lt n + 1$ (we asumme that $n \ne n+1$; the proof is in **1.5.**).
-Suppose there exists $m$ such that $n \lt m \lt n + 1$,
-then by transitivity, $n \subsetneq m \subsetneq n \cup \{n\}$, and then
-there exists a nonempty set $a$ such that $m = n \cup a$, and $a \subsetneq
-\{n\}$; thus $n \notin n$ and $n \notin a$ (suppose not, $n \in a$, i.e.,
-$\{n\} \subset a$; a contradiction), and so $n \notin n \cup a = m$;
-a contradiction. Now let $P(x)$ be the property “$x = \{m \in \mathbb{N} :
+<br />$\quad$It's obvious that $k \in n \cup \{n\}$ if and only if $k \in n$
+or $k = n$. It follows that for all $k, n \in \mathbb{N}, k< n + 1$
+if and only if $k< n$ or $k = n$. Now let $P(x)$ be the property “$x = \{m
+\in \mathbb{N} :
 m < x\}$”. $P(0)$ holds, and assume that $P(n)$ holds. $n + 1 = n \cup \{n\}
 = \{m \in \mathbb{N} : m < n\} \cup \{n\}$ $=$ $\{m \in \mathbb{N} : m < n
-\text{ or } m = n\}$; since there is no $m \in \mathbb{N}$ such that $n
-\lt m \lt n + 1$, $\{m \in \mathbb{N} : m < n + 1\} = P(n+1)$ holds.
+\text{ or } m = n\}$ $=$ $\{m \in \mathbb{N} : m < n + 1\} = P(n+1)$ holds.
 Therefore, for each $n, n=\{m∈\mathbb{N} :m<n\}$.$\quad\blacksquare$
 
 **1.4.** If $X$ is inductive, then the set $\{x ∈ X : x \text{ is
