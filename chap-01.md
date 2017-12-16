@@ -164,9 +164,10 @@ T-finite}\}$. We show that $A = \mathbb{N}$ by induction.\
 &nbsp;$\quad$Since $P(\emptyset) = \{\emptyset\}$ has the only subset
 $\{\emptyset\}$, and it's T-finite, $\emptyset \in A$.\
 &nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. $X$ is either $Y$ or
-$Z=\{x \cup \{n\} : x \in Y$\} for some $Y \subset P(n)$. In the latter case,
-it's obvious that $Y$ is T-finite if and only if $Z$ is T-finite; thus $Z$ is
-T-finite. Therefore, $A = \mathbb{N}$.$\quad\square$
+$Z=\{x \cup \{n\} : x \in Y$\} for some $Y \subset P(n)$. For the latter case,
+let $a$ be a $\subset$-maximal element of $Y$. Then it's obvious that
+$a \cup \{n\}$ is a $\subset$-maximal element of $Z$; thus $Z$ is T-finite.
+Therefore, $A = \mathbb{N}$.$\quad\square$
 
 **1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
