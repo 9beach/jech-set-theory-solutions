@@ -1,4 +1,4 @@
-SRCS	= $(wildcard c*.md)
+SRCS	= $(wildcard *.md)
 HTMLS	= $(SRCS:.md=.html)
 PDFS	= $(SRCS:.md=.pdf)
 

@@ -1,3 +1,9 @@
+---
+pagetitle: "A solutions manual for Set Theory by Thomas Jech"
+author: 9beach@gmail.com
+
+---
+
 # A solutions manual for Set Theory by Thomas Jech
 December 2017, for no special reason I started studying mathematics and writing
 a solutions manual for
