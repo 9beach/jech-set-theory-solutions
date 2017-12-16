@@ -118,7 +118,7 @@ y$, i.e., $y \in y$, but then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
 not have $\epsilon$-minimal element ($... y \in y \in y ...$, $...y \in a \in
 y \in a...$); a contradiction. It follows that $y$ is $\epsilon$-_maximal_
 in $y$; thus every nonempty $z \subset y \cup \{y\}$ has an $\epsilon$-minimal
-element, and so $y \cup \{y\} \in Y$. Therefore, we have that $Y$ is
+element, and so $y \cup \{y\} \in Y$. Therefore, $Y$ is
 inductive.$\quad\square$
 
 **1.7.** Every nonempty $X \subset \mathbb{N}$ has an $\epsilon$-minimal
@@ -129,10 +129,11 @@ element.\
 set, from **1.6**, we have that every $n \in \mathbb{N}$ has an
 $\epsilon$-minimal element. Let $n \in X$. If $n \cap X = \emptyset$, then
 $n$ is an $\epsilon$-minimal element. Suppose not. There exists $m \in X
-\smallsetminus n$ such that $m \in n$, but since $n=\{m\in \mathbb{N}:
-m<n\}$, a contradiction. If $n \cap X \neq \emptyset$, then $n \cap X \subset
-n$ has an $\epsilon$-minimal element, and it's an $\epsilon$-minimal element
-of $X$; otherwise similarly to the previous, a contradiction.$\quad\square$
+\smallsetminus n$ such that $m \in n$, but then since $n=\{m\in \mathbb{N}:
+m<n\}$, $n \cap X \neq \emptyset$; a contradiction. If $n \cap X \neq
+\emptyset$, then $n \cap X \subset n$ has an $\epsilon$-minimal element,
+and it's an $\epsilon$-minimal element of $X$; otherwise similarly to the
+previous, a contradiction.$\quad\square$
 
 **1.8.** If $X$ is inductive then so is $\{x\in X:x=\emptyset$ or $x=y\cup
 \{y\}$ for some $y\}$. Hence each $n \ne 0$ is $m + 1$ for some $m$.
@@ -163,10 +164,9 @@ T-finite}\}$. We show that $A = \mathbb{N}$ by induction.\
 &nbsp;$\quad$Since $P(\emptyset) = \{\emptyset\}$ has the only subset
 $\{\emptyset\}$, and it's T-finite, $\emptyset \in A$.\
 &nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. $X$ is either $Y$ or
-$\{n\} \cup Y$ for some $Y \subset P(n)$. From **1.6**, and by transitivity
-of $n$, $n$ is a $\subset$-maximal element of $\{n\} \cup Y$; otherwise
-$n \in a$ for some $a \in n$, a contradiction; thus $n+1\in A$.
-Therefore, $A = \mathbb{N}$.$\quad\square$
+$Z=\{x \cup \{n\} : x \in Y$\} for some $Y \subset P(n)$. In the latter case,
+it's obvious that $Y$ is T-finite if and only if $Z$ is T-finite; thus $Z$ is
+T-finite. Therefore, $A = \mathbb{N}$.$\quad\square$
 
 **1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
