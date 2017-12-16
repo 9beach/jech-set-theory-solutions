@@ -114,7 +114,7 @@ $\emptyset \in Y$. Now let $y \in Y$. Since $Y \subset X$, and $X$ is
 inductive, $y \in X$, and $y \cup \{y\} \in X$. We already have that $y
 \cup \{y\}$ is transitive. Now suppose that there exists $a \in y$ such that
 $y \in a$, then $y \in a \in y$, and by transitivity of $y$, $y \in a \subset
-y$, i.e., $y \in y$, and then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
+y$, i.e., $y \in y$, but then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
 not have $\epsilon$-minimal element ($... y \in y \in y ...$, $...y \in a \in
 y \in a...$); a contradiction. It follows that $y$ is $\epsilon$-_maximal_
 in $y$; thus every nonempty $z \subset y \cup \{y\}$ has an $\epsilon$-minimal
@@ -139,7 +139,7 @@ of $X$; otherwise similarly to the previous, a contradiction.$\quad\square$
 
 **_Proof._**&nbsp;$\quad$Let $A = \{x\in X:x=\emptyset \text{ or }x=
 y\cup \{y\}$ for some $y \}$; let $a \neq \emptyset \in A$. Since $a = y\cup
-\{y\}$ for some $y$, so is $a \cup \{a\}$ for $y\cup \{y\}$; thus $a \cup
+\{y\}$ for some $y$, so is $a \cup \{a\}$ for $a$, i.e., $y\cup \{y\}$; thus $a \cup
 \{a\} \in A$. Therefore, $A$ is inductive, and each $n \ne 0$ is $m + 1$
 for some $m$.$\quad\square$
 
@@ -162,10 +162,11 @@ and $u \ne v$. $S$ is T-_infinite_ if it is not T-finite. (T is for Tarski.)
 T-finite}\}$. We show that $A = \mathbb{N}$ by induction.\
 &nbsp;$\quad$Since $P(\emptyset) = \{\emptyset\}$ has the only subset
 $\{\emptyset\}$, and it's T-finite, $\emptyset \in A$.\
-&nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. For some $Y \subset
-P(n)$, $X$ is either $Y$ or $\{n\} \cup Y$. From **1.6** and by transitivity
-of $n$, $n$ is a $\subset$-maximal element of $\{n\} \cup Y$; thus $n+1\in A$.
-Therefore, $A = \mathbb{N}$$\quad\square$
+&nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. $X$ is either $Y$ or
+$\{n\} \cup Y$ for some $Y \subset P(n)$. From **1.6**, and by transitivity
+of $n$, $n$ is a $\subset$-maximal element of $\{n\} \cup Y$; otherwise
+$n \in a$ for some $a \in n$, a contradiction; thus $n+1\in A$.
+Therefore, $A = \mathbb{N}$.$\quad\square$
 
 **1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
