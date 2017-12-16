@@ -141,9 +141,19 @@ contradiction.$\quad\blacksquare$
 **1.8.** If $X$ is inductive then so is $\{x∈X:x=∅\text{ or }x=y∪\{y\}\text{
 for some }y \}$. Hence each $n \ne 0$ is $m + 1$ for some $m$.
 
+**_Proof._**$\quad$Let $A = \{x∈X:x=∅\text{ or }x=y∪\{y\}\text{ for some }y
+\}$; let $a \neq \emptyset \in A$. Since $a = y∪\{y\}$ for some $y$,
+so is $a \cup \{a\}$ for $y∪\{y\}$; thus $a \cup \{a\} \in A$. Therefore,
+$A$ is inductive, and each $n \ne 0$ is $m + 1$ for some
+$m$.$\quad\blacksquare$
+
 **1.9** **(Induction).** Let $A$ be a subset of $\mathbb{N}$ such that $0
 ∈ A$, and if $n ∈ A$ then $n+1∈A$. Then $A=\mathbb{N}$.
-<br />$\quad$A set $X$ _has $n$ elements_ (where $n ∈ \mathbb{N}$) if there is
+
+**_Proof._**$\quad$By definition, $A$ is a inductive subset of
+$\mathbb{N}$. Therefore, $A = \mathbb{N}$.$\quad\blacksquare$
+
+$\quad$A set $X$ _has $n$ elements_ (where $n ∈ \mathbb{N}$) if there is
 a one-to-one mapping of $n$ onto $X$. A set is _finite_ if it has $n$ elements
 for some $n ∈ \mathbb{N}$, and _infinite_ if it is not finite.
 <br />$\quad$A set $S$ is _T-finite_ if every nonempty $X ⊂ P (S)$ has a
