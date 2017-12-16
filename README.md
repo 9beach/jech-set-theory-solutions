@@ -23,8 +23,8 @@ a solutions manual for
 15. Applications of Forcing
 16. Iterated Forcing and Martin's Axiom
 17. Large Cardinals
-18. Large Cardinals and L
-19. Iterated Ultrapowers and L[U]
+18. Large Cardinals and $L$
+19. Iterated Ultrapowers and $L[U]$
 20. Very Large Cardinals
 21. Large Cardinals and Forcing
 22. Saturated Ideals
@@ -34,7 +34,7 @@ a solutions manual for
 26. The Real Line
 
 ## Part III: Selected Topics
-27. Combinatorial Principles in L
+27. Combinatorial Principles in $L$
 28. More Applications of Forcing
 29. More Combinatorial Set Theory
 30. Complete Boolean Algebras
