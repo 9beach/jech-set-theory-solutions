@@ -23,9 +23,9 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 
 **_Proof._**&nbsp;$\quad$Suppose $P(X) \subset X$, then we have a
 surjective function $f : X \to P(X)$. But the set $Y = \{x\in X : x\notin
-f(x) \}$ is not in the range of $f$. Suppose not. If $z\in X$ were such
+f(x) \}$ is not in the range of $f$. Suppose not, if $z\in X$ were such
 that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$; a contradiction.
-Hence $f$ is not a surjective function; a contradiction.$\quad\square$
+So $f$ is not a surjective function; a contradiction.$\quad\square$
 
 &nbsp;$\quad$Let
 $$
