@@ -48,8 +48,8 @@ inductive. Hence $\mathbb{N}$ is transitive, and for each $n, n=\{m\in
 $\emptyset \subset X$, and $\emptyset \in X$, $\emptyset \in Y$. Now let
 $y \in Y$. Since $Y \subset X$, and $X$ is inductive, $y \in X$, i.e.,
 $\{y\} \subset X$, and $y \cup \{y\} \in X$, and since $y \subset X$, $y
-\cup \{y\} \subset X$; thus $y \cup \{y\} \in Y$. Therefore, we have
-that $Y$ is inductive.\
+\cup \{y\} \subset X$; thus $y \cup \{y\} \in Y$. Therefore, $Y$ is
+inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \subset
 \mathbb{N}\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and since
 $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
@@ -72,8 +72,8 @@ Since $\emptyset \in X$, and $\emptyset$ is transitive, $\emptyset \in Y$.
 Now let $y \in Y$. Since $Y \subset X$, and $X$ is inductive, $y \in X$,
 and $y \cup \{y\} \in X$. Let $z \in y \cup \{y\}$, then either $z \in y$ or
 $z = y$; since $y$ is transitive, in any case, $z \subset y \cup \{y\}$. Thus
-$y \cup \{y\}$ is transitive, and so $y \cup \{y\} \in Y$. Therefore, we have
-that $Y$ is inductive.\
+$y \cup \{y\}$ is transitive, and so $y \cup \{y\} \in Y$. Therefore,
+$Y$ is inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \text{ is
 transitive}\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and since
 $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
