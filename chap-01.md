@@ -175,8 +175,12 @@ T-finite.$\quad\square$
 ($\mathbb{N}$) has no $\subset$-maximal element.
 
 **_Proof._**&nbsp;$\quad$For any $n \in \mathbb{N}$, there exists $n + 1$
-such that $n \subsetneq n + 1$; thus $\mathbb{N} \subset P(S)$ has no
-$\subset$-maximal element.$\quad\square$
+such that $n \subsetneq n + 1$; thus $\mathbb{N} \subset P(\mathbb{N})$ has
+no $\subset$-maximal element.$\quad\square$\
+&nbsp;$\quad$_Note that $\mathbb{N} \in P(\mathbb{N})$, $\mathbb{N}
+\subset P(\mathbb{N})$, and $\bigcup\mathbb{N} = \mathbb{N}$._
+
+
 
 1.12. Every finite set is T-finite.
 
