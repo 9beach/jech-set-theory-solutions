@@ -57,12 +57,13 @@ $\mathbb{N} = Y_\mathbb{N}$, and so we have that $x\in \mathbb{N}$ implies
 $x\subset \mathbb{N}$. Therefore, $\mathbb{N}$ is transitive.\
 &nbsp;$\quad$It's obvious that $k \in n \cup \{n\}$ if and only if $k
 \in n$ or $k = n$. So it follows that for all $k, n \in \mathbb{N}, k< n + 1$
-if and only if $k< n$ or $k = n$. Now let $P(x)$ be the property “$x = \{m
+if and only if $k< n$ or $k = n$. Now we show that for each $n, n=\{m\in
+\mathbb{N} :m<n\}$ by induction. Let $P(x)$ be the property “$x = \{m
 \in \mathbb{N} : m < x\}$”. $P(0)$ holds, and assume that $P(n)$ holds.
-$n + 1 = n \cup \{n\} = \{m \in \mathbb{N} : m < n\} \cup \{n\}$ $=$ $\{m
-\in \mathbb{N} : m < n \text{ or } m = n\}$ $=$ $\{m \in \mathbb{N} :
-m < n + 1\} = P(n+1)$ holds. Therefore, for each $n, n=\{m\in \mathbb{N}
-:m<n\}$.$\quad\square$
+$n + 1$ $=$ $n \cup \{n\}$ $=$ $\{m \in \mathbb{N} : m < n\} \cup \{n\}$ $=$
+$\{m\in \mathbb{N} : m < n \text{ or } m = n\}$ $=$ $\{m \in \mathbb{N} :
+m < n + 1\}$ $=$ $P(n+1)$ holds. Therefore, for each $n, n$ $=$
+$\{m\in \mathbb{N} :m<n\}$.$\quad\square$
 
 1.4. If $X$ is inductive, then the set $\{x \in X : x \text{ is
 transitive}\}$ is inductive. Hence every $n \in \mathbb{N}$ is transitive.
