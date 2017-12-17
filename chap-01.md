@@ -140,11 +140,11 @@ previous, a contradiction.$\quad\square$
 
 **_Proof._**&nbsp;$\quad$Let $A = \{x\in X:x=\emptyset \text{ or }x=
 y\cup \{y\}$ for some $y \}$; let $a \neq \emptyset \in A$. Since $a = y\cup
-\{y\}$ for some $y$, so is $a \cup \{a\}$ for $a$, i.e., $y\cup \{y\}$; thus
+\{y\}$ for some $y$, so is $a \cup \{a\}$ for $a$; thus
 $a \cup \{a\} \in A$. Therefore, $A$ is inductive, and each $n \ne 0$ is
 $m + 1$ for some $m$.$\quad\square$
 
-1.9 **(Induction).** Let $A$ be a subset of $\mathbb{N}$ such that $0
+1.9 (Induction). Let $A$ be a subset of $\mathbb{N}$ such that $0
 \in A$, and if $n \in A$ then $n+1\in A$. Then $A=\mathbb{N}$.
 
 **_Proof._**&nbsp;$\quad$By definition, $A$ is a inductive subset of
@@ -179,13 +179,13 @@ $\subset$-maximal element.$\quad\square$
 
 1.12. Every finite set is T-finite.
 
-**_Proof._**&nbsp;$\quad$Let $F$ be a finite set. By definition,
-we have a bijective function $f : F \to n \in \mathbb{N}$.
+**_Proof._**&nbsp;$\quad$Let $F$ be a finite set, then
+there is a one-to-one mapping $f$ of $F$ onto $n \in \mathbb{N}$.
 Let ${A} \subset P(F)$ be a nonempty set. Then ${B} =
 \{ f(X) \subset P(n) : X \in {A} \}$ is nonempty, and has
-a $\subset$-maximal element. Since it's obvious that $\forall X,Y \in
-{A}(X \subset Y \iff f(X) \subset f(Y))$, ${A}$
-has a $\subset$-maximal element.$\quad\square$
+a $\subset$-maximal element. It's obvious that $\forall X,Y \in
+{A}(X \subset Y \iff f(X) \subset f(Y))$; ${A}$ has a $\subset$-maximal
+element.$\quad\square$
 
 1.13. Every infinite set is T-infinite.\
 &nbsp;$\quad$[If $S$ is infinite, consider $X = \{u \subset S : u\text{
@@ -193,9 +193,9 @@ is finite}\}$.]
 
 **_Proof._**&nbsp;$\quad$Since $\emptyset \in X$, $X$ is nonempty. Suppose
 $X$ is has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
-\emptyset$, and so there exists $x \in S \smallsetminus m$; otherwise $S$ is
-a subset of a finite set, a contradiction. Then $m \subsetneq m \cup \{x\}
-\in X$; a contradiction.$\quad\square$
+\emptyset$; otherwise $S$ is a subset of a finite set; a contradiction,
+and so there exists $x \in S \smallsetminus m$. Then $m \subsetneq m \cup
+\{x\} \in X$; a contradiction.$\quad\square$
 
 1.14. The Separation Axioms follow from the Replacement Schema.\
 &nbsp;$\quad$[Given $\phi$, let $F = \{(x,x) : \phi (x)\}$. Then $\{x
