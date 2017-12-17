@@ -103,9 +103,9 @@ Therefore, $n \notin n$ and $n \ne n + 1$ for each $n \in \mathbb
 {N}$.$\quad\square$
 
 **1.6.** If $X$ is inductive, then $\{x \in X:x$ is transitive and every
-nonempty $z \subset x$ has an $\epsilon$-minimal $\text{element}\}$ is inductive
-($t$ is $\epsilon$-_minimal_ in $z$ if there is no $s \in z$ such that $s
-\in t$).
+nonempty $z \subset x$ has an $\epsilon$-minimal $\text{element}\}$ is
+inductive ($t$ is $\epsilon$-_minimal_ in $z$ if there is no $s \in z$ such
+that $s \in t$).
 
 **_Proof._**&nbsp;$\quad$Let $Y = \{x \in X : x$ is transitive and every
 nonempty $z \subset x$ has an $\epsilon$-minimal $\text{element}\}$. Since
@@ -140,9 +140,9 @@ previous, a contradiction.$\quad\square$
 
 **_Proof._**&nbsp;$\quad$Let $A = \{x\in X:x=\emptyset \text{ or }x=
 y\cup \{y\}$ for some $y \}$; let $a \neq \emptyset \in A$. Since $a = y\cup
-\{y\}$ for some $y$, so is $a \cup \{a\}$ for $a$, i.e., $y\cup \{y\}$; thus $a \cup
-\{a\} \in A$. Therefore, $A$ is inductive, and each $n \ne 0$ is $m + 1$
-for some $m$.$\quad\square$
+\{y\}$ for some $y$, so is $a \cup \{a\}$ for $a$, i.e., $y\cup \{y\}$; thus
+$a \cup \{a\} \in A$. Therefore, $A$ is inductive, and each $n \ne 0$ is
+$m + 1$ for some $m$.$\quad\square$
 
 **1.9** **(Induction).** Let $A$ be a subset of $\mathbb{N}$ such that $0
 \in A$, and if $n \in A$ then $n+1\in A$. Then $A=\mathbb{N}$.
@@ -154,29 +154,49 @@ $\mathbb{N}$. Therefore, $A = \mathbb{N}$.$\quad\square$
 is a one-to-one mapping of $n$ onto $X$. A set is _finite_ if it has $n$
 elements for some $n \in \mathbb{N}$, and _infinite_ if it is not finite.\
 &nbsp;$\quad$A set $S$ is _T-finite_ if every nonempty $X \subset P (S)$ has a
-$\subset$-maximal element, i.e., $u \in X$ such that there is no $v \in X$ with $u \subset v$
-and $u \ne v$. $S$ is T-_infinite_ if it is not T-finite. (T is for Tarski.)
+$\subset$-maximal element, i.e., $u \in X$ such that there is no $v \in X$
+with $u \subset v$ and $u \ne v$. $S$ is T-_infinite_ if it is not T-finite.
+(T is for Tarski.)
 
 **1.10.** Each $n \in \mathbb{N}$ is T-finite.
 
 **_Proof._**&nbsp;$\quad$Let $A = \{n \in \mathbb{N} : n \text{ is
 T-finite}\}$. We show that $A = \mathbb{N}$ by induction.\
-&nbsp;$\quad$Since $P(\emptyset) = \{\emptyset\}$ has the only subset
-$\{\emptyset\}$, and it's T-finite, $\emptyset \in A$.\
-&nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. $X$ is either $Y$ or
-$Z=\{x \cup \{n\} : x \in Y$\} for some $Y \subset P(n)$. For the latter case,
-let $a$ be a $\subset$-maximal element of $Y$. Then it's obvious that
+&nbsp;$\quad$$P(\emptyset) = \{\emptyset\}$ has the only nonempty
+subset $\{\emptyset\}$ which has a $\subset$-maximal element $\emptyset$.\
+&nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. For some $Y \subset
+P(n)$, $X$ is either $Y$ or $Z=\{x \cup \{n\} : x \in Y$\}. For the latter
+case, let $a$ be a $\subset$-maximal element of $Y$. Then it's obvious that
 $a \cup \{n\}$ is a $\subset$-maximal element of $Z$; thus $Z$ is T-finite.
 Therefore, $A = \mathbb{N}$.$\quad\square$
 
 **1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
 
+**_Proof._**&nbsp;$\quad$For any $n \in \mathbb{N}$, there exists $n + 1$
+such that $n \subsetneq n + 1$; thus $\mathbb{N} \subset P(S)$ has no
+$\subset$-maximal element. Threfore, $\mathbb{N}$ is T-infinite.$\quad\square$
+
 **1.12.** Every finite set is T-finite.
+
+**_Proof._**&nbsp;$\quad$Let $F$ be a finite set. By definition,
+we have a bijective function $f : F \to n \in \mathbb{N}$.
+Let ${A} \subset P(F)$ be a nonempty set. Then ${B} =
+\{ f(X) \subset P(n) : X \in {A} \}$ is nonempty, and has
+a $\subset$-maximal element. Since it's obvious that $\forall X,Y \in
+{A}(X \subset Y \iff f(X) \subset f(Y))$, ${A}$
+has a $\subset$-maximal element. Threfore, Every finite set is
+T-finite.$\quad\square$
 
 **1.13.** Every infinite set is T-infinite.\
 &nbsp;$\quad$[If $S$ is infinite, consider $X = \{u \subset S : u\text{
 is finite}\}$.]
+
+**_Proof._**&nbsp;$\quad$Since $\emptyset \in X$, $X$ is nonempty. Suppose
+$X$ is has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
+\emptyset$ and there exists $x \in S \smallsetminus m$; otherwise $S$ is a
+subset of a finite set; a contradiction. Then $m \subsetneq m \cup \{x\}
+\in X$; a contradiction.$\quad\square$
 
 **1.14.** The Separation Axioms follow from the Replacement Schema.\
 &nbsp;$\quad$[Given $\phi$, let $F = \{(x,x) : \phi (x)\}$. Then $\{x
