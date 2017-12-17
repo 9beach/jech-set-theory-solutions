@@ -25,7 +25,7 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 surjective function $f : X \to P(X)$. But the set $Y = \{x\in X : x\notin
 f(x) \}$ is not in the range of $f$. Suppose not, if $z\in X$ were such
 that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$; a contradiction.
-So $f$ is not a surjective function; a contradiction.$\quad\square$
+Thus $f$ is not a surjective function; but also a contradiction.$\quad\square$
 
 &nbsp;$\quad$Let
 $$
