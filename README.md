@@ -5,7 +5,7 @@ author: 9beach@gmail.com
 ---
 
 # A solutions manual for Set Theory by Thomas Jech
-December 2017, for no special reason I started studying mathematics and writing
+In 2017, for no special reason I started studying mathematics, and writing
 a solutions manual for
 [Set Theory by Thomas Jech](https://www.amazon.com/Set-Theory-Thomas-Jech/dp/3540440852).
 

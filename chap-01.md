@@ -25,8 +25,7 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 surjective function $f : X \to P(X)$. But the set $Y = \{x\in X : x\notin
 f(x) \}$ is not in the range of $f$. Suppose not. If $z\in X$ were such
 that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$, a contradiction;
-hence $f$ is not a surjective function. Therefore, there is no set $X$ such
-that $P(X) \subset X$.$\quad\square$
+hence $f$ is not a surjective function.$\quad\square$
 
 &nbsp;$\quad$Let
 $$
@@ -78,7 +77,7 @@ that $Y$ is inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \text{ is
 transitive}\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and since
 $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
-$\mathbb{N} = Y_\mathbb{N}$, and so we have that every $n \in \mathbb{N}$ is
+$\mathbb{N} = Y_\mathbb{N}$. Threfore, every $n \in \mathbb{N}$ is
 transitive.$\quad\square$
 
 **1.5.** If $X$ is inductive, then the set $\{x \in X : x$ is transitive
@@ -93,7 +92,7 @@ already have that $y \cup \{y\}$ is transitive. Suppose $y \cup \{y\} \in y
 \cup \{y\}$, then $y \cup \{y\} \in y$, i.e., $y \cup \{y\} \subset y$ or $y
 \cup \{y\} = y$; in any case, $\{y\} \subset y$, i.e., $y \in y$; a
 contradiction. Thus $y \cup \{y\} \notin y \cup \{y\}$, and so $y \cup \{y\}
-\in Y$. Therefore, we have that $Y$ is inductive.\
+\in Y$. Therefore, $Y$ is inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \text{ is
 transitive and } x \notin x\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and
 since $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
@@ -115,8 +114,9 @@ inductive, $y \in X$, and $y \cup \{y\} \in X$. We already have that $y
 \cup \{y\}$ is transitive. Now suppose that there exists $a \in y$ such that
 $y \in a$, then $y \in a \in y$, and by transitivity of $y$, $y \in a \subset
 y$, i.e., $y \in y$, but then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
-not have $\epsilon$-minimal element ($... y \in y \in y ...$, $...y \in a \in
-y \in a...$); a contradiction. It follows that $y$ is $\epsilon$-_maximal_
+not have $\epsilon$-minimal element ($\cdot\cdot\cdot$$y \in y \in
+y$$\cdot\cdot\cdot$, $\cdot\cdot\cdot$$y \in a \in y \in a$$\cdot\cdot\cdot$);
+a contradiction. It follows that $y$ is $\epsilon$-_maximal_
 in $y$; thus every nonempty $z \subset y \cup \{y\}$ has an $\epsilon$-minimal
 element, and so $y \cup \{y\} \in Y$. Therefore, $Y$ is
 inductive.$\quad\square$
@@ -167,15 +167,15 @@ subset $\{\emptyset\}$ which has a $\subset$-maximal element $\emptyset$.\
 &nbsp;$\quad$Let $n \in A$; let $X \subset P(n + 1)$. For some $Y \subset
 P(n)$, $X$ is either $Y$ or $Z=\{x \cup \{n\} : x \in Y$\}. For the latter
 case, let $a$ be a $\subset$-maximal element of $Y$. Then it's obvious that
-$a \cup \{n\}$ is a $\subset$-maximal element of $Z$; thus $Z$ is T-finite.
-Therefore, $A = \mathbb{N}$.$\quad\square$
+$a \cup \{n\}$ is a $\subset$-maximal element of $Z$; thus $X$ is
+T-finite.$\quad\square$
 
 **1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
 
 **_Proof._**&nbsp;$\quad$For any $n \in \mathbb{N}$, there exists $n + 1$
 such that $n \subsetneq n + 1$; thus $\mathbb{N} \subset P(S)$ has no
-$\subset$-maximal element. Threfore, $\mathbb{N}$ is T-infinite.$\quad\square$
+$\subset$-maximal element.$\quad\square$
 
 **1.12.** Every finite set is T-finite.
 
@@ -185,8 +185,7 @@ Let ${A} \subset P(F)$ be a nonempty set. Then ${B} =
 \{ f(X) \subset P(n) : X \in {A} \}$ is nonempty, and has
 a $\subset$-maximal element. Since it's obvious that $\forall X,Y \in
 {A}(X \subset Y \iff f(X) \subset f(Y))$, ${A}$
-has a $\subset$-maximal element. Threfore, Every finite set is
-T-finite.$\quad\square$
+has a $\subset$-maximal element.$\quad\square$
 
 **1.13.** Every infinite set is T-infinite.\
 &nbsp;$\quad$[If $S$ is infinite, consider $X = \{u \subset S : u\text{
@@ -194,8 +193,8 @@ is finite}\}$.]
 
 **_Proof._**&nbsp;$\quad$Since $\emptyset \in X$, $X$ is nonempty. Suppose
 $X$ is has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
-\emptyset$ and there exists $x \in S \smallsetminus m$; otherwise $S$ is a
-subset of a finite set; a contradiction. Then $m \subsetneq m \cup \{x\}
+\emptyset$, and so there exists $x \in S \smallsetminus m$; otherwise $S$ is
+a subset of a finite set, a contradiction. Then $m \subsetneq m \cup \{x\}
 \in X$; a contradiction.$\quad\square$
 
 **1.14.** The Separation Axioms follow from the Replacement Schema.\
