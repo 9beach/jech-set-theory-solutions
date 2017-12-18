@@ -115,8 +115,8 @@ inductive, $y \in X$, and $y \cup \{y\} \in X$. We already have that $y
 \cup \{y\}$ is transitive. Now suppose that there exists $a \in y$ such that
 $y \in a$, then $y \in a \in y$, and by transitivity of $y$, $y \in a \subset
 y$, i.e., $y \in y$, but then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
-not have $\epsilon$-minimal element ($\cdot\cdot\cdot$$y \in y \in
-y$$\cdot\cdot\cdot$, $\cdot\cdot\cdot$$y \in a \in y \in a$$\cdot\cdot\cdot$);
+not have $\epsilon$-minimal element ($\cdots y \in y \in y\cdots$, $\cdots y
+\in a \in y \in a\cdots$);
 a contradiction. It follows that $y$ is $\epsilon$-_maximal_
 in $y$; thus every nonempty $z \subset y \cup \{y\}$ has an $\epsilon$-minimal
 element, and so $y \cup \{y\} \in Y$. Therefore, $Y$ is
@@ -197,7 +197,7 @@ element.$\quad\square$
 is finite}\}$.]
 
 **_Proof._**&nbsp;$\quad$Since $\emptyset \in X$, $X$ is nonempty. Suppose
-$X$ is has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
+$X$ has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
 \emptyset$; otherwise $S$ is a subset of a finite set; a contradiction,
 and so there exists $x \in S \smallsetminus m$. Then $m \subsetneq m \cup
 \{x\} \in X$; a contradiction.$\quad\square$
@@ -205,6 +205,17 @@ and so there exists $x \in S \smallsetminus m$. Then $m \subsetneq m \cup
 1.14. The Separation Axioms follow from the Replacement Schema.\
 &nbsp;$\quad$[Given $\phi$, let $F = \{(x,x) : \phi (x)\}$. Then $\{x
 \in X : \phi (x)\} = F(X)$, for every $X$.]
+
+**_Proof._**&nbsp;$\quad$Let $\varphi(x, y)$ be $x = y \wedge
+\phi(x)$. Then $F = \{(x,x) : \phi(x)\} = \{(x,y) : \varphi(x,y)\}$.
+Since $\forall x \forall y \forall z(\varphi(x,y)\wedge
+\varphi(x,z)\to y = z)$ holds, $\varphi(x,y)$ is a functional
+formula. Therefore, we have that The Separation Axioms follow from the
+Replacement Schema.\
+&nbsp;$\quad$$F(X)$ $=$ $\{y : (\exists x \in X)\varphi(x, y)\}$ $=$
+$\{y:(\exists x \in X)x = y \wedge \phi(x)\}$ $=$
+$\{x:(\exists x \in X)\phi(x)\}$ $=$
+$\{x \in X : \phi (x)\}$.$\quad\square$
 
 1.15. Instead of Union, Power Set, and Replacement Axioms consider the
 following weaker versions:
@@ -217,3 +228,10 @@ u(u\subset X\to u\in Y)$,\
 
 Then axioms 1.4, 1.5, and 1.7 can be proved from (1.8), (1.9), and (1.10),
 using the Separation Schema (1.3).
+
+**_Proof._**&nbsp;$\quad$Using the Separation Schema,\
+&nbsp;$\quad$(1.8) $\implies$ $\{ x \in Y : (\exists a \in X)x \in a\} =
+\bigcup X$,\
+&nbsp;$\quad$(1.9) $\implies$ $\{ x \in Y : x \subset X\} = P(X)$,\
+&nbsp;$\quad$(1.10) $\implies$ $\{ y \in Y : (\exists x\in X)\varphi(x,y,p)
+\} = F(X)$.$\quad\square$

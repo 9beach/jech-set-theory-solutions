@@ -5,13 +5,12 @@ PDFS	= $(SRCS:.md=.pdf)
 %.html:%.md
 	pandoc -s $< -o $@ --mathjax
 
-%.pdf:%.md template.tex Makefile
+%.pdf:%.md template.tex
 	pandoc -s $< -o $@ --template template.tex \
 		--pdf-engine=xelatex \
-		-f markdown+escaped_line_breaks -V papersize:b5paper\
-		-f markdown-raw_tex+tex_math_single_backslash \
-		-V fontsize=12pt \
-		-V geometry:"top=2.2cm, bottom=2cm, left=1.8cm, right=1.8cm"
+		-f markdown+escaped_line_breaks \
+		-V geometry:"top=2.2cm, bottom=2cm, left=1.8cm, right=1.8cm" \
+		-V papersize:b5paper -V fontsize=11pt
 
 all: $(HTMLS) $(PDFS)
 
