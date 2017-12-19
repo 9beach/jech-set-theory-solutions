@@ -6,7 +6,6 @@ author: 9beach@gmail.com
 
 # A solutions manual for Set Theory by Thomas Jech
 ## 1. Axioms of Set Theory
-### Exercises
 
 1.1. Verify (1.1)$\qquad(a, b) = (c, d)$ if and only if $a = c$ and
 $b = d$.

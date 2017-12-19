@@ -1,25 +1,27 @@
-SRCS	= $(wildcard *.md)
-HTMLS	= $(SRCS:.md=.html)
-PDFS	= $(SRCS:.md=.pdf)
+SRCS		= $(wildcard *.md)
+HTMLS		= $(SRCS:.md=.html)
+PDFS		= $(shell basename $(shell pwd)).pdf
+PDF_SRCS	= $(join $(addsuffix build/, $(dir $(SRCS))), \
+		  $(notdir $(SRCS:.md=.md)))
 
-# Change markdown url to rawgit url for HTMLs
-SED_PARAM := 's:(\(c[^)]*\)\.md):(https\:/rawgit.com/9beach/$(shell basename $(shell pwd))/master/\1.html):'
-
+# Change markdown link to rawgit link
 %.html:%.md
-	cat $< | grep -v 'rawgit\.com' | \
-		sed -e 's:(\(ch[^)]*\).md):(\1.html):' | \
+	sed -e 's:(\(ch[^)]*\).md):(\1.html):' < $< | \
 		pandoc -o $@ -f markdown -s --mathjax
 
-%.pdf:%.md template.tex
-	pandoc -s $< -o $@ --template template.tex \
+all: $(HTMLS) $(PDFS)
+
+$(PDFS):$(SRCS) template.tex
+	mkdir -p build
+	for i in *md; do sed -e 's:^# .*:\\newpage:' < $$i | sed -e \
+		's:\[\([^]]*\)\](\(ch[^)]*\).md):\1:' > build/$$i; done
+	pandoc $(PDF_SRCS) -o $@ --template template.tex \
 		--pdf-engine=xelatex \
 		-f markdown+escaped_line_breaks \
 		-V geometry:"top=2.2cm, bottom=2cm, left=1.8cm, right=1.8cm" \
 		-V papersize:b5paper -V fontsize=11pt
-
-all: $(HTMLS)
-
-pdf: $(PDFS)
+	rm -rf build
 
 clean:
 	rm -f $(HTMLS) $(PDFS)
+	rm -rf build

@@ -6,7 +6,6 @@ author: 9beach@gmail.com
 
 # A solutions manual for Set Theory by Thomas Jech
 ## 2. Ordinal Numbers
-### Exercises
 
 2.1. The relation “$(P,<) is isomorphic to (Q,<)$” is an equivalence relation
 (on the class of all partially ordered sets).

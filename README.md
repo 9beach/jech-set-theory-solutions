@@ -5,13 +5,16 @@ author: 9beach@gmail.com
 ---
 
 # A solutions manual for Set Theory by Thomas Jech
-In 2017, for no special reason I started studying mathematics, and writing
-a solutions manual for
+In 2017, for no special reason I started studying mathematics and writing a
+solutions manual for
 [Set Theory by Thomas Jech](https://www.amazon.com/Set-Theory-Thomas-Jech/dp/3540440852).
 
-_[HTML version](https://rawgit.com/9beach/jech-set-theory-solutions/master/README.html)_
+_GitHub repository [here](https://github.com/9beach/jech-set-theory-solutions),
+and HTML versions [here](https://rawgit.com/9beach/jech-set-theory-solutions/master/README.html)._
 
-## Part I: Basic Set Theory
+## Contents
+
+#### Part I: Basic Set Theory
 1. [Axioms of Set Theory](chap-01.md)
 2. [Ordinal Numbers](chap-02.md) _wip_
 3. Cardinal Numbers
@@ -25,7 +28,7 @@ _[HTML version](https://rawgit.com/9beach/jech-set-theory-solutions/master/READM
 11. Borel and Analytic Sets
 12. Models of Set Theory
 
-## Part II: Advanced Set Theory
+#### Part II: Advanced Set Theory
 13. Constructible Sets
 14. Forcing
 15. Applications of Forcing
@@ -41,7 +44,7 @@ _[HTML version](https://rawgit.com/9beach/jech-set-theory-solutions/master/READM
 25. Descriptive Set Theory
 26. The Real Line
 
-## Part III: Selected Topics
+#### Part III: Selected Topics
 27. Combinatorial Principles in $L$
 28. More Applications of Forcing
 29. More Combinatorial Set Theory
