@@ -91,7 +91,7 @@ each $n \in \mathbb{N}$.
 $\emptyset \notin \emptyset$, $\emptyset \in Y$. Now let $y \in Y$. Since
 $Y \subset X$, and $X$ is inductive, $y \in X$, and $y \cup \{y\} \in X$. We
 already have that $y \cup \{y\}$ is transitive. Suppose $y \cup \{y\} \in y
-\cup \{y\}$, then $y \cup \{y\} \in y$, i.e., $y \cup \{y\} \subset y$ or $y
+\cup \{y\}$, then $y \cup \{y\} \in y$ or $y
 \cup \{y\} = y$; in any case, $\{y\} \subset y$, i.e., $y \in y$; a
 contradiction. Thus $y \cup \{y\} \notin y \cup \{y\}$, and so $y \cup \{y\}
 \in Y$. Therefore, $Y$ is inductive.\
