@@ -1,5 +1,5 @@
 ---
-pagetitle: "Axioms of Set Theory"
+pagetitle: "1. Axioms of Set Theory"
 author: 9beach@gmail.com
 
 ---
@@ -22,11 +22,10 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 1.2. There is no set $X$ such that $P(X) \subset X$.
 
 **_Proof._**&nbsp;$\quad$Suppose $P(X) \subset X$, then we have a
-function $f$ from $X$ onto $P(X)$. But the set $Y = \{x\in X : x\notin
-f(x) \}$ is not in the range of $f$: If $z\in X$ were such
-that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$, a contradiction.
-Thus $f$ is not a function of $X$ onto $P(X)$; also a
-contradiction.$\quad\square$
+surjective function $f : X \to P(X)$. But the set $Y = \{x\in X : x\notin
+f(x) \}$ is not in the range of $f$. Suppose not, if $z\in X$ were such
+that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$; a contradiction.
+Thus $f$ is not a surjective function; but also a contradiction.$\quad\square$
 
 &nbsp;$\quad$Let
 $$
@@ -91,8 +90,8 @@ each $n \in \mathbb{N}$.
 $\emptyset \notin \emptyset$, $\emptyset \in Y$. Now let $y \in Y$. Since
 $Y \subset X$, and $X$ is inductive, $y \in X$, and $y \cup \{y\} \in X$. We
 already have that $y \cup \{y\}$ is transitive. Suppose $y \cup \{y\} \in y
-\cup \{y\}$, then $y \cup \{y\} \in y$ or $y
-\cup \{y\} = y$; in any case, $\{y\} \subset y$, i.e., $y \in y$; a
+\cup \{y\}$, then $y \cup \{y\} = y$ or $y \cup \{y\} \in y$, i.e., $y \cup
+\{y\} \subset y$; in any case, $\{y\} \subset y$, i.e., $y \in y$; a
 contradiction. Thus $y \cup \{y\} \notin y \cup \{y\}$, and so $y \cup \{y\}
 \in Y$. Therefore, $Y$ is inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \text{ is

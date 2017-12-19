@@ -9,9 +9,11 @@ In 2017, for no special reason I started studying mathematics, and writing
 a solutions manual for
 [Set Theory by Thomas Jech](https://www.amazon.com/Set-Theory-Thomas-Jech/dp/3540440852).
 
+_[HTML version](https://rawgit.com/9beach/jech-set-theory-solutions/master/README.html)_
+
 ## Part I: Basic Set Theory
-1. [Axioms of Set Theory](https://rawgit.com/9beach/jech-set-theory-solutions/master/chap-01.html)
-2. Ordinal Numbers
+1. [Axioms of Set Theory](chap-01.md)
+2. [Ordinal Numbers](chap-02.md) _wip_
 3. Cardinal Numbers
 4. Real Numbers
 5. The Axiom of Choice and Cardinal Arithmetic
