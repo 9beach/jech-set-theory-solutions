@@ -7,15 +7,15 @@ author: 9beach@gmail.com
 # A solutions manual for Set Theory by Thomas Jech
 ## 2. Ordinal Numbers
 
-2.1. The relation “$(P,<) is isomorphic to (Q,<)$” is an equivalence relation
-(on the class of all partially ordered sets).
+2.1. The relation “$(P,<)$ is isomorphic to $(Q,<)$” is an equivalence
+relation (on the class of all partially ordered sets).
 
 2.2. $\alpha$ is a limit ordinal if and only if $\beta <\alpha$ implies
 $\beta+1<\alpha$, for every $\beta$.
 
 2.3. If a set $X$ is inductive, then $X \cap Ord$ is inductive. The set
-$\mathbb{N} = \bigcap\{X : X \text{ is inductive}\}$ is the least limit ordinal
-$\neq 0$.
+$\mathbb{N} = \bigcap\{X : X \text{ is inductive}\}$ is the least limit
+ordinal $\neq 0$.
 
 2.4. (Without the Axiom of Infinity). Let $\omega =$ least limit $\alpha
 \neq 0$ if it exists, $\omega = Ord$ otherwise. Prove that the following
@@ -47,7 +47,7 @@ arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha =
 &nbsp;$\quad$(ii) $\alpha^{\beta+\gamma}=\alpha^{\beta}\cdot\alpha^{\gamma}$,\
 &nbsp;$\quad$(iii) $(\alpha^{\beta})^{\gamma} =\alpha^{\beta\cdot\gamma}$.
 
-2.9.&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq \omega\cdot 2+1\cdot 2$.\
+2.9.&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
 &nbsp;$\quad$(ii) Show that $(\omega\cdot 2)^2 \neq \omega^2\cdot 2^2$.
 
 2.10. If $\alpha <\beta$ then $\alpha +\gamma \le \beta +\gamma$, $\alpha
