@@ -1,6 +1,6 @@
 ---
 pagetitle: "1. Axioms of Set Theory"
-author: 9beach@gmail.com
+author: https://github.com/9beach
 
 ---
 

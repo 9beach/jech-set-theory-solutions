@@ -1,6 +1,6 @@
 ---
 pagetitle: "A solutions manual for Set Theory by Thomas Jech"
-author: 9beach@gmail.com
+author: https://github.com/9beach
 
 ---
 
