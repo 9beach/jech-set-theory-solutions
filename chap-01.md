@@ -219,11 +219,12 @@ $\{x \in X : \phi (x)\}$.$\quad\square$
 1.15. Instead of Union, Power Set, and Replacement Axioms consider the
 following weaker versions:
 
-(1.8) $\forall X\exists Y\bigcup X \subset Y$, i.e., $\forall X\exists Y
-(\forall x\in X)(\forall u\in x)u\in Y$,\
-(1.9) $\forall X\exists Y P(X)\subset Y$, i.e., $\forall X\exists Y \forall
-u(u\subset X\to u\in Y)$,\
-(1.10) If a class $F$ is a function, then $\forall X\exists Y F(X)\subset Y$.
+&nbsp;$\quad$(1.8) $\forall X\exists Y\bigcup X \subset Y$, i.e.,
+$\forall X\exists Y(\forall x\in X)(\forall u\in x)u\in Y$,\
+&nbsp;$\quad$(1.9) $\forall X\exists Y P(X)\subset Y$, i.e.,
+$\forall X\exists Y \forall u(u\subset X\to u\in Y)$,\
+&nbsp;$\quad$(1.10) If a class $F$ is a function, then $\forall X\exists
+Y F(X)\subset Y$.
 
 Then axioms 1.4, 1.5, and 1.7 can be proved from (1.8), (1.9), and (1.10),
 using the Separation Schema (1.3).
