@@ -10,7 +10,7 @@ solutions manual for
 [Set Theory by Thomas Jech](https://www.amazon.com/Set-Theory-Thomas-Jech/dp/3540440852).
 
 _GitHub repository [here](https://github.com/9beach/jech-set-theory-solutions),
-and HTML versions [here](https://rawgit.com/9beach/jech-set-theory-solutions/master/README.html)._
+HTML versions [here](https://rawgit.com/9beach/jech-set-theory-solutions/master/README.html), and PDF version [here](https://github.com/9beach/jech-set-theory-solutions/releases)._
 
 ## Contents
 
