@@ -11,8 +11,12 @@ all: $(HTMLS) $(PDF)
 
 $(PDF):$(SRCS) template.tex
 	mkdir -p .build
-	for i in *md; do sed -e 's:^# .*:\\newpage:' < $$i | sed -e \
-		's:\[\([^]]*\)\](\(ch[^)]*\).md):\1:' > .build/$$i; done
+	for i in *md; do \
+		sed -e 's:^# .*:\\newpage:' < $$i | \
+		sed -e 's:^## :# :' | \
+		sed -e 's:^### :## :' | \
+		sed -e 's:\[\([^]]*\)\](\(ch[^)]*\).md):\1:' > \
+		.build/$$i; done
 	pandoc .build/*.md -o $@ \
 		--template template.tex --pdf-engine=xelatex \
 		-f markdown+escaped_line_breaks \
