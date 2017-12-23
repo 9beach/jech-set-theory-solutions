@@ -3,13 +3,13 @@ HTMLS		= $(SRCS:.md=.html)
 PDF		= $(shell basename $(shell pwd)).pdf
 
 # Change markdown link to rawgit link
-%.html:%.md
+%.html: %.md
 	sed -e 's:(\(ch[^)]*\).md):(\1.html):' < $< | \
 		pandoc -o $@ -f markdown -s --mathjax
 
 all: $(HTMLS) $(PDF)
 
-$(PDF):$(SRCS) template.tex
+$(PDF): $(SRCS) template.tex
 	mkdir -p .build
 	for i in *md; do \
 		sed -e 's:^# .*:\\newpage:' < $$i | \
