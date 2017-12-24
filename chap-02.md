@@ -49,7 +49,7 @@ finite subsets of $X$.]
 exists a inductive T-infinite set $\mathbb{N}$, and by exercise 1.11 and
 1.12, $\mathbb{N}$ is infinite.\
 &nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $Y = \{x\subset X : x \text{ is a
-finite set}\}$. Then $Y \subset P(X)$ is a set, and since $y \in Y$ is finite,
+finite set}\}$. Then $Y \subset P(X)$ is a set, and since $x \in Y$ is finite,
 there is a mapping $f$ from $Y$ into $\omega$ given by $x \mapsto n$, $n$
 such that $x$ has $n$ elements. Since $X$ is infinite, if $x \in Y$ has $n$ elements, then there
 exists $y \in Y$ which has $n+1$ elements; thus $ran(f) = \omega$. Therefore,
@@ -73,7 +73,7 @@ $a_0 >a_1 >a_2 > \ldots.$
 we can define $\alpha_{n+1} = \alpha_n+1$, and $\beta=\lim_{n\to
 \omega}\alpha_n$. Then, for any $\gamma < \beta$, there exists
 $\gamma < \alpha_n$, and $\gamma + 1 < \alpha_n + 1 = \alpha_{n+1}$; thus
-$\beta$ is limit ordinals. Therefore, there are arbitrarily large limit 
+$\beta$ is limit ordinals. Therefore, there are arbitrarily large limit
 ordinals.$\quad\square$
 
 2.7. Every normal sequence $\langle\gamma_\alpha : \alpha \in Ord\rangle$ has
@@ -82,59 +82,39 @@ arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha =
 &nbsp;$\quad$[Let $\alpha_{n+1}=\gamma_{\alpha_n}$, and $\alpha=\lim_{n\to
 \omega}\alpha_n$.]
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.8. For all $\alpha, \beta$ and $\gamma$,\
 &nbsp;$\quad$(i) $\alpha\cdot(\beta+\gamma)= \alpha\cdot\beta+
 \alpha\cdot\gamma$,\
 &nbsp;$\quad$(ii) $\alpha^{\beta+\gamma}=\alpha^{\beta}\cdot\alpha^{\gamma}$,\
 &nbsp;$\quad$(iii) $(\alpha^{\beta})^{\gamma} =\alpha^{\beta\cdot\gamma}$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.9.&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
 &nbsp;$\quad$(ii) Show that $(\omega\cdot 2)^2 \neq \omega^2\cdot 2^2$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.10. If $\alpha<\beta$ then $\alpha+\gamma\le\beta+\gamma$, $\alpha
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le\beta^{\gamma}$.
-
-**_Proof._**&nbsp;$\quad$ $\quad\square$
 
 2.11. Find $\alpha, \beta, \gamma$ such that\
 &nbsp;$\quad$(i) $\alpha <\beta$ and $\alpha +\gamma =\beta +\gamma$,\
 &nbsp;$\quad$(ii) $\alpha <\beta$ and $\alpha\cdot\gamma=\beta\cdot\gamma$,\
 &nbsp;$\quad$(iii) $\alpha <\beta$ and $\alpha\gamma=\beta\gamma$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.12. Let $\varepsilon_0 = lim_{n\to \omega}\alpha_n$ where $\alpha_0 =
 \omega$ and $\alpha_{n+1} = \omega^{\alpha_n}$ for all $n$. Show that
 $\varepsilon_0$ is the least ordinal $\varepsilon$ such that
 $\omega^{\varepsilon}=\varepsilon$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 A limit ordinal $\gamma > 0$ is called _indecomposable_ if there exist no
 $\alpha < \gamma$ and $\beta < \gamma$ such that $\alpha + \beta = \gamma$.
-
-**_Proof._**&nbsp;$\quad$ $\quad\square$
 
 2.13. A limit ordinal $\gamma > 0$ is indecomposable if and only if $\alpha
 +\gamma = \gamma$ for all $\alpha < \gamma$ if and only if $\gamma
 =\omega^{\alpha}$ for some $\alpha$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.14. If $E$ is a well-founded relation on $P$, then there is no sequence
 $\langle a_n : n \in \mathbb{N} \rangle$ in $P$ such that $a_1\, E\, a_0,
 \,a_2\,E\,a_1,\, a_3\, E\, a_2,\, \ldots$.
 
-**_Proof._**&nbsp;$\quad$ $\quad\square$
-
 2.15. (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
 $P$, and let $G$ be a function. Then there exists a function $F$ such that
 for all $x \in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
-
-**_Proof._**&nbsp;$\quad$ $\quad\square$
