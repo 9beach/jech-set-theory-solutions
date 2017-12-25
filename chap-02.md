@@ -50,7 +50,7 @@ exists an inductive T-infinite set $\mathbb{N}$, and by exercise 1.12 and
 1.13, $\mathbb{N}$ is infinite.\
 &nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $Y = \{x\subset X : x \text{ is a
 finite set}\}$. Then $Y \subset P(X)$ is a set, and since $x \in Y$ is finite,
-there is a mapping $f$ from $Y$ into $\omega$ given by $x \mapsto n$; $n$
+there is a mapping $f$ from $Y$ into $\omega$ given by $x \mapsto n$, $n$
 such that $x$ has $n$ elements. Since $X$ is infinite, if $x \in Y$ has $n$
 elements, then there exists $y \in Y$ which has $n+1$ elements; thus
 $ran(f) = \omega$. Therefore, $\omega$ is a set.\
@@ -137,7 +137,7 @@ $=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi=\alpha\cdot\beta+
 $\alpha+\gamma\le\beta+\gamma$ by induction on $\gamma$.\
 $\alpha+0\le\beta+0$. $\alpha+\gamma+1\le\alpha+1+\gamma+1
 \le\beta+\gamma+1$. Let a limit ordinal $> 0$ be $\gamma$.
-For all $\xi<\gamma$, if $\alpha + \xi < \beta + \xi$ then,
+For all $\xi<\gamma$, if $\alpha + \xi < \beta + \xi$ then
 $\text{sup }\{\alpha + \xi : \xi<\gamma\} \le \text{sup } \{\beta +
 \xi : \xi<\gamma\}$. Therefore, $\alpha+\gamma\le\beta+\gamma$.\
 &nbsp;$\quad$Similarly to the previous, $\alpha
