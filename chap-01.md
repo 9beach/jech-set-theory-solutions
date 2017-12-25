@@ -147,7 +147,7 @@ $m + 1$ for some $m$.$\quad\square$
 1.9 (Induction). Let $A$ be a subset of $\mathbb{N}$ such that $0
 \in A$, and if $n \in A$ then $n+1\in A$. Then $A=\mathbb{N}$.
 
-**_Proof._**&nbsp;$\quad$By definition, $A$ is a inductive subset of
+**_Proof._**&nbsp;$\quad$By definition, $A$ is an inductive subset of
 $\mathbb{N}$. Therefore, $A = \mathbb{N}$.$\quad\square$
 
 &nbsp;$\quad$A set $X$ _has $n$ elements_ (where $n \in \mathbb{N}$) if there
