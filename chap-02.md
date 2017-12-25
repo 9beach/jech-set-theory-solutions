@@ -19,9 +19,9 @@ then $P$ is isomorphic to $G$ by $g\circ f$.$\quad\square$
 $\beta+1<\alpha$, for every $\beta$.
 
 **_Proof._**&nbsp;$\quad$Suppose $\beta+1\ge\alpha$. Since $\beta <\alpha$,
-$\alpha = \beta + 1$; thus $\alpha$ is a successor ordinal; a contradiction.
+$\alpha = \beta + 1$; thus $\alpha$ is a successor ordinal, a contradiction.
 Conversely, suppose that $\alpha$ is a successor ordinal. Then
-$\alpha=\beta+1$ for some $\beta<\alpha$; a contradiction.$\quad\square$
+$\alpha=\beta+1$ for some $\beta<\alpha$, a contradiction.$\quad\square$
 
 2.3. If a set $X$ is inductive, then $X \cap Ord$ is inductive. The set
 $\mathbb{N} = \bigcap\{X : X \text{ is inductive}\}$ is the least limit
@@ -164,8 +164,8 @@ $\omega^{\varepsilon}=\varepsilon$.
 \omega^{\text{sup }\{\omega, \omega^\omega,
 \omega^{\omega^\omega},\ldots\}}=\omega^{\varepsilon_0}$.\
 &nbsp;$\quad$Suppose that there exists $\varepsilon < \varepsilon_0$
-such that $\omega^{\varepsilon}=\varepsilon$. Then for every finite
-number $a$, $a \neq \omega^a$; thus $\varepsilon \ge \omega$, and so there
+such that $\omega^{\varepsilon}=\varepsilon$. Then since for every finite
+number $a$, $a \neq \omega^a$, $\varepsilon \ge \omega$, and so there
 exists the least $n$ such that $n>0, n\in\omega$, and $\alpha_n >
 \varepsilon$. Then
 $\alpha_n=\omega^{\alpha_{n-1}}>\varepsilon=\omega^\varepsilon$. But
