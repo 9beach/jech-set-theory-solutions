@@ -179,6 +179,25 @@ $\alpha+\beta=\gamma$.
 +\gamma = \gamma$ for all $\alpha < \gamma$ if and only if $\gamma
 =\omega^{\alpha}$ for some $\alpha$.
 
+**_Proof._**&nbsp;$\quad$$\gamma > 0$ is indecomposable
+if and only if $\alpha+\beta<\gamma$ for all
+$\alpha < \gamma$ and $\beta < \gamma$; otherwise
+$\alpha<\gamma<\alpha+\beta$, and so there is $\delta$ such that
+$\alpha+\delta=\gamma$ and $\delta<\gamma$; a contradiction. Hence
+for all $\alpha < \gamma$, $\alpha+\gamma=\text{sup }\{\alpha+\xi : \xi <
+\gamma\}$ $=$ $\text{sup }\{\xi : \xi < \gamma\}=\gamma$. Conversely, if
+$\alpha +\gamma = \gamma$ for all $\alpha < \gamma$, then
+$\text{sup }\{\alpha+\xi : \xi < \gamma\}$ $=$ $\gamma$. It follows that
+for all $\alpha < \gamma$ and $\beta < \gamma$, $\alpha+\beta<\gamma$.\
+&nbsp;$\quad$Let $\gamma=\omega^{\beta_1}\cdot k_1
++\ldots+\omega^{\beta_n}\cdot k_n$ be Cantor's normal form.
+If $\gamma \ne \omega^\alpha$ for
+all $\alpha$, i.e., $n>1$ or $k_n>1$ then clearly not indecomposable.
+Conversely, let $\beta_1, \beta_2<\gamma=\omega^\alpha$. there exist $\alpha'<\alpha$ and $n<\omega$ such
+that $\beta_1, \beta_2<\omega^{\alpha'}\cdot n$; consider Cantor’s
+normal forms of $\beta_1, \beta_2$. Hence $\beta_1 + \beta_2 <
+\omega^{\alpha'}\cdot (k+k) < \omega^\alpha=\gamma$.$\quad\square$
+
 2.14. If $E$ is a well-founded relation on $P$, then there is no sequence
 $\langle a_n : n \in \mathbb{N} \rangle$ in $P$ such that $a_1\,E\,a_0,
 \,a_2\,E\,a_1,\,a_3\,E\,a_2,\,\ldots$.
@@ -189,3 +208,16 @@ a_0$; there is no least element.$\quad\square$
 2.15. (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
 $P$, and let $G$ be a function. Then there exists a function $F$ such that
 for all $x \in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
+
+**_Proof._**&nbsp;$\quad$A set $B\subset A$ is $E$-transitive in $A$
+if $\{y\in A:y\,E\,x\}\subset B$ holds for all $x\in B$. Let $T = \{g : g$
+is a function. $\text{dom}(g)$ is a $E$-transitive in $P$, and
+$(\forall x \in \text{dom}(g))g(x) = G(x, g\upharpoonright x)\}$.\
+&nbsp;$\quad$We claim that $\bigcup T$ is a function. Suppose not.
+There is a $E$-minimal element $m$ of the set
+$\{x\in \text{dom}(g_1)\cap\text{dom}(g_2) : g_1(x) \neq g_2(x)$
+for some $g_1, g_2 \in T\}$.
+Then $g_1\upharpoonright\{y\in \text{dom}(g_1): y\,E\,m\}$ $=$
+$g_2\upharpoonright\{y\in \text{dom}(g_2): y\,E\,m\}$; thus $g_1(x) = g_2(x)$,
+a contradiction. Similarly, dom($\bigcup T)=P$. Therefore,
+$\bigcup T=F$.$\quad\square$
