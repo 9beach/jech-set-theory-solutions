@@ -3,7 +3,7 @@ pagetitle: "1. Axioms of Set Theory"
 author: https://github.com/9beach
 
 ---
-# A solutions manual for Set Theory by Thomas Jech
+# [A solutions manual for Set Theory by Thomas Jech](README.md)
 ## Part I: Basic Set Theory
 ### 1. Axioms of Set Theory
 

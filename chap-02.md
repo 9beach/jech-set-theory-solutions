@@ -3,7 +3,7 @@ pagetitle: "2. Ordinal Numbers"
 author: https://github.com/9beach
 
 ---
-# A solutions manual for Set Theory by Thomas Jech
+# [A solutions manual for Set Theory by Thomas Jech](README.md)
 ### 2. Ordinal Numbers
 
 2.1. The relation “$(P,<)$ is isomorphic to $(Q,<)$” is an equivalence

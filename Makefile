@@ -2,9 +2,8 @@ SRCS		= $(wildcard *.md)
 HTMLS		= $(SRCS:.md=.html)
 PDF		= $(shell basename $(shell pwd)).pdf
 
-# Change markdown link to rawgit link
 %.html: %.md
-	sed -e 's:(\(ch[^)]*\).md):(\1.html):' < $< | \
+	sed -e 's:(\([^)]*\).md):(\1.html):' < $< | \
 		pandoc -o $@ -f markdown -s --mathjax
 
 all: $(HTMLS) $(PDF)
