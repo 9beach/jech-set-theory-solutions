@@ -102,37 +102,41 @@ Therefore, $n \notin n$ and $n \ne n + 1$ for each $n \in \mathbb
 {N}$.$\quad\square$
 
 1.6. If $X$ is inductive, then $\{x \in X:x$ is transitive and every
-nonempty $z \subset x$ has an $\epsilon$-minimal $\text{element}\}$ is
-inductive ($t$ is $\epsilon$-_minimal_ in $z$ if there is no $s \in z$ such
+nonempty $z \subset x$ has an $\in$-minimal $\text{element}\}$ is
+inductive ($t$ is $\in$-_minimal_ in $z$ if there is no $s \in z$ such
 that $s \in t$).
 
-**_Proof._**&nbsp;$\quad$Let $Y = \{x \in X : x$ is transitive and every
-nonempty $z \subset x$ has an $\epsilon$-minimal $\text{element}\}$. Since
-$\emptyset \in X$, and $\emptyset$ is transitive and has no nonempty set,
-$\emptyset \in Y$. Now let $y \in Y$. Since $Y \subset X$, and $X$ is
+**_Proof._**&nbsp;$\quad$Let $P(x)$ be the property "every nonempty $z
+\subset x$ has an $\in$-minimal element"; let $Y = \{x \in X : x$ is
+transitive and $P(x)\}$. $\emptyset \in X$, and is
+transitive, and has no nonempty subset, thus
+$\emptyset \in Y$. Let $y \in Y$. Since $Y \subset X$, and $X$ is
 inductive, $y \in X$, and $y \cup \{y\} \in X$. We already have that $y
-\cup \{y\}$ is transitive. Now suppose that there exists $a \in y$ such that
-$y \in a$, then $y \in a \in y$, and by transitivity of $y$, $y \in a \subset
-y$, i.e., $y \in y$, but then $\{y\} \subset y$ and $\{a, y\} \subset y$ do
-not have $\epsilon$-minimal element ($\cdots y \in y \in y\cdots$, $\cdots y
-\in a \in y \in a\cdots$);
-a contradiction. It follows that $y$ is $\epsilon$-_maximal_
-in $y$; thus every nonempty $z \subset y \cup \{y\}$ has an $\epsilon$-minimal
-element, and so $y \cup \{y\} \in Y$. Therefore, $Y$ is
-inductive.$\quad\square$
+\cup \{y\}$ is transitive. Now we show that
+$P(y \cup \{y\})$ holds. $y \notin y$; otherwise $y \in y \Rightarrow y
+\subset y$, and so
+$\{y\}$ $\subset y$ does not have an $\in$-minimal element ($\cdots y \in y
+\in y\cdots$), a contradiction. There is no $a \in y$ such that
+$y \in a$; otherwise $y \in a \in y\Rightarrow y \in a \subset
+y\Rightarrow y \in y$.
+Hence for every nonempty $z \subset y\cup\{y\}$
+such that $z\cap \{y\}=\emptyset$, if $m$ is an $\in$-minimal element
+in $z$ then so is in $z\cup\{y\}$; otherwise $y\in m$, a contradiction.
+Similarly, $P(\{y\})$ holds; otherwise $\cdots y \in y \in y\cdots$.
+Therefore, $P(y\cup\{y\})$ holds, and so $Y$ is inductive.$\quad\square$
 
-1.7. Every nonempty $X \subset \mathbb{N}$ has an $\epsilon$-minimal
+1.7. Every nonempty $X \subset \mathbb{N}$ has an $\in$-minimal
 element.\
 &nbsp;$\quad$[Pick $n \in X$ and look at $X \cap n$.]
 
 **_Proof._**&nbsp;$\quad$Since $\mathbb{N}$ is the smallest inductive
 set, from 1.6, we have that every $n \in \mathbb{N}$ has an
-$\epsilon$-minimal element. Let $n \in X$. If $n \cap X = \emptyset$, then
-$n$ is an $\epsilon$-minimal element. Suppose not. There exists $m \in X
+$\in$-minimal element. Let $n \in X$. If $n \cap X = \emptyset$, then
+$n$ is an $\in$-minimal element. Suppose not. There exists $m \in X
 \smallsetminus n$ such that $m \in n$, but then since $n=\{m\in \mathbb{N}:
 m<n\}$, $n \cap X \neq \emptyset$; a contradiction. If $n \cap X \neq
-\emptyset$, then $n \cap X \subset n$ has an $\epsilon$-minimal element,
-and it's an $\epsilon$-minimal element of $X$; otherwise similarly to the
+\emptyset$, then $n \cap X \subset n$ has an $\in$-minimal element,
+and it's an $\in$-minimal element of $X$; otherwise similarly to the
 previous, a contradiction.$\quad\square$
 
 1.8. If $X$ is inductive then so is $\{x\in X:x=\emptyset$ or $x=y\cup
@@ -178,8 +182,6 @@ such that $n \subsetneq n + 1$; thus $\mathbb{N} \subset P(\mathbb{N})$ has
 no $\subset$-maximal element.$\quad\square$\
 &nbsp;$\quad$_Note that $\mathbb{N} \in P(\mathbb{N})$, $\mathbb{N}
 \subset P(\mathbb{N})$, and $\bigcup\mathbb{N} = \mathbb{N}$._
-
-
 
 1.12. Every finite set is T-finite.
 
