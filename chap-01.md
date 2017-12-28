@@ -119,8 +119,8 @@ $\{y\}$ $\subset y$ does not have an $\in$-minimal element ($\cdots y \in y
 \in y\cdots$), a contradiction. There is no $a \in y$ such that
 $y \in a$; otherwise $y \in a \in y\Rightarrow y \in a \subset
 y\Rightarrow y \in y$.
-Hence for every nonempty $z \subset y\cup\{y\}$
-such that $z\cap \{y\}=\emptyset$, if $m$ is an $\in$-minimal element
+Hence for every nonempty $z \subset y$
+if $m$ is an $\in$-minimal element
 in $z$ then so is in $z\cup\{y\}$; otherwise $y\in m$, a contradiction.
 Similarly, $P(\{y\})$ holds; otherwise $\cdots y \in y \in y\cdots$.
 Therefore, $P(y\cup\{y\})$ holds, and so $Y$ is inductive.$\quad\square$
