@@ -113,8 +113,7 @@ transitive, and has no nonempty subset, thus
 $\emptyset \in Y$. Let $y \in Y$. Since $Y \subset X$, and $X$ is
 inductive, $y \in X$, and $y \cup \{y\} \in X$. We already have that $y
 \cup \{y\}$ is transitive. Now we show that
-$P(y \cup \{y\})$ holds. $y \notin y$; otherwise $y \in y \Rightarrow y
-\subset y$, and so
+$P(y \cup \{y\})$ holds. $y \notin y$; otherwise
 $\{y\}$ $\subset y$ does not have an $\in$-minimal element ($\cdots y \in y
 \in y\cdots$), a contradiction. There is no $a \in y$ such that
 $y \in a$; otherwise $y \in a \in y\Rightarrow y \in a \subset
