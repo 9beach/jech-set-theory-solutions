@@ -60,8 +60,8 @@ Clearly, a function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
 **_Proof._**&nbsp;$\quad$(i) Let $f$ be a function of
 $\mathbb{N}\times\mathbb{N}$ into $\mathbb{N}$ given by
 $(m,n)\mapsto 2^m (2n + 1) - 1$.
-Let $m=$ sup $\{a\in\omega:2^a$ divides $x + 1$ for $x\in\omega\}$. Then
-for $x\in\omega$, $(x+1)/{2^m}$ is odd, so there is $n\in\omega$
+Let $x\in\omega$, and $m=$ sup $\{a\in\omega:2^a$ divides $x + 1\}$. Then
+$(x+1)/{2^m}$ is odd, so there is $n\in\omega$
 such that $2n + 1=(x+1)/{2^m}$.
 Thus $f$ is a function onto $\mathbb{N}$.
 Suppose that $2^{m_1} (2{n_1} + 1)=2^{m_2}(2{n_2} + 1)$. Since
