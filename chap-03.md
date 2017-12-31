@@ -61,7 +61,7 @@ Clearly, a function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
 $\mathbb{N}\times\mathbb{N}$ into $\mathbb{N}$ given by
 $(m,n)\mapsto 2^m (2n + 1) - 1$.
 Let $m=$ sup $\{a\in\omega:2^a$ divides $x + 1$ for $x\in\omega\}$. Then
-$(x+1)/{2^m}$ is odd, so there is $n\in\omega$ such that $2n + 1=(x+1)/{2^m}$. 
+$(x+1)/{2^m}$ is odd, so there is $n\in\omega$ such that $2n + 1=(x+1)/{2^m}$.
 Thus $f$ is a function onto $\mathbb{N}$.
 Suppose that $2^{m_1} (2{n_1} + 1)=2^{m_2}(2{n_2} + 1)$. Since
 $2{x} + 1\neq2y$ for all $x,y\in\mathbb{N}$,
