@@ -77,7 +77,7 @@ $Y$ is inductive.\
 &nbsp;$\quad$Let $Y_\mathbb{N} = \{x \in \mathbb{N} : x \text{ is
 transitive}\}$, then $Y_\mathbb{N} \subset \mathbb{N}$, and since
 $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
-$\mathbb{N} = Y_\mathbb{N}$. Threfore, every $n \in \mathbb{N}$ is
+$\mathbb{N} = Y_\mathbb{N}$. Therefore, every $n \in \mathbb{N}$ is
 transitive.$\quad\square$
 
 1.5. If $X$ is inductive, then the set $\{x \in X : x$ is transitive
