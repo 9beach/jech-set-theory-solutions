@@ -11,6 +11,24 @@ author: https://github.com/9beach
 &nbsp;$\quad$(iii) The power set of a finite set is finite.\
 &nbsp;$\quad$(iv) The image of a finite set (under a mapping) is finite.
 
+**_Proof._**&nbsp;$\quad$(i) Let $X$ be a finite set, and $Y \subset X$.
+Suppose that $Y$ is infinite.
+Then $Y$ is T-infinite, so there is $S\subset P(Y)$ such that $S$ has
+no $\subset$-maximal element. But by definition, $P(Y) \subset P(X)$, and
+so $S \subset P(X)$, a contradiction.\
+&nbsp;$\quad$(ii) Let $S=\bigcup_{i<p\in\omega}S_i$ for $p>1$, and
+$f_i$ be a function of $S_i$ onto $n_i$; let
+$f:S\to\sum_{i<p}n_i$ given by $x \mapsto\sum_{i<j}n_j+f_j(x)$ such that
+$j$ is the least number $x\in S_j$. Then $f$ is one-to-one function
+of $S$ into $\sum_{i<p}n_i$ which is bounded. Thus $S$ is finite.\
+&nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}
+<\aleph_0$; and each subset of $X$ is finite. $P(X)$ is a finite set
+of finite sets.\
+&nbsp;$\quad$(iv) Let $f$ be a function of a finite set $X$ onto $Y$.
+Then there is a one-to-one function $g$ of $X$ onto $n<\omega$.
+Clearly, a function $h$ of $f(X)$ into $n$ given by $x\mapsto
+\bigcap{g_{-1}\cdot f_{-1}(x)}$ exists.$\quad\square$
+
 3.2.&nbsp;$\quad$(i) A subset of a countable set is at most countable.\
 &nbsp;$\quad$(ii) The union of a finite set of countable sets is countable.\
 &nbsp;$\quad$(iii) The image of a countable set (under a mapping) is at most
@@ -29,7 +47,8 @@ countable.
 3.6. There is a well-ordering of the class of all finite sequences of
 ordinals such that for each $\alpha$, the set of all finite sequences in
 $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
-We say that a set $B$ is a projection of a set $A$ if there is a mapping of
+
+&nbsp;$\quad$We say that a set $B$ is a _projection_ of a set $A$ if there is a mapping of
 $A$ onto $B$. Note that $B$ is a projection of $A$ if and only if there is a
 partition $P$ of $A$ such that $|P| = |B|$. If $|A| \ge |B| > 0$, then $B$ is
 a projection of $A$. Conversely, using the Axiom of Choice, one shows that
