@@ -66,7 +66,7 @@ Suppose that $2^{m_1} (2{n_1} + 1)=2^{m_2}(2{n_2} + 1)$. Since
 $2{x} + 1\neq2y$ for all $x,y\in\mathbb{N}$,
 the prime factorization of $2{x} + 1$
 does not have $2$ as a factor. Thus $m_1=m_2$ and $n_1=n_2$, and so
-$f$ is a one-to-one function onto $\mathbb{N}$. Therefore $\mathbb{N}
+$f$ is a one-to-one function onto $\mathbb{N}$. Therefore, $\mathbb{N}
 \times\mathbb{N}$ is countable.$\quad\square$
 
 3.4.&nbsp;$\quad$(i) The set of all finite sequences in $\mathbb{N}$ is
