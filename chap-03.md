@@ -141,10 +141,9 @@ Note that $\Gamma(\langle\omega\rangle)=\omega,
 finite sequences in $\mathbb{N}$ is countable.\
 &nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
 Note that $\gamma$ is increasing and continuous. We show that
-$\gamma(\omega_\alpha)=\omega_\alpha$ for each $\alpha$ by induction
-of $\alpha$. $\gamma(\omega_0)=\omega_0$. Suppose that
-$\alpha=\text{min }
-\{\alpha\in\omega:\gamma(\omega_\alpha)\ne\omega_\alpha\}$.
+$\gamma(\omega_\alpha)=\omega_\alpha$ by induction
+of $\alpha$. This is true for $\alpha=0$. Thus let $\alpha$ be the least
+ordinal such that $\gamma(\omega_\alpha)\ne\omega_\alpha$.
 Since $\gamma$ is increasing, $\gamma(\omega_\alpha)\ge\omega_\alpha$;
 thus $\gamma(\omega_\alpha)>\omega_\alpha$,
 and so there is a sequence $\langle\beta_i:i<k\rangle$
