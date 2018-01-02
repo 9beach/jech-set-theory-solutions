@@ -16,7 +16,7 @@ Suppose that $Y$ is infinite.
 Then $Y$ is T-infinite, so there is $S\subset P(Y)$ such that $S$ has
 no $\subset$-maximal element. But by definition, $P(Y)\subset P(X)$, and
 so $S\subset P(X)$, a contradiction.\
-&nbsp;$\quad$(ii) For $p$ such that $1<p<\omega$, for each $i<p$,
+&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$, for each $i<p$,
 let $S_{i}$ is a finite set, and $f_{i}$ be a function of $S_i$ onto
 a finite ordinal $n_i$.
 Let $S=\bigcup_{i<p}S_i$; let
@@ -42,7 +42,7 @@ Let $id_Y$ be a function of $Y$ into $X$ given by $x\mapsto x$. Clearly
 the function $f\cdot id_Y$ is a function of $Y$ into $\omega$, and so
 $|Y|\le\aleph_0$. Therefore, by definition of $\aleph_0$, $Y$ is at most
 countable.\
-&nbsp;$\quad$(ii) For $p$ such that $1<p<\omega$, for each $i<p$,
+&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$, for each $i<p$,
 let $S_{i}$ is a countable set, and $f_{i}$ be a function of $S_i$ onto
 $\omega$.
 Let $S=\bigcup_{i<p}S_i$; let
@@ -102,9 +102,63 @@ $=$ $\omega^{\alpha}\cdot 4\le\omega^{\alpha+1}$. For a limit ordinal
 $\gamma>0$, by definition $\Gamma(\gamma\times\gamma)=\text{sup }\{
 \Gamma(\alpha\times\alpha):\alpha<\gamma\}\le\omega^\gamma$.$\quad\square$
 
-3.6. There is a well-ordering of the class of all finite sequences of
+<span id='3.6'>3.6.</span> There is a well-ordering of the class of all finite sequences of
 ordinals such that for each $\alpha$, the set of all finite sequences in
 $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
+
+**_Proof._**&nbsp;$\quad$We define:
+$$
+\begin{aligned}
+\text{max}
+&\,\langle\alpha_i:i<m\rangle\leftrightarrow\text{max }\{\alpha_i:i<m\},\\
+\langle\alpha_0,\,&\ldots\rangle\prec\langle\beta_0,\ldots\rangle
+\leftrightarrow\\
+&\text{there is }k\text{ such that }\\
+&\phantom{\text{or}}\alpha_k<\beta_k\text{ and } \alpha_i=\beta_i
+\text{ for all }i<k,\\
+\langle\alpha_i:&\,i<m\rangle<\langle\beta_i:i<n\rangle\leftrightarrow\\
+&\text{either max }\langle\alpha_i:i<m\rangle <
+\text{max }\langle\beta_i:i<n\rangle\\
+&\text{or max }\langle\alpha_i:i<m\rangle <
+\text{max }\langle\beta_i:i<n\rangle\\
+&\phantom{\text{or}}\text{ and } m<n\\
+&\text{or max }\langle\alpha_i:i<m\rangle <
+\text{max }\langle\beta_i:i<n\rangle\\
+&\phantom{\text{or}}\text{ and } m=n\text{ and }\langle\alpha_i:i<m\rangle\prec\langle\beta_i:i<n\rangle.\\
+\end{aligned}
+$$
+&nbsp;$\quad$Let $X$ be the class of all finite sequences
+of ordinals. The relation $<$ defined above is a linear ordering of $X$. Moreover, if $S\subset X$ is nonempty,
+then $S$ has a least element. Also, for each $\alpha$, all finite
+sequences in $\alpha$ is the initial segment given by
+$\langle\alpha\rangle$. If we let
+$\Gamma(\langle\alpha_0,\ldots\rangle)$ = the order-type of the set
+$\{\langle\beta_0,\ldots\rangle\in X:\langle\beta_0,\ldots\rangle <
+\langle\alpha_0,\ldots\rangle \}$,
+then $\Gamma$ is a one-to-one mapping of $X$ onto $Ord$.
+Note that $\Gamma(\langle\omega\rangle)=\omega,
+\Gamma(\langle 0, \omega\rangle)=\omega+1, \ldots$ since the set of all
+finite sequences in $\mathbb{N}$ is countable.\
+&nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
+Note that $\gamma$ is increasing and continuous. We show that
+$\gamma(\omega_\alpha)=\omega_\alpha$ for each $\alpha$ by induction
+of $\alpha$. $\gamma(\omega_0)=\omega_0$. Suppose that
+$\alpha=\text{min }
+\{\alpha\in\omega:\gamma(\omega_\alpha)\ne\omega_\alpha\}$.
+Since $\gamma$ is increasing, $\gamma(\omega_\alpha)\ge\omega_\alpha$;
+thus $\gamma(\omega_\alpha)>\omega_\alpha$,
+and so there is a sequence $\langle\beta_i:i<k\rangle$
+such that $\Gamma(\langle\beta_i:i<k\rangle)=\omega_\alpha$ and
+$\beta_i<\omega_\alpha$ for $i<k$. Then there is a successor ordinal
+$\delta$ such that
+$\beta_i<\delta<\omega_\alpha$ for $i<k$, and so
+$\omega_\alpha=\Gamma(\langle\beta_i:i<k\rangle)<\gamma(\delta)$;
+thus $\omega_\alpha\le|\gamma(\delta)|=|\gamma(|\delta|)|
+\le\gamma(|\delta|)$.
+But since
+$\delta<\omega_\alpha$, by the minimality of $\alpha$,
+$\gamma(|\delta|)=|\delta|<\omega_\alpha$.
+A contradiction.$\quad\square$
 
 &nbsp;$\quad$We say that a set $B$ is a _projection_ of a set $A$ if there is a mapping of
 $A$ onto $B$. Note that $B$ is a projection of $A$ if and only if there is a
