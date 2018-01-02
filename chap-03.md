@@ -119,10 +119,10 @@ $$
 \langle\alpha_i:&\,i<m\rangle<\langle\beta_i:i<n\rangle\leftrightarrow\\
 &\text{either max }\langle\alpha_i:i<m\rangle <
 \text{max }\langle\beta_i:i<n\rangle\\
-&\text{or max }\langle\alpha_i:i<m\rangle <
+&\text{or max }\langle\alpha_i:i<m\rangle =
 \text{max }\langle\beta_i:i<n\rangle\\
 &\phantom{\text{or}}\text{ and } m<n\\
-&\text{or max }\langle\alpha_i:i<m\rangle <
+&\text{or max }\langle\alpha_i:i<m\rangle =
 \text{max }\langle\beta_i:i<n\rangle\\
 &\phantom{\text{or}}\text{ and } m=n\text{ and }\langle\alpha_i:i<m\rangle\prec\langle\beta_i:i<n\rangle.\\
 \end{aligned}
@@ -149,8 +149,7 @@ Since $\gamma$ is increasing, $\gamma(\omega_\alpha)\ge\omega_\alpha$;
 thus $\gamma(\omega_\alpha)>\omega_\alpha$,
 and so there is a sequence $\langle\beta_i:i<k\rangle$
 such that $\Gamma(\langle\beta_i:i<k\rangle)=\omega_\alpha$ and
-$\beta_i<\omega_\alpha$ for $i<k$. Then there is a successor ordinal
-$\delta$ such that
+$\beta_i<\omega_\alpha$ for $i<k$. Then there is $\delta$ such that
 $\beta_i<\delta<\omega_\alpha$ for $i<k$, and so
 $\omega_\alpha=\Gamma(\langle\beta_i:i<k\rangle)<\gamma(\delta)$;
 thus $\omega_\alpha\le|\gamma(\delta)|=|\gamma(|\delta|)|
