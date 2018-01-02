@@ -107,7 +107,7 @@ $\gamma_\alpha =\alpha$$\quad\square$
 $\alpha\cdot(\beta+0)$ $=$ $\alpha\cdot\beta$ $=$ $\alpha\cdot\beta +
 \alpha\cdot 0$.
 $\alpha\cdot(\beta+(\gamma+1))$ $=$ $\alpha\cdot((\beta+\gamma)+1)$ $=$
-$\alpha\cdot(\beta+\gamma)+\alpha$ $$ $=$ $$ $\alpha\cdot\beta+
+$\alpha\cdot(\beta+\gamma)+\alpha$ $=$ $\alpha\cdot\beta+
 \alpha\cdot\gamma +\alpha$ $=$ $\alpha\cdot\beta+\alpha\cdot(\gamma+1)$.
 For all limit $\gamma > 0$, $\alpha\cdot(\beta+\gamma)$ $=$
 $\alpha\cdot\lim_{\xi\to\gamma}(\beta+\xi)$ $=$
