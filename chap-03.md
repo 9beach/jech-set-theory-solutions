@@ -11,31 +11,15 @@ author: https://github.com/9beach
 &nbsp;$\quad$(iii) The power set of a finite set is finite.\
 &nbsp;$\quad$(iv) The image of a finite set (under a mapping) is finite.
 
-**_Proof._**&nbsp;$\quad$(i) Let $X$ be a finite set, and $Y\subset X$.
-Suppose that $Y$ is infinite.
-Then $Y$ is T-infinite, so there is $S\subset P(Y)$ such that $S$ has
-no $\subset$-maximal element. But by definition, $P(Y)\subset P(X)$, and
-so $S\subset P(X)$, a contradiction.\
-&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$,
-let $S_{i}$ be a finite set, and $f_{i}$ be a function of $S_i$ onto
-a finite ordinal $n_i$ for each $i<p$.
-Let $S=\bigcup_{i<p}S_i$; let
-$f:S\to\sum_{i<p}n_i$ given by $x\mapsto\sum_{i<k}n_i+f_k(x)$ where
-$k$ is the least number such that $x\in S_k$.
-Then $f$ is one-to-one function
-of $S$ into $\sum_{i<p}n_i$ which is bounded. Thus $S$ is finite.\
-&nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}
-<\aleph_0$; and each subset of $X$ is finite. $P(X)$ is a finite set
-of finite sets.\
+**_Proof._**&nbsp;$\quad$(i) Let $X$ be a finite set, and $Y\subset X$. Suppose that $Y$ is infinite. Then $Y$ is T-infinite, so there is $S\subset P(Y)$ such that $S$ has no $\subset$-maximal element. But by definition, $P(Y)\subset P(X)$, and so $S\subset P(X)$, a contradiction.\
+&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$, let $S_{i}$ be a finite set, and $f_{i}$ be a function of $S_i$ onto a finite ordinal $n_i$ for each $i<p$. Let $S=\bigcup_{i<p}S_i$; let $f:S\to\sum_{i<p}n_i$ given by $x\mapsto\sum_{i<k}n_i+f_k(x)$ where $k$ is the least number such that $x\in S_k$. Then $f$ is one-to-one function of $S$ into $\sum_{i<p}n_i$ which is bounded. Thus $S$ is finite.\
+&nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}<\aleph_0$; and each subset of $X$ is finite. $P(X)$ is a finite set of finite sets.\
 &nbsp;$\quad$(iv) Let $f$ be a function of a finite set $X$ onto $Y$.
-Then there is a one-to-one function $g$ of $X$ onto $n<\omega$.
-Clearly, a function $h$ of $f(X)$ into $n$ given by $y\mapsto
-\bigcap{g_{-1}\cdot f_{-1}(y)}$ exists.$\quad\square$
+Then there is a one-to-one function $g$ of $X$ onto $n<\omega$. Clearly, a function $h$ of $f(X)$ into $n$ given by $y\mapsto\bigcap{g_{-1}\cdot f_{-1}(y)}$ exists.$\quad\square$
 
 3.2.&nbsp;$\quad$(i) A subset of a countable set is at most countable.\
 &nbsp;$\quad$(ii) The union of a finite set of countable sets is countable.\
-&nbsp;$\quad$(iii) The image of a countable set (under a mapping) is at most
-countable.
+&nbsp;$\quad$(iii) The image of a countable set (under a mapping) is at most countable.
 
 **_Proof._**&nbsp;$\quad$(i) Let $X$ be a countable set, and $Y\subset X$.
 Then there is a one-to-one function $f$ of $X$ onto $\omega$.
@@ -69,8 +53,7 @@ Suppose that $2^{m_1} (2{n_1} + 1)=2^{m_2}(2{n_2} + 1)$. Since
 $2{x} + 1\neq2y$ for all $x,y\in\mathbb{N}$,
 the prime factorization of $2{x} + 1$
 does not have $2$ as a factor. Thus $m_1=m_2$ and $n_1=n_2$, and so
-$f$ is a one-to-one function onto $\mathbb{N}$. Therefore, $\mathbb{N}
-\times\mathbb{N}$ is countable.$\quad\square$
+$f$ is a one-to-one function onto $\mathbb{N}$. Therefore, $\mathbb{N}\times\mathbb{N}$ is countable.$\quad\square$
 
 3.4.&nbsp;$\quad$(i) The set of all finite sequences in $\mathbb{N}$ is
 countable.\
@@ -131,8 +114,8 @@ $\{\beta\in X:\beta<\alpha\}$ for $\alpha\in X$,
 then $\Gamma$ is a one-to-one mapping of $X$ onto $Ord$.
 Note that for a finite sequence $\alpha$ in $\omega$,
 $\Gamma(\alpha)\in\omega$,
-and so the least element $\alpha$ of $X$ such that $\alpha$ is
-not a finite sequence in $\omega$ is $\langle\omega\rangle$; thus
+and so $\langle\omega\rangle$ is the least element $\alpha$ of $X$
+such that $\alpha$ is not a finite sequence in $\omega$; thus
 $\Gamma(\langle\omega\rangle)=\omega$.\
 &nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
 Note that $\gamma(\alpha)$ is an increasing function of $\alpha$, and
@@ -152,12 +135,12 @@ $\Gamma(\beta)=\omega_\alpha$ and $\beta<\langle\omega_\alpha\rangle$.
 Then there is an ordinal $\delta$ such that
 $\beta<\langle\delta\rangle<\langle\omega_\alpha\rangle$; thus
 $\Gamma(\beta)=\omega_\alpha<\gamma(\delta)\le\eta(\delta)$
-$\Leftrightarrow$ $\omega_\alpha\le|\eta(\delta)|$ $=$ $|\eta(|\delta|)|
+$\Leftrightarrow$ $\aleph_\alpha\le|\eta(\delta)|$ $=$ $|\eta(|\delta|)|
 \le\eta(|\delta|)$.
 But since $\delta<\omega_\alpha$, by the minimality of $\alpha$,
-$\eta(|\delta|)=|\delta|<\omega_\alpha$.
+$\eta(|\delta|)=|\delta|<\aleph_\alpha$.
 A contradiction. Finally, by definition of $\gamma$,
-for each nonzero limit $\alpha$, $\gamma(\omega_\alpha)=
+for each nonzero limit ordinal $\alpha$, $\gamma(\omega_\alpha)=
 \text{sup }\{\gamma(\omega_\xi):\xi<\alpha\}=\omega_\alpha$.$\quad\square$
 
 &nbsp;$\quad$We say that a set $B$ is a _projection_ of a set $A$ if there is a mapping of
@@ -169,17 +152,33 @@ proved without the Axiom of Choice.
 
 3.7. If $B$ is a projection of $\omega_\alpha$, then $|B|\le\aleph_\alpha$.
 
+**_Proof._**&nbsp;$\quad$Let $f$ be a function of $\omega_\alpha$ onto $B$.
+Then a one-to-one function $g$ of $B$ into $\omega_\alpha$ is given by
+$x\mapsto \text{min }f_{-1}(x)$.$\quad\square$
+
 3.8. The set of all finite subsets of $\omega_\alpha$ has cardinality $\aleph_\alpha$.\
 &nbsp;$\quad$[The set is a projection of the set of finite sequences.]
+
+**_Proof._**&nbsp;$\quad$Let $X$ be the set of all finite sequences of
+$\omega_\alpha$; let $Y$ be the set of all finite subsets of $\omega_\alpha$.
+Then there is a function of $X$ onto $Y$ given by
+$\langle\alpha_0,\ldots\alpha_n\rangle\mapsto\{\alpha_0,\ldots\alpha_n\}$.
+Thus $\aleph_\alpha = |X|\ge|Y|$. But there is a one-to-one mapping of
+$S\subset Y$ such that each $x\in S$ is singleton onto a set of cardinality
+$\aleph_\alpha$. Thus $Y\ge\aleph_\alpha$. Therefore,
+$|Y|=\aleph_\alpha$.$\quad\square$
 
 3.9. If $B$ is a projection of $A$, then $|P (B)|\le |P (A)|$.\
 &nbsp;$\quad$[Consider $g(X) = f_{-1}(X)$, where $f$ maps $A$ onto $B$.]
 
+**_Proof._**&nbsp;$\quad$Since for each $S\subset B$, there is unique
+$f_{-1}(S)\subset A$, there is a one-to-one function of $P(B)$
+into $P(A)$ given by $S\mapsto f_{-1}(S)$.$\quad\square$
+
 3.10. $\omega_{\alpha+1}$ is a projection of $P(\omega_\alpha )$.\
 &nbsp;$\quad$[Use $|\omega_\alpha\times\omega_\alpha| =\omega_\alpha$ and
 project $P(\omega_\alpha\times\omega_\alpha)$: If $R\subset\omega_\alpha
-\times\omega_\alpha$ is a well-ordering,
-let $f(R)$ be its order-type.]
+\times\omega_\alpha$ is a well-ordering, let $f(R)$ be its order-type.]
 
 3.11. $\aleph_{\alpha+1}<2^{2^{\aleph_\alpha}}$.\
 &nbsp;$\quad$[Use Exercises 3.10 and 3.9.]
