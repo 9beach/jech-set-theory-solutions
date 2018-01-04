@@ -126,7 +126,7 @@ $$
 &nbsp;$\quad$Let $X$ be the class of all finite sequences
 of ordinals. The relation $<$ defined above is a linear ordering of $X$. Moreover, if $S\subset X$ is nonempty,
 then $S$ has a least element. If we let
-$\Gamma(\alpha) =$ the order-type of the set
+$\Gamma(\alpha)=$ the order-type of the set
 $\{\beta\in X:\beta<\alpha\}$ for $\alpha\in X$,
 then $\Gamma$ is a one-to-one mapping of $X$ onto $Ord$.
 Note that for a finite sequence $\alpha$ in $\omega$,
@@ -135,13 +135,13 @@ and so the least element $\alpha$ of $X$ such that $\alpha$ is
 not a finite sequence in $\omega$ is $\langle\omega\rangle$; thus
 $\Gamma(\langle\omega\rangle)=\omega$.\
 &nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
-Note that $\gamma$ is increasing, and also that since
-each infinite cardinal is indecomposable,
+Note that $\gamma(\alpha)$ is an increasing function of $\alpha$, and
+also that since each infinite cardinal is indecomposable,
 by definition of $(X,<)$, $\gamma(\omega_\alpha)$ is the set of all
 finite sequences in $\omega_\alpha$. Let $\eta(\alpha)=$ the order-type
 of the set of all finite sequences in $\alpha$. Then
-$\gamma(\alpha)\le\eta(\alpha)$ and $\gamma(\aleph_\alpha)
-=\eta(\aleph_\alpha)$ for each $\alpha$. We show that
+$\gamma(\alpha)\le\eta(\alpha)$ and $\gamma(\omega_\alpha)
+=\eta(\omega_\alpha)$ for each $\alpha$. We show that
 $\gamma(\omega_\alpha)=\omega_\alpha$ by induction
 of $\alpha$. This is true for $\alpha=0$. Thus let $\alpha$ be the least
 ordinal such that $\gamma(\omega_\alpha)\ne\omega_\alpha$.
@@ -152,11 +152,13 @@ $\Gamma(\beta)=\omega_\alpha$ and $\beta<\langle\omega_\alpha\rangle$.
 Then there is an ordinal $\delta$ such that
 $\beta<\langle\delta\rangle<\langle\omega_\alpha\rangle$; thus
 $\Gamma(\beta)=\omega_\alpha<\gamma(\delta)\le\eta(\delta)$
-$\Leftrightarrow$ $\omega_\alpha\le|\eta(\delta)|=|\eta(|\delta|)|
+$\Leftrightarrow$ $\omega_\alpha\le|\eta(\delta)|$ $=$ $|\eta(|\delta|)|
 \le\eta(|\delta|)$.
 But since $\delta<\omega_\alpha$, by the minimality of $\alpha$,
 $\eta(|\delta|)=|\delta|<\omega_\alpha$.
-A contradiction.$\quad\square$
+A contradiction. Finally, by definition of $\gamma$,
+for each nonzero limit $\alpha$, $\gamma(\omega_\alpha)=
+\text{sup }\{\gamma(\omega_\xi):\xi<\alpha\}=\omega_\alpha$.$\quad\square$
 
 &nbsp;$\quad$We say that a set $B$ is a _projection_ of a set $A$ if there is a mapping of
 $A$ onto $B$. Note that $B$ is a projection of $A$ if and only if there is a
