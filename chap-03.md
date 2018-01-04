@@ -16,12 +16,13 @@ Suppose that $Y$ is infinite.
 Then $Y$ is T-infinite, so there is $S\subset P(Y)$ such that $S$ has
 no $\subset$-maximal element. But by definition, $P(Y)\subset P(X)$, and
 so $S\subset P(X)$, a contradiction.\
-&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$, for each $i<p$,
-let $S_{i}$ is a finite set, and $f_{i}$ be a function of $S_i$ onto
-a finite ordinal $n_i$.
+&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$,
+let $S_{i}$ be a finite set, and $f_{i}$ be a function of $S_i$ onto
+a finite ordinal $n_i$ for each $i<p$.
 Let $S=\bigcup_{i<p}S_i$; let
-$f:S\to\sum_{i<p}n_i$ given by $x\mapsto\sum_{i<j}n_j+f_j(x)$ such that
-$j$ is the least number $x\in S_j$. Then $f$ is one-to-one function
+$f:S\to\sum_{i<p}n_i$ given by $x\mapsto\sum_{i<k}n_i+f_k(x)$ where
+$k$ is the least number such that $x\in S_k$.
+Then $f$ is one-to-one function
 of $S$ into $\sum_{i<p}n_i$ which is bounded. Thus $S$ is finite.\
 &nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}
 <\aleph_0$; and each subset of $X$ is finite. $P(X)$ is a finite set
@@ -109,53 +110,52 @@ $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
 **_Proof._**&nbsp;$\quad$We define:
 $$
 \begin{aligned}
-\text{max}
-&\,\langle\alpha_i:i<m\rangle\leftrightarrow\text{max }\{\alpha_i:i<m\},\\
-\langle\alpha_0,\,&\ldots\rangle\prec\langle\beta_0,\ldots\rangle
+\langle\alpha_0,\ldots&\rangle\prec\langle\beta_0,\ldots\rangle
 \leftrightarrow\\
 &\text{there is }k\text{ such that }\\
-&\phantom{\text{or}}\alpha_k<\beta_k\text{ and } \alpha_i=\beta_i
+&\qquad\alpha_k<\beta_k\text{ and }\alpha_i=\beta_i
 \text{ for all }i<k,\\
-\langle\alpha_i:&\,i<m\rangle<\langle\beta_i:i<n\rangle\leftrightarrow\\
-&\text{either max }\langle\alpha_i:i<m\rangle <
-\text{max }\langle\beta_i:i<n\rangle\\
-&\text{or max }\langle\alpha_i:i<m\rangle =
-\text{max }\langle\beta_i:i<n\rangle\\
-&\phantom{\text{or}}\text{ and } m<n\\
-&\text{or max }\langle\alpha_i:i<m\rangle =
-\text{max }\langle\beta_i:i<n\rangle\\
-&\phantom{\text{or}}\text{ and } m=n\text{ and }\langle\alpha_i:i<m\rangle\prec\langle\beta_i:i<n\rangle.\\
+\langle\alpha_i:i<m&\rangle<\langle\beta_i:i<n\rangle\leftrightarrow\\
+&\text{either }\sum_{i<m}\alpha_i+m <
+\sum_{i<n}\beta_i+n\\
+&\text{or }\sum_{i<m}\alpha_i+m=\sum_{i<n}\beta_i+n\\
+&\qquad\text{ and }
+\langle\alpha_i:i<m\rangle\prec\langle\beta_i:i<n\rangle.\\
 \end{aligned}
 $$
 &nbsp;$\quad$Let $X$ be the class of all finite sequences
 of ordinals. The relation $<$ defined above is a linear ordering of $X$. Moreover, if $S\subset X$ is nonempty,
-then $S$ has a least element. Also, for each $\alpha$, all finite
-sequences in $\alpha$ is the initial segment given by
-$\langle\alpha\rangle$. If we let
-$\Gamma(\langle\alpha_0,\ldots\rangle)$ = the order-type of the set
-$\{\langle\beta_0,\ldots\rangle\in X:\langle\beta_0,\ldots\rangle <
-\langle\alpha_0,\ldots\rangle \}$,
+then $S$ has a least element. If we let
+$\Gamma(\alpha) =$ the order-type of the set
+$\{\beta\in X:\beta<\alpha\}$ for $\alpha\in X$,
 then $\Gamma$ is a one-to-one mapping of $X$ onto $Ord$.
-Note that $\Gamma(\langle\omega\rangle)=\omega,
-\Gamma(\langle 0, \omega\rangle)=\omega+1, \ldots$ since the set of all
-finite sequences in $\mathbb{N}$ is countable.\
+Note that for a finite sequence $\alpha$ in $\omega$,
+$\Gamma(\alpha)\in\omega$,
+and so the least element $\alpha$ of $X$ such that $\alpha$ is
+not a finite sequence in $\omega$ is $\langle\omega\rangle$; thus
+$\Gamma(\langle\omega\rangle)=\omega$.\
 &nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
-Note that $\gamma$ is increasing and continuous. We show that
+Note that $\gamma$ is increasing, and also that since
+each infinite cardinal is indecomposable,
+by definition of $(X,<)$, $\gamma(\omega_\alpha)$ is the set of all
+finite sequences in $\omega_\alpha$. Let $\eta(\alpha)=$ the order-type
+of the set of all finite sequences in $\alpha$. Then
+$\gamma(\alpha)\le\eta(\alpha)$ and $\gamma(\aleph_\alpha)
+=\eta(\aleph_\alpha)$ for each $\alpha$. We show that
 $\gamma(\omega_\alpha)=\omega_\alpha$ by induction
 of $\alpha$. This is true for $\alpha=0$. Thus let $\alpha$ be the least
 ordinal such that $\gamma(\omega_\alpha)\ne\omega_\alpha$.
 Since $\gamma$ is increasing, $\gamma(\omega_\alpha)\ge\omega_\alpha$;
 thus $\gamma(\omega_\alpha)>\omega_\alpha$,
-and so there is a sequence $\langle\beta_i:i<k\rangle$
-such that $\Gamma(\langle\beta_i:i<k\rangle)=\omega_\alpha$ and
-$\beta_i<\omega_\alpha$ for $i<k$. Then there is $\delta$ such that
-$\beta_i<\delta<\omega_\alpha$ for $i<k$, and so
-$\omega_\alpha=\Gamma(\langle\beta_i:i<k\rangle)<\gamma(\delta)$;
-thus $\omega_\alpha\le|\gamma(\delta)|=|\gamma(|\delta|)|
-\le\gamma(|\delta|)$.
-But since
-$\delta<\omega_\alpha$, by the minimality of $\alpha$,
-$\gamma(|\delta|)=|\delta|<\omega_\alpha$.
+and so there is a sequence $\beta$ such that
+$\Gamma(\beta)=\omega_\alpha$ and $\beta<\langle\omega_\alpha\rangle$.
+Then there is an ordinal $\delta$ such that
+$\beta<\langle\delta\rangle<\langle\omega_\alpha\rangle$; thus
+$\Gamma(\beta)=\omega_\alpha<\gamma(\delta)\le\eta(\delta)$
+$\Leftrightarrow$ $\omega_\alpha\le|\eta(\delta)|=|\eta(|\delta|)|
+\le\eta(|\delta|)$.
+But since $\delta<\omega_\alpha$, by the minimality of $\alpha$,
+$\eta(|\delta|)=|\delta|<\omega_\alpha$.
 A contradiction.$\quad\square$
 
 &nbsp;$\quad$We say that a set $B$ is a _projection_ of a set $A$ if there is a mapping of
