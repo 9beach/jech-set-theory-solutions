@@ -204,10 +204,14 @@ $R\in P(\omega_\alpha\times\omega_\alpha)$ such that $f(R)=\beta$
 for each $\beta\in\omega_{\alpha+1}$. Let
 $g(R)=f(R)$ if $R$ is a well-ordering; otherwise $g(R)=0$. Then we have
 a mapping of $P(\omega_\alpha\times\omega_\alpha)$ onto $\omega_{\alpha+1}$
-given by $R\mapsto g(R)$.
+given by $R\mapsto g(R)$.$\quad\square$
 
 3.11. $\aleph_{\alpha+1}<2^{2^{\aleph_\alpha}}$.\
 &nbsp;$\quad$[Use Exercises 3.10 and 3.9.]
+
+**_Proof._**&nbsp;$\quad$By exercises 3.10 and 3.9,
+$\aleph_{\alpha+1}\le{2^{\aleph_\alpha}}$, and by Cantor’s theorem,
+$\aleph_{\alpha+1}<2^{2^{\aleph_\alpha}}$.$\quad\square$
 
 3.12. If $\aleph_\alpha$ is an uncountable limit cardinal, then cf
 $\omega_\alpha$ = cf $\alpha$; $\omega_\alpha$ is the limit of
