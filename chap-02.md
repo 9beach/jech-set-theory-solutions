@@ -9,7 +9,7 @@ author: https://github.com/9beach
 <span id="2.1">2.1.</span> The relation “$(P,<)$ is isomorphic to $(Q,<)$” is an equivalence
 relation (on the class of all partially ordered sets).
 
-**_Proof._**&nbsp;$\quad$Let $(P, <)$, $(Q, <)$, and $(G, <)$ be partially
+**_Proof._**$\quad$Let $(P, <)$, $(Q, <)$, and $(G, <)$ be partially
 ordered sets. $P$ is isomorphic to $P$ by $f:x\mapsto x$. If $P$ is
 isomorphic to $Q$ by $f$, then $Q$ is isomorphic to $P$ by $f^{-1}$. If
 $P$ is isomorphic to $Q$ by $f$, and $Q$ is isomorphic to $G$ by $g$,
@@ -18,7 +18,7 @@ then $P$ is isomorphic to $G$ by $g\circ f$.$\quad\square$
 <span id="2.2">2.2.</span> $\alpha$ is a limit ordinal if and only if $\beta <\alpha$ implies
 $\beta+1<\alpha$, for every $\beta$.
 
-**_Proof._**&nbsp;$\quad$Suppose $\beta+1\ge\alpha$. Since $\beta <\alpha$,
+**_Proof._**$\quad$Suppose $\beta+1\ge\alpha$. Since $\beta <\alpha$,
 $\alpha =\beta + 1$; thus $\alpha$ is a successor ordinal, a contradiction.
 Conversely, suppose that $\alpha$ is a successor ordinal. Then
 $\alpha=\beta+1$ for some $\beta<\alpha$, a contradiction.$\quad\square$
@@ -27,7 +27,7 @@ $\alpha=\beta+1$ for some $\beta<\alpha$, a contradiction.$\quad\square$
 $\mathbb{N} =\bigcap\{X : X\text{ is inductive}\}$ is the least limit
 ordinal $\neq 0$.
 
-**_Proof._**&nbsp;$\quad$$\emptyset\in X\cap Ord$. If $x\in X\cap Ord$,
+**_Proof._**$\quad$$\emptyset\in X\cap Ord$. If $x\in X\cap Ord$,
 then $x + 1 = x\cup\{x\}\in X\cap Ord$. Therefore, $X\cap Ord$ is
 inductive.\
 $\quad$By exercise 1.3, $\mathbb{N}$ is transitive. Since $\mathbb{N}
@@ -39,22 +39,22 @@ is the the least limit ordinal $\neq\emptyset$.$\quad\square$
 <span id="2.4">2.4.</span> (Without the Axiom of Infinity). Let $\omega =$ least limit $\alpha
 \neq 0$ if it exists, $\omega = Ord$ otherwise. Prove that the following
 statements are equivalent:\
-&nbsp;$\quad$(i) There exists an inductive set.\
-&nbsp;$\quad$(ii) There exists an infinite set.\
-&nbsp;$\quad$(iii) $\omega$ is a set.\
-&nbsp;$\quad$[For (ii) $\to$ (iii), apply Replacement to the set of all
+$\quad$(i) There exists an inductive set.\
+$\quad$(ii) There exists an infinite set.\
+$\quad$(iii) $\omega$ is a set.\
+$\quad$[For (ii) $\to$ (iii), apply Replacement to the set of all
 finite subsets of $X$.]
 
-**_Proof._**&nbsp;$\quad$_Case (i)$\implies$(ii)._ By exercise 1.11, there
+**_Proof._**$\quad$_Case (i)$\implies$(ii)._ By exercise 1.11, there
 exists an inductive T-infinite set $\mathbb{N}$, and by exercise 1.12 and
 1.13, $\mathbb{N}$ is infinite.\
-&nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $Y =\{x\subset X : x\text{ is a
+$\quad$_Case (ii)$\implies$(iii)._ Let $Y =\{x\subset X : x\text{ is a
 finite set}\}$. Then $Y\subset P(X)$ is a set, and since $x\in Y$ is finite,
 there is a mapping $f$ from $Y$ into $\omega$ given by $x\mapsto n$, $n$
 such that $x$ has $n$ elements. Since $X$ is infinite, if $x\in Y$ has $n$
 elements, then there exists $y\in Y$ which has $n+1$ elements; thus
 $ran(f) =\omega$. Therefore, $\omega$ is a set.\
-&nbsp;$\quad$_Case (iii)$\implies$(i)._ By definition, $\emptyset\in\omega$,
+$\quad$_Case (iii)$\implies$(i)._ By definition, $\emptyset\in\omega$,
 and if $\alpha\in\omega$, then $\alpha+1\in\omega$. Therefore, $\omega$ is
 inductive.$\quad\square$
 
@@ -62,14 +62,14 @@ inductive.$\quad\square$
 $\langle a_n : n\in\mathbb{N}\rangle$ in $W$ such that
 $a_0 >a_1 >a_2 >\ldots.$
 
-**_Proof._**&nbsp;$\quad$Otherwise there is no least element.$\quad\square$
+**_Proof._**$\quad$Otherwise there is no least element.$\quad\square$
 
 <span id="2.6">2.6.</span> There are arbitrarily large limit ordinals; i.e., $\forall\alpha\exists
 \beta >\alpha$ ($\beta$ is a limit).\
-&nbsp;$\quad$[Consider $\lim_{n\to\omega}\alpha_n$, where $\alpha_{n+1} =
+$\quad$[Consider $\lim_{n\to\omega}\alpha_n$, where $\alpha_{n+1} =
 \alpha_n + 1$.]
 
-**_Proof._**&nbsp;$\quad$Given $\alpha_0\in Ord$,
+**_Proof._**$\quad$Given $\alpha_0\in Ord$,
 we define $\alpha_{n+1} =\alpha_n+1$, and $\beta=\lim_{n\to
 \omega}\alpha_n$, i.e., $\beta=\bigcup\{\alpha_n:n<\omega\}=\text{sup }
 \{\alpha_n:n<\omega\}$. Then since the union of ordinals is an ordinal,
@@ -82,10 +82,10 @@ $\beta$ is a limit ordinal. Therefore, there are arbitrarily large limit ordinal
 <span id="2.7">2.7.</span> Every normal sequence $\langle\gamma_\alpha :\alpha\in Ord\rangle$ has
 arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha =
 \alpha$.\
-&nbsp;$\quad$[Let $\alpha_{n+1}=\gamma_{\alpha_n}$, and $\alpha=\lim_{n\to
+$\quad$[Let $\alpha_{n+1}=\gamma_{\alpha_n}$, and $\alpha=\lim_{n\to
 \omega}\alpha_n$.]
 
-**_Proof._**&nbsp;$\quad$Since $\langle\gamma_\alpha :\alpha\in Ord\rangle$
+**_Proof._**$\quad$Since $\langle\gamma_\alpha :\alpha\in Ord\rangle$
 is increasing, for $\beta\in Ord$, there exists $m\in Ord$ such that
 $\gamma_m>\beta$.
 Let $\alpha_0=\gamma_m$, $\alpha_{n+1}=\gamma_{\alpha_n}$. Then
@@ -98,12 +98,12 @@ $\alpha=\lim_{n\to\omega}\alpha_{n+1}=
 $\gamma_\alpha =\alpha$$\quad\square$
 
 <span id="2.8">2.8.</span> For all $\alpha,\beta$ and $\gamma$,\
-&nbsp;$\quad$(i) $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+
+$\quad$(i) $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+
 \alpha\cdot\gamma$,\
-&nbsp;$\quad$(ii) $\alpha^{\beta+\gamma}=\alpha^{\beta}\cdot\alpha^{\gamma}$,\
-&nbsp;$\quad$(iii) $(\alpha^{\beta})^{\gamma} =\alpha^{\beta\cdot\gamma}$.
+$\quad$(ii) $\alpha^{\beta+\gamma}=\alpha^{\beta}\cdot\alpha^{\gamma}$,\
+$\quad$(iii) $(\alpha^{\beta})^{\gamma} =\alpha^{\beta\cdot\gamma}$.
 
-**_Proof._**&nbsp;$\quad$_Case (i)._ We show by induction on $\gamma$.
+**_Proof._**$\quad$_Case (i)._ We show by induction on $\gamma$.
 $\alpha\cdot(\beta+0)$ $=$ $\alpha\cdot\beta$ $=$ $\alpha\cdot\beta +
 \alpha\cdot 0$.
 $\alpha\cdot(\beta+(\gamma+1))$ $=$ $\alpha\cdot((\beta+\gamma)+1)$ $=$
@@ -116,52 +116,52 @@ $\lim_{\xi\to\gamma}(\alpha\cdot\beta+\alpha\cdot\xi)$ $=$
 $\alpha\cdot\beta+\lim_{\xi\to\gamma}(\alpha\cdot\xi)$
 $=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi$ $=$ $\alpha\cdot\beta+
 \alpha\cdot\gamma$\
-&nbsp;$\quad$_Case (ii) and (iii)._ Similarly to the previous.$\quad\square$
+$\quad$_Case (ii) and (iii)._ Similarly to the previous.$\quad\square$
 
-<span id="2.9">2.9.</span>&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
-&nbsp;$\quad$(ii) Show that $(\omega\cdot 2)^2\neq\omega^2\cdot 2^2$.
+<span id="2.9">2.9.</span>$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
+$\quad$(ii) Show that $(\omega\cdot 2)^2\neq\omega^2\cdot 2^2$.
 
-**_Proof._**&nbsp;$\quad$_Case (i)._ $(\omega+1)\cdot 2=\omega+1+\omega
+**_Proof._**$\quad$_Case (i)._ $(\omega+1)\cdot 2=\omega+1+\omega
 +1=\omega+\omega+1=\omega\cdot 2 + 1 <\omega\cdot 2 + 2 =\omega\cdot 2
 +1\cdot 2$\
-&nbsp;$\quad$_Case (ii)._ $(\omega\cdot 2)^2=\omega\cdot 2\cdot\omega\cdot
+$\quad$_Case (ii)._ $(\omega\cdot 2)^2=\omega\cdot 2\cdot\omega\cdot
 2=\omega\cdot (2\cdot\omega)\cdot 2=\omega\cdot\omega\cdot 2<\omega\cdot\omega\cdot 4=\omega^2\cdot 2^2$
  $\quad\square$
 
 <span id="2.10">2.10.</span> If $\alpha<\beta$ then $\alpha+\gamma\le\beta+\gamma$, $\alpha
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le\beta^{\gamma}$.
 
-**_Proof._**&nbsp;$\quad$We show that if $\alpha<\beta$ then
+**_Proof._**$\quad$We show that if $\alpha<\beta$ then
 $\alpha+\gamma\le\beta+\gamma$ by induction on $\gamma$.\
 $\alpha+0\le\beta+0$. $\alpha+\gamma+1\le\alpha+1+\gamma+1
 \le\beta+\gamma+1$. Let a limit ordinal $> 0$ be $\gamma$.
 For all $\xi<\gamma$, if $\alpha +\xi <\beta +\xi$ then
 $\text{sup }\{\alpha +\xi :\xi<\gamma\}\le\text{sup }\{\beta +
 \xi :\xi<\gamma\}$. Therefore, $\alpha+\gamma\le\beta+\gamma$.\
-&nbsp;$\quad$Similarly to the previous, $\alpha
+$\quad$Similarly to the previous, $\alpha
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le
 \beta^{\gamma}$.$\quad\square$
 
 <span id="2.11">2.11.</span> Find $\alpha,\beta,\gamma$ such that\
-&nbsp;$\quad$(i) $\alpha <\beta$ and $\alpha +\gamma =\beta +\gamma$,\
-&nbsp;$\quad$(ii) $\alpha <\beta$ and $\alpha\cdot\gamma=\beta\cdot\gamma$,\
-&nbsp;$\quad$(iii) $\alpha <\beta$ and $\alpha^{\gamma}=\beta^{\gamma}$.
+$\quad$(i) $\alpha <\beta$ and $\alpha +\gamma =\beta +\gamma$,\
+$\quad$(ii) $\alpha <\beta$ and $\alpha\cdot\gamma=\beta\cdot\gamma$,\
+$\quad$(iii) $\alpha <\beta$ and $\alpha^{\gamma}=\beta^{\gamma}$.
 
-**_Proof._**&nbsp;$\quad$_Case (i)._ $0+\omega=1+\omega$\
-&nbsp;$\quad$_Case (ii)._ $1\cdot\omega=2\cdot\omega$\
-&nbsp;$\quad$_Case (iii)._ $2^{\omega}=3^{\omega}$$\quad\square$
+**_Proof._**$\quad$_Case (i)._ $0+\omega=1+\omega$\
+$\quad$_Case (ii)._ $1\cdot\omega=2\cdot\omega$\
+$\quad$_Case (iii)._ $2^{\omega}=3^{\omega}$$\quad\square$
 
 <span id="2.12">2.12.</span> Let $\varepsilon_0 =\lim_{n\to\omega}\alpha_n$ where $\alpha_0 =
 \omega$ and $\alpha_{n+1} =\omega^{\alpha_n}$ for all $n$. Show that
 $\varepsilon_0$ is the least ordinal $\varepsilon$ such that
 $\omega^{\varepsilon}=\varepsilon$.
 
-**_Proof._**&nbsp;$\quad$$\varepsilon_0=\text{sup }\{\omega,\omega^\omega,
+**_Proof._**$\quad$$\varepsilon_0=\text{sup }\{\omega,\omega^\omega,
 \omega^{\omega^\omega},\ldots\}=\text{sup }\{\omega^\omega,
 \omega^{\omega^\omega},\omega^{\omega^{\omega^\omega}},\ldots\}=
 \omega^{\text{sup }\{\omega,\omega^\omega,
 \omega^{\omega^\omega},\ldots\}}=\omega^{\varepsilon_0}$.\
-&nbsp;$\quad$Suppose that there exists $\varepsilon <\varepsilon_0$
+$\quad$Suppose that there exists $\varepsilon <\varepsilon_0$
 such that $\omega^{\varepsilon}=\varepsilon$. Then since for every finite
 number $a$, $a\neq\omega^a$, $\varepsilon\ge\omega$, and so there
 exists the least $n$ such that $n>0, n\in\omega$, and $\alpha_n >
@@ -169,7 +169,7 @@ exists the least $n$ such that $n>0, n\in\omega$, and $\alpha_n >
 $\alpha_n=\omega^{\alpha_{n-1}}>\varepsilon=\omega^\varepsilon$. But
 since $\alpha_{n-1}<\varepsilon$, a contradiction.$\quad\square$
 
-&nbsp;$\quad$A limit ordinal $\gamma > 0$ is called _indecomposable_ if
+$\quad$A limit ordinal $\gamma > 0$ is called _indecomposable_ if
 there exist no $\alpha <\gamma$ and $\beta <\gamma$ such that
 $\alpha+\beta=\gamma$.
 
@@ -177,7 +177,7 @@ $\alpha+\beta=\gamma$.
 +\gamma =\gamma$ for all $\alpha <\gamma$ if and only if $\gamma
 =\omega^{\alpha}$ for some $\alpha$.
 
-**_Proof._**&nbsp;$\quad$$\gamma > 0$ is indecomposable
+**_Proof._**$\quad$$\gamma > 0$ is indecomposable
 if and only if $\alpha+\beta<\gamma$ for all
 $\alpha <\gamma$ and $\beta <\gamma$; otherwise
 $\alpha<\gamma<\alpha+\beta$, and so there is $\delta$ such that
@@ -189,7 +189,7 @@ for all $\alpha <\gamma$, $\alpha+\gamma=\text{sup }\{\alpha+\xi :\xi <
 $\alpha +\gamma =\gamma$ for all $\alpha <\gamma$ then
 $\text{sup }\{\alpha+\xi :\xi <\gamma\}$ $=$ $\gamma$. It follows that
 for all $\alpha <\gamma$ and $\beta <\gamma$, $\alpha+\beta<\gamma$.\
-&nbsp;$\quad$Let $\gamma=\omega^{\beta_1}\cdot k_1
+$\quad$Let $\gamma=\omega^{\beta_1}\cdot k_1
 +\ldots+\omega^{\beta_n}\cdot k_n$ be Cantor's normal form.
 If a limit ordinal $\gamma\ne\omega^\alpha$ for
 all $\alpha$, i.e., $n>1$ or $k_n>1$ for some $n$ then clearly not indecomposable, i.e.,
@@ -204,21 +204,21 @@ normal forms of $\beta_1$ and $\beta_2$). Hence $\beta_1 +\beta_2 <
 $\langle a_n : n\in\mathbb{N}\rangle$ in $P$ such that $a_1\,E\,a_0,
 \,a_2\,E\,a_1,\,a_3\,E\,a_2,\,\ldots$.
 
-**_Proof._**&nbsp;$\quad$Otherwise, $\cdots\,E\,\,a_3\,E\,a_2\,E\,a_1\,E\,
+**_Proof._**$\quad$Otherwise, $\cdots\,E\,\,a_3\,E\,a_2\,E\,a_1\,E\,
 a_0$; there is no $E$-minimal elements.$\quad\square$
 
 <span id="2.15">2.15.</span> (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
 $P$, and let $G$ be a function. Then there exists a function $F$ such that
 for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
 
-**_Proof._**&nbsp;$\quad$A set $B\subset A$ is called $E$-transitive in $A$
+**_Proof._**$\quad$A set $B\subset A$ is called $E$-transitive in $A$
 if $\{y\in A:y\,E\,x\}\subset B$ holds for all $x\in B$. Let $T =\{g : g$
 is a function. $\text{dom}(g)$ is a $E$-transitive in $P$, and
 $(\forall x\in\text{dom}(g))g(x) = G(x, g\upharpoonright x)\}$.
 $T$ is nonempty, since for every $E$-miminal element $m\in P$,\{m\} is
 $E$-transitive, and a function $g$ of $\{m\}$ is given by $m\mapsto G(m,
 \emptyset)$.\
-&nbsp;$\quad$We claim that $\bigcup T$ is a function. Suppose not.
+$\quad$We claim that $\bigcup T$ is a function. Suppose not.
 There is a $E$-minimal element $m$ of the set
 $\{x\in\text{dom}(g_1)\cap\text{dom}(g_2) : g_1(x)\neq g_2(x)$
 for some $g_1, g_2\in T\}$.
