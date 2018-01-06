@@ -6,7 +6,7 @@ author: https://github.com/9beach
 # [A solutions manual for Set Theory by Thomas Jech](README.md)
 ### 2. Ordinal Numbers
 
-2.1. The relation “$(P,<)$ is isomorphic to $(Q,<)$” is an equivalence
+**2.1.** The relation “$(P,<)$ is isomorphic to $(Q,<)$” is an equivalence
 relation (on the class of all partially ordered sets).
 
 **_Proof._**&nbsp;$\quad$Let $(P, <)$, $(Q, <)$, and $(G, <)$ be partially
@@ -15,7 +15,7 @@ isomorphic to $Q$ by $f$, then $Q$ is isomorphic to $P$ by $f^{-1}$. If
 $P$ is isomorphic to $Q$ by $f$, and $Q$ is isomorphic to $G$ by $g$,
 then $P$ is isomorphic to $G$ by $g\circ f$.$\quad\square$
 
-2.2. $\alpha$ is a limit ordinal if and only if $\beta <\alpha$ implies
+**2.2.** $\alpha$ is a limit ordinal if and only if $\beta <\alpha$ implies
 $\beta+1<\alpha$, for every $\beta$.
 
 **_Proof._**&nbsp;$\quad$Suppose $\beta+1\ge\alpha$. Since $\beta <\alpha$,
@@ -23,7 +23,7 @@ $\alpha =\beta + 1$; thus $\alpha$ is a successor ordinal, a contradiction.
 Conversely, suppose that $\alpha$ is a successor ordinal. Then
 $\alpha=\beta+1$ for some $\beta<\alpha$, a contradiction.$\quad\square$
 
-2.3. If a set $X$ is inductive, then $X\cap Ord$ is inductive. The set
+**2.3.** If a set $X$ is inductive, then $X\cap Ord$ is inductive. The set
 $\mathbb{N} =\bigcap\{X : X\text{ is inductive}\}$ is the least limit
 ordinal $\neq 0$.
 
@@ -36,7 +36,7 @@ well-ordered by $\in$. Thus $\mathbb{N}$ is an ordinal number. And,
 if $n\in\mathbb{N}$, then $n + 1\in\mathbb{N}$. Therefore, $\mathbb{N}$
 is the the least limit ordinal $\neq\emptyset$.$\quad\square$
 
-2.4. (Without the Axiom of Infinity). Let $\omega =$ least limit $\alpha
+**2.4.** (Without the Axiom of Infinity). Let $\omega =$ least limit $\alpha
 \neq 0$ if it exists, $\omega = Ord$ otherwise. Prove that the following
 statements are equivalent:\
 &nbsp;$\quad$(i) There exists an inductive set.\
@@ -47,7 +47,7 @@ finite subsets of $X$.]
 
 **_Proof._**&nbsp;$\quad$_Case (i)$\implies$(ii)._ By exercise 1.11, there
 exists an inductive T-infinite set $\mathbb{N}$, and by exercise 1.12 and
-1.13, $\mathbb{N}$ is infinite.\
+**1.13, $\mathbb{N}$ is infinite.**\
 &nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $Y =\{x\subset X : x\text{ is a
 finite set}\}$. Then $Y\subset P(X)$ is a set, and since $x\in Y$ is finite,
 there is a mapping $f$ from $Y$ into $\omega$ given by $x\mapsto n$, $n$
@@ -58,13 +58,13 @@ $ran(f) =\omega$. Therefore, $\omega$ is a set.\
 and if $\alpha\in\omega$, then $\alpha+1\in\omega$. Therefore, $\omega$ is
 inductive.$\quad\square$
 
-2.5. If $W$ is a well-ordered set, then there exists no sequence
+**2.5.** If $W$ is a well-ordered set, then there exists no sequence
 $\langle a_n : n\in\mathbb{N}\rangle$ in $W$ such that
 $a_0 >a_1 >a_2 >\ldots.$
 
 **_Proof._**&nbsp;$\quad$Otherwise there is no least element.$\quad\square$
 
-2.6. There are arbitrarily large limit ordinals; i.e., $\forall\alpha\exists
+**2.6.** There are arbitrarily large limit ordinals; i.e., $\forall\alpha\exists
 \beta >\alpha$ ($\beta$ is a limit).\
 &nbsp;$\quad$[Consider $\lim_{n\to\omega}\alpha_n$, where $\alpha_{n+1} =
 \alpha_n + 1$.]
@@ -79,7 +79,7 @@ $\alpha_n$ such that $\alpha_n>\gamma$; otherwise $\gamma\ge\text{sup }
 Thus $\gamma+1<\alpha_n+1=\alpha_{n+1}<\beta$, and so
 $\beta$ is a limit ordinal. Therefore, there are arbitrarily large limit ordinals.$\quad\square$
 
-2.7. Every normal sequence $\langle\gamma_\alpha :\alpha\in Ord\rangle$ has
+**2.7.** Every normal sequence $\langle\gamma_\alpha :\alpha\in Ord\rangle$ has
 arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha =
 \alpha$.\
 &nbsp;$\quad$[Let $\alpha_{n+1}=\gamma_{\alpha_n}$, and $\alpha=\lim_{n\to
@@ -97,7 +97,7 @@ $\alpha=\lim_{n\to\omega}\alpha_{n+1}=
 \gamma_{\lim_{\xi\to\alpha}\xi}=\gamma_\alpha$. Therefore,
 $\gamma_\alpha =\alpha$$\quad\square$
 
-2.8. For all $\alpha,\beta$ and $\gamma$,\
+**2.8.** For all $\alpha,\beta$ and $\gamma$,\
 &nbsp;$\quad$(i) $\alpha\cdot(\beta+\gamma)=\alpha\cdot\beta+
 \alpha\cdot\gamma$,\
 &nbsp;$\quad$(ii) $\alpha^{\beta+\gamma}=\alpha^{\beta}\cdot\alpha^{\gamma}$,\
@@ -118,7 +118,7 @@ $=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi$ $=$ $\alpha\cdot\beta+
 \alpha\cdot\gamma$\
 &nbsp;$\quad$_Case (ii) and (iii)._ Similarly to the previous.$\quad\square$
 
-2.9.&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
+**2.9.**&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
 &nbsp;$\quad$(ii) Show that $(\omega\cdot 2)^2\neq\omega^2\cdot 2^2$.
 
 **_Proof._**&nbsp;$\quad$_Case (i)._ $(\omega+1)\cdot 2=\omega+1+\omega
@@ -128,7 +128,7 @@ $=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi$ $=$ $\alpha\cdot\beta+
 2=\omega\cdot (2\cdot\omega)\cdot 2=\omega\cdot\omega\cdot 2<\omega\cdot\omega\cdot 4=\omega^2\cdot 2^2$
  $\quad\square$
 
-2.10. If $\alpha<\beta$ then $\alpha+\gamma\le\beta+\gamma$, $\alpha
+**2.10.** If $\alpha<\beta$ then $\alpha+\gamma\le\beta+\gamma$, $\alpha
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le\beta^{\gamma}$.
 
 **_Proof._**&nbsp;$\quad$We show that if $\alpha<\beta$ then
@@ -142,7 +142,7 @@ $\text{sup }\{\alpha +\xi :\xi<\gamma\}\le\text{sup }\{\beta +
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le
 \beta^{\gamma}$.$\quad\square$
 
-2.11. Find $\alpha,\beta,\gamma$ such that\
+**2.11.** Find $\alpha,\beta,\gamma$ such that\
 &nbsp;$\quad$(i) $\alpha <\beta$ and $\alpha +\gamma =\beta +\gamma$,\
 &nbsp;$\quad$(ii) $\alpha <\beta$ and $\alpha\cdot\gamma=\beta\cdot\gamma$,\
 &nbsp;$\quad$(iii) $\alpha <\beta$ and $\alpha^{\gamma}=\beta^{\gamma}$.
@@ -151,7 +151,7 @@ $\text{sup }\{\alpha +\xi :\xi<\gamma\}\le\text{sup }\{\beta +
 &nbsp;$\quad$_Case (ii)._ $1\cdot\omega=2\cdot\omega$\
 &nbsp;$\quad$_Case (iii)._ $2^{\omega}=3^{\omega}$$\quad\square$
 
-2.12. Let $\varepsilon_0 =\lim_{n\to\omega}\alpha_n$ where $\alpha_0 =
+**2.12.** Let $\varepsilon_0 =\lim_{n\to\omega}\alpha_n$ where $\alpha_0 =
 \omega$ and $\alpha_{n+1} =\omega^{\alpha_n}$ for all $n$. Show that
 $\varepsilon_0$ is the least ordinal $\varepsilon$ such that
 $\omega^{\varepsilon}=\varepsilon$.
@@ -173,7 +173,7 @@ since $\alpha_{n-1}<\varepsilon$, a contradiction.$\quad\square$
 there exist no $\alpha <\gamma$ and $\beta <\gamma$ such that
 $\alpha+\beta=\gamma$.
 
-2.13. A limit ordinal $\gamma > 0$ is indecomposable if and only if $\alpha
+**2.13.** A limit ordinal $\gamma > 0$ is indecomposable if and only if $\alpha
 +\gamma =\gamma$ for all $\alpha <\gamma$ if and only if $\gamma
 =\omega^{\alpha}$ for some $\alpha$.
 
@@ -200,14 +200,14 @@ that $\beta_1,\beta_2<\omega^{\alpha'}\cdot k$ (Consider Cantor’s
 normal forms of $\beta_1$ and $\beta_2$). Hence $\beta_1 +\beta_2 <
 \omega^{\alpha'}\cdot (k+k) <\omega^\alpha=\gamma$.$\quad\square$
 
-2.14. If $E$ is a well-founded relation on $P$, then there is no sequence
+**2.14.** If $E$ is a well-founded relation on $P$, then there is no sequence
 $\langle a_n : n\in\mathbb{N}\rangle$ in $P$ such that $a_1\,E\,a_0,
 \,a_2\,E\,a_1,\,a_3\,E\,a_2,\,\ldots$.
 
 **_Proof._**&nbsp;$\quad$Otherwise, $\cdots\,E\,\,a_3\,E\,a_2\,E\,a_1\,E\,
 a_0$; there is no $E$-minimal elements.$\quad\square$
 
-2.15. (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
+**2.15.** (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
 $P$, and let $G$ be a function. Then there exists a function $F$ such that
 for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
 

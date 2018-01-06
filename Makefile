@@ -4,7 +4,8 @@ PDF		= $(shell basename $(shell pwd)).pdf
 PDF_KINDLE	= $(shell basename $(shell pwd))-kindle.pdf
 
 %.html: %.md
-	sed -e 's:(\([^)]*\).md):(\1.html):' < $< |\
+	cat $< | sed -e 's:(\([^)]*\).md):(\1.html):' -e\
+		's:^\*\*\([0-9][0-9]*\.*[0-9]*\).*\.\*\*:<span id="\1"></span>&:' |\
 		pandoc -o $@ -f markdown -s --mathjax
 
 all: $(HTMLS)

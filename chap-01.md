@@ -7,7 +7,7 @@ author: https://github.com/9beach
 ## Part I: Basic Set Theory
 ### 1. Axioms of Set Theory
 
-1.1. Verify (1.1)$\qquad(a, b) = (c, d)$ if and only if $a = c$ and
+**1.1.** Verify (1.1)$\qquad(a, b) = (c, d)$ if and only if $a = c$ and
 $b = d$.
 
 **_Proof._**&nbsp;$\quad$If $a=c$ and $b=d$, then $(a,b)=\{\{a\},\{a,b\}
@@ -18,7 +18,7 @@ assumed that $a=b$, $a=c$ and $b=d$. Assume that $(a,b)=(c,d)$ and $a \neq b$.
 Since $\{\{a\},\{a,b\}\}=\{\{c\},\{c,d\}\}$ and $\{a\} \neq \{a,b\}$,
 $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 
-1.2. There is no set $X$ such that $P(X) \subset X$.
+**1.2.** There is no set $X$ such that $P(X) \subset X$.
 
 **_Proof._**&nbsp;$\quad$Suppose $P(X) \subset X$, then we have a
 function $f$ from $X$ onto $P(X)$. But the set $Y = \{x\in X : x\notin
@@ -39,7 +39,7 @@ If $n \in \mathbb{N}$, let $n + 1 = n \cup \{n\}$. Let us define $<$ (on
 $\mathbb{N}$) by $n < m$ if and only if $n \in m$.\
 &nbsp;$\quad$A set $T$ is transitive if $x\in T$ implies $x\subset T$.
 
-1.3. If $X$ is inductive, then the set $\{x \in X : x \subset X\}$ is
+**1.3.** If $X$ is inductive, then the set $\{x \in X : x \subset X\}$ is
 inductive. Hence $\mathbb{N}$ is transitive, and for each $n, n=\{m\in
 \mathbb{N} :m<n\}$.
 
@@ -64,7 +64,7 @@ $\{m\in \mathbb{N} : m < n \text{ or } m = n\}$ $=$ $\{m \in \mathbb{N} :
 m < n + 1\}$ $=$ $P(n+1)$ holds. Therefore, for each $n, n$ $=$
 $\{m\in \mathbb{N} :m<n\}$.$\quad\square$
 
-1.4. If $X$ is inductive, then the set $\{x \in X : x \text{ is
+**1.4.** If $X$ is inductive, then the set $\{x \in X : x \text{ is
 transitive}\}$ is inductive. Hence every $n \in \mathbb{N}$ is transitive.
 
 **_Proof._**&nbsp;$\quad$Let $Y = \{x \in X : x \text{ is transitive}\}$.
@@ -80,7 +80,7 @@ $Y_\mathbb{N}$ is inductive, $\mathbb{N} \subset Y_\mathbb{N}$; thus
 $\mathbb{N} = Y_\mathbb{N}$. Therefore, every $n \in \mathbb{N}$ is
 transitive.$\quad\square$
 
-1.5. If $X$ is inductive, then the set $\{x \in X : x$ is transitive
+**1.5.** If $X$ is inductive, then the set $\{x \in X : x$ is transitive
 and $x \notin x\}$ is inductive. Hence $n \notin n$ and $n \ne n + 1$ for
 each $n \in \mathbb{N}$.
 
@@ -101,7 +101,7 @@ $n\cup\{n\} = n$, then $\{n\}\subset n$, i.e., $n\in n$; a contradiction.
 Therefore, $n \notin n$ and $n \ne n + 1$ for each $n \in \mathbb
 {N}$.$\quad\square$
 
-1.6. If $X$ is inductive, then $\{x \in X:x$ is transitive and every
+**1.6.** If $X$ is inductive, then $\{x \in X:x$ is transitive and every
 nonempty $z \subset x$ has an $\in$-minimal $\text{element}\}$ is
 inductive ($t$ is $\in$-_minimal_ in $z$ if there is no $s \in z$ such
 that $s \in t$).
@@ -124,7 +124,7 @@ in $z$ then so is in $z\cup\{y\}$; otherwise $y\in m$, a contradiction.
 Similarly, $P(\{y\})$ holds; otherwise $\cdots y \in y \in y\cdots$.
 Therefore, $P(y\cup\{y\})$ holds, and so $Y$ is inductive.$\quad\square$
 
-1.7. Every nonempty $X \subset \mathbb{N}$ has an $\in$-minimal
+**1.7.** Every nonempty $X \subset \mathbb{N}$ has an $\in$-minimal
 element.\
 &nbsp;$\quad$[Pick $n \in X$ and look at $X \cap n$.]
 
@@ -138,7 +138,7 @@ m<n\}$, $n \cap X \neq \emptyset$; a contradiction. If $n \cap X \neq
 and it's an $\in$-minimal element of $X$; otherwise similarly to the
 previous, a contradiction.$\quad\square$
 
-1.8. If $X$ is inductive then so is $\{x\in X:x=\emptyset$ or $x=y\cup
+**1.8.** If $X$ is inductive then so is $\{x\in X:x=\emptyset$ or $x=y\cup
 \{y\}$ for some $y\}$. Hence each $n \ne 0$ is $m + 1$ for some $m$.
 
 **_Proof._**&nbsp;$\quad$Let $A = \{x\in X:x=\emptyset \text{ or }x=
@@ -147,7 +147,7 @@ y\cup \{y\}$ for some $y \}$; let $a \neq \emptyset \in A$. Since $a = y\cup
 $a \cup \{a\} \in A$. Therefore, $A$ is inductive, and each $n \ne 0$ is
 $m + 1$ for some $m$.$\quad\square$
 
-1.9 (Induction). Let $A$ be a subset of $\mathbb{N}$ such that $0
+**1.9 (Induction).** Let $A$ be a subset of $\mathbb{N}$ such that $0
 \in A$, and if $n \in A$ then $n+1\in A$. Then $A=\mathbb{N}$.
 
 **_Proof._**&nbsp;$\quad$By definition, $A$ is an inductive subset of
@@ -161,7 +161,7 @@ $\subset$-maximal element, i.e., $u \in X$ such that there is no $v \in X$
 with $u \subset v$ and $u \ne v$. $S$ is T-_infinite_ if it is not T-finite.
 (T is for Tarski.)
 
-1.10. Each $n \in \mathbb{N}$ is T-finite.
+**1.10.** Each $n \in \mathbb{N}$ is T-finite.
 
 **_Proof._**&nbsp;$\quad$Let $A = \{n \in \mathbb{N} : n \text{ is
 T-finite}\}$. We show that $A = \mathbb{N}$ by induction.\
@@ -173,7 +173,7 @@ case, let $a$ be a $\subset$-maximal element of $Y$. Then it's obvious that
 $a \cup \{n\}$ is a $\subset$-maximal element of $Z$; thus $X$ is
 T-finite.$\quad\square$
 
-1.11. $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
+**1.11.** $\mathbb{N}$ is T-infinite; the set $\mathbb{N} \subset P$
 ($\mathbb{N}$) has no $\subset$-maximal element.
 
 **_Proof._**&nbsp;$\quad$For any $n \in \mathbb{N}$, there exists $n + 1$
@@ -182,7 +182,7 @@ no $\subset$-maximal element.$\quad\square$\
 &nbsp;$\quad$_Note that $\mathbb{N} \in P(\mathbb{N})$, $\mathbb{N}
 \subset P(\mathbb{N})$, and $\bigcup\mathbb{N} = \mathbb{N}$._
 
-1.12. Every finite set is T-finite.
+**1.12.** Every finite set is T-finite.
 
 **_Proof._**&nbsp;$\quad$Let $F$ be a finite set, then
 there is a one-to-one mapping $f$ of $F$ onto $n \in \mathbb{N}$.
@@ -192,7 +192,7 @@ a $\subset$-maximal element. It's obvious that $\forall X,Y \in
 {A}(X \subset Y \iff f(X) \subset f(Y))$; ${A}$ has a $\subset$-maximal
 element.$\quad\square$
 
-1.13. Every infinite set is T-infinite.\
+**1.13.** Every infinite set is T-infinite.\
 &nbsp;$\quad$[If $S$ is infinite, consider $X = \{u \subset S : u\text{
 is finite}\}$.]
 
@@ -202,7 +202,7 @@ $X$ has a $\subset$-maximal element $m$. Then $S \smallsetminus m \neq
 and so there exists $x \in S \smallsetminus m$. Then $m \subsetneq m \cup
 \{x\} \in X$; a contradiction.$\quad\square$
 
-1.14. The Separation Axioms follow from the Replacement Schema.\
+**1.14.** The Separation Axioms follow from the Replacement Schema.\
 &nbsp;$\quad$[Given $\phi$, let $F = \{(x,x) : \phi (x)\}$. Then $\{x
 \in X : \phi (x)\} = F(X)$, for every $X$.]
 
@@ -217,7 +217,7 @@ $\{y:(\exists x \in X)x = y \wedge \phi(x)\}$ $=$
 $\{x:(\exists x \in X)\phi(x)\}$ $=$
 $\{x \in X : \phi (x)\}$.$\quad\square$
 
-1.15. Instead of Union, Power Set, and Replacement Axioms consider the
+**1.15.** Instead of Union, Power Set, and Replacement Axioms consider the
 following weaker versions:
 
 &nbsp;$\quad$(1.8) $\forall X\exists Y\bigcup X \subset Y$, i.e.,
