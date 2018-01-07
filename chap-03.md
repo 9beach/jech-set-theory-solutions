@@ -283,11 +283,11 @@ otherwise $X\subset\{\alpha_i:i<m\}\times\{\beta_i:i<n\}$
 for some finite $m, n$.
 Thus $\{\alpha_i:i<\omega\}\subset A$ or $\{\beta_i:i<\omega\}\subset B$
 are countable. A contradiction.\
-&nbsp;$\quad$(ii) Let $A$ be a D-finite set;
-for some $i\in Ord$, let
+&nbsp;$\quad$(ii) Let $A$ be a D-finite set.
+Suppose that for some $i\in \omega$,
 $X_i=\langle x^i_k\in A:k<p,\text{ for some }p<\omega\rangle$
 be a finite one-to-one
-sequence in $A$. Suppose that $X=\{X_i: i<\omega\}$
+sequence in $A$, and $X=\{X_i: i<\omega\}$
 is countable. Let $\alpha_0=x^0_0$; for $n>0$,
 let $\alpha_n$ = $x^k_i$ where $k$ and $i$ is the least index such that
 $\text{ran}(X_k)\not\subset\{\alpha_0,\ldots,\alpha_{n-1}\}$ and
@@ -301,14 +301,14 @@ of $n$, $\bigcup\{A, A^2,\ldots A^n\}$ is D-finite; a contradiction. Thus
 $\{\alpha_n:n<\omega\}\subset A$, also a contradiction.
 \
 &nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}\{X_i\}$ be a union of a disjoint
-D-finite family of D-finite sets; let $S=\{\alpha_i:i<\omega\}\subset
-X$ be countable. Then since $X_i$ is disjoint for all $i\in I$, we have
+D-finite family of D-finite sets. Suppose that $S=\{\alpha_i:i<\omega\}\subset
+X$ is countable. Then since $X_i$ is disjoint for all $i\in I$, we have
 a countable sequence $\langle\beta_i\in I:i<\omega\rangle$ where $\beta_n$
 is the least index such that $\beta_n\notin\{\beta_i\in I:i<n\}$ and
 $\alpha_n\notin X_{\beta_n}$ for all $n<\omega$. Otherwise,
 $I$ is finite, or $\alpha_n\in X_i$ for all $i\ge n$. The latter is
-impossible. If the former is true then by (i), a finite union of D-finite
-sets is D-finite, but $S\subset X$ is countable; a contradiction. Thus we have a
+impossible. Since by (i), a finite union of D-finite
+sets is D-finite, if the former is true, $S\subset X$ is D-finite; a contradiction. Thus we have a
 countable sequence $\langle\beta_i\in I:i<\omega\rangle$, also a contradiction.
 $\quad\square$
 
