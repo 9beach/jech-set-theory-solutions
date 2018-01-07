@@ -47,7 +47,7 @@ finite subsets of $X$.]
 
 **_Proof._**&nbsp;$\quad$_Case (i)$\implies$(ii)._ By exercise 1.11, there
 exists an inductive T-infinite set $\mathbb{N}$, and by exercise 1.12 and
-**1.13, $\mathbb{N}$ is infinite.**\
+1.13, $\mathbb{N}$ is infinite.\
 &nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $Y =\{x\subset X : x\text{ is a
 finite set}\}$. Then $Y\subset P(X)$ is a set, and since $x\in Y$ is finite,
 there is a mapping $f$ from $Y$ into $\omega$ given by $x\mapsto n$, $n$

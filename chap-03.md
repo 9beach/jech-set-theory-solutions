@@ -99,7 +99,7 @@ $=$ $\omega^{\alpha}\cdot 4\le\omega^{\alpha+1}$. For a limit ordinal
 $\gamma>0$, by definition $\Gamma(\gamma\times\gamma)=\text{sup }\{
 \Gamma(\alpha\times\alpha):\alpha<\gamma\}\le\omega^\gamma$.$\quad\square$
 
-**3.6.**<span id='3.6'></span> There is a well-ordering of the class of all
+**3.6.** There is a well-ordering of the class of all
 finite sequences of
 ordinals such that for each $\alpha$, the set of all finite sequences in
 $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
@@ -166,7 +166,8 @@ a projection of $A$. Conversely, using the Axiom of Choice, one shows that
 if $B$ is a projection of $A$, then $|A|\ge |B|$. This, however, cannot be
 proved without the Axiom of Choice.
 
-**3.7.** If $B$ is a projection of $\omega_\alpha$, then $|B|\le\aleph_\alpha$.
+**3.7.** If $B$ is a projection of $\omega_\alpha$, then
+$|B|\le\aleph_\alpha$.
 
 **_Proof._**&nbsp;$\quad$Let $f$ be a function of $\omega_\alpha$ onto $B$.
 Then a one-to-one function $g$ of $B$ into $\omega_\alpha$ is given by
@@ -218,11 +219,24 @@ $\omega_\alpha$ = cf $\alpha$; $\omega_\alpha$ is the limit of
 a cofinal sequence $\langle\omega_\xi :\xi <\text{cf }\alpha\rangle$
 of cardinals.
 
-**3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable sets.\
+**_Proof._**&nbsp;$\quad$For $\beta<\omega_\alpha$, there is $\xi$ such
+that $\omega_\xi > \beta$ and $\xi < \text{cf }\alpha$. Therefore,
+cf $\omega_\alpha$ = cf $\alpha$.$\quad\square$
+
+
+**3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable
+sets.\
 &nbsp;$\quad$[Assume that $\omega_2=\bigcup_{n<\omega}S_n$ with $S_n$
 countable and let $\alpha_n$ be the order-type of $S_n$.
 Then $\alpha=\text{sup}_n\alpha_n\le\omega_1$
 and there is a mapping of $\omega\times\alpha$ onto $\omega_2$.]
+
+**_Proof._**&nbsp;$\quad$We can assume that $S_n$ is disjoint
+for each $n\le\omega$. Then we have a one-to-one function of
+$\omega\times\alpha$ onto $\omega_2$ given by $(n,\beta)\mapsto$
+the $\beta$-th element of $S_n$ if $\beta\in\alpha_n$ otherwise
+$0$. Thus $\aleph_2=|\omega_2|\le|\omega\times\alpha|\le\aleph_0\cdot
+\aleph_1=\aleph_1$. A contradiction.$\quad\square$
 
 &nbsp;$\quad$A set $S$ is _Dedekind-finite_ (D-finite) if there is no
 one-to-one mapping of $S$ onto a proper subset of $S$. Every finite set is
@@ -236,6 +250,13 @@ hence every $S$ such that $|S|\ge\aleph_0$, is D-infinite.
 &nbsp;$\quad$[If $S$ is D-infinite, let $f:S\to X\subset S$ be one-to-one.
 Let $x_0\in S-X$ and $x_{n+1}=f(x_n)$. Then $S\supset\{x_n:n<\omega\}$.]
 
+**_Proof._**&nbsp;$\quad$If $S$ is D-infinite, since $f$ is one-to-one, for each $m$
+and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus we have a
+countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
+&nbsp;$\quad$Conversely, if $S$ has a countable subset $X=\{x_n:n<\omega\}$.
+We have a one-to-one mapping of $S$ onto $S\smallsetminus\{x_0\}$ given by
+$x\mapsto x$ if $x\notin X$; otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
+
 **3.15.**&nbsp;$\quad$(i) If $A$ and $B$ are D-finite, then $A\cup B$ and
 $A\times B$ are D-finite.\
 &nbsp;$\quad$(ii) The set of all finite one-to-one sequences in a D-finite
@@ -243,10 +264,61 @@ set is D-finite.\
 &nbsp;$\quad$(iii) The union of a disjoint D-finite family of D-finite sets
 is D-finite.
 
+&nbsp;$\quad$_As for now, I don't understand a case where D-finite
+but infinite, and so I'm not sure my solutions below. But I tried not to
+regard D-finite as finite._\
+**_Proof._**&nbsp;$\quad$&nbsp;$\quad$(i) Suppose that $X\subset A\cup B$
+is countable.
+Then since a subset of a countable set is at most countable,
+$X\cap A$ and $X\cap B$ are at most countable. Since
+$X=(X\cap A)\cup(X\cap B)$, and the union of a finite set of finite sets
+is finite, $X\cap A$ or $X\cap B$ are countable. Thus $A$ or $B$
+are D-infinite. A contradiction.
+Suppose that there is a countable $X=\{(x_i, y_i):i<\omega\}\subset
+A\times B$. Then we have a set $\{\alpha_i:\alpha_i=x_k$ where $k$ is the
+least index such that $x_k\notin\{\alpha_j:j<i\}$ for all $i<\omega\}$
+or  $\{\beta_i:\beta_i=y_k$ where $k$ is the
+least index such that $y_k\notin\{\beta_j:j<i\}$ for all $i<\omega\}$;
+otherwise $X\subset\{\alpha_i:i<m\}\times\{\beta_i:i<n\}$
+for some finite $m, n$.
+Thus $\{\alpha_i:i<\omega\}\subset A$ or $\{\beta_i:i<\omega\}\subset B$
+are countable. A contradiction.\
+&nbsp;$\quad$(ii) Let $A$ be a D-finite set;
+for some $i\in Ord$, let
+$X_i=\langle x^i_k\in A:k<p,\text{ for some }p<\omega\rangle$
+be a finite one-to-one
+sequence in $A$. Suppose that $X=\{X_i: i<\omega\}$
+is countable. Let $\alpha_0=x^0_0$; for $n>0$,
+let $\alpha_n$ = $x^k_i$ where $k$ and $i$ is the least index such that
+$\text{ran}(X_k)\not\subset\{\alpha_0,\ldots,\alpha_{n-1}\}$ and
+$x^k_i\notin\{\alpha_0,\ldots,\alpha_{n-1}\}$.
+Then for $n<\omega$, $\alpha_n$ is well-defined. Otherwise,
+for some $n<\omega$, $\text{ran}(X_k)\subset\{\alpha_0,\ldots,\alpha_{n-1}\}$
+for all $k<\omega$. Then since $X_i$ is a finite one-to-one sequence for all
+$i<\omega$, $X_i \in \bigcup\{A, A^2,\ldots A^n\}$, and so
+$X\subset\bigcup\{A, A^2,\ldots A^n\}$. But by (i), and induction
+of $n$, $\bigcup\{A, A^2,\ldots A^n\}$ is D-finite; a contradiction. Thus
+$\{\alpha_n:n<\omega\}\subset A$, also a contradiction.
+\
+&nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}\{X_i\}$ be a union of a disjoint
+D-finite family of D-finite sets; let $S=\{\alpha_i:i<\omega\}\subset
+X$ be countable. Then since $X_i$ is disjoint for all $i\in I$, we have
+a countable sequence $\langle\beta_i\in I:i<\omega\rangle$ where $\beta_n$
+is the least index such that $\beta_n\notin\{\beta_i\in I:i<n\}$ and
+$\alpha_n\notin X_{\beta_n}$ for all $n<\omega$. Otherwise,
+$I$ is finite, or $\alpha_n\in X_i$ for all $i\ge n$. The latter is
+impossible. If the former is true then by (i), a finite union of D-finite
+sets is D-finite, but $S\subset X$ is countable; a contradiction. Thus we have a
+countable sequence $\langle\beta_i\in I:i<\omega\rangle$, also a contradiction.
+$\quad\square$
+
 &nbsp;$\quad$On the other hand, one cannot prove without the Axiom of Choice
 that a projection, power set, or the set of all finite subsets of a D-finite
 set is D-finite, or that the union of a D-finite family of D-finite sets is
 D-finite.
 
 **3.16.** If $A$ is an infinite set, then $PP(A)$ is D-infinite.\
-&nbsp;$\quad$[Consider the set $\{X\subset A:|X|=n\}:n<\omega\}$.]
+&nbsp;$\quad$[Consider the set $\{\{X\subset A:|X|=n\}:n<\omega\}$.]
+
+**_Proof._**&nbsp;$\quad$ The set $\{\{X\subset A:|X|=n\}:n<\omega\}\subset
+PP(A)$ is countable.$\quad\square$
