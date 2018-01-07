@@ -16,8 +16,8 @@ HTML versions [here](https://rawgit.com/9beach/jech-set-theory-solutions/master/
 #### Part I: Basic Set Theory
 1. [Axioms of Set Theory](chap-01.md)
 2. [Ordinal Numbers](chap-02.md)
-3. [Cardinal Numbers](chap-03.md) _wip_
-4. Real Numbers
+3. [Cardinal Numbers](chap-03.md)
+4. [Real Numbers](chap-04.md) _wip_
 5. The Axiom of Choice and Cardinal Arithmetic
 6. The Axiom of Regularity
 7. Filters, Ultrafilters and Boolean Algebras

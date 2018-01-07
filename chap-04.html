@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="https://github.com/9beach" />
+  <title>4. Real Numbers</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="a-solutions-manual-for-set-theory-by-thomas-jech"><a href="README.html">A solutions manual for Set Theory by Thomas Jech</a></h1>
+<h3 id="real-numbers">4. Real Numbers</h3>
+<p><span id="4.1"></span><strong>4.1.</strong> The set of all continuous functions <span class="math inline">\(f : \mathbb{R}\to \mathbb{R}\)</span> has cardinality <span class="math inline">\(\mathfrak{c}\)</span> (while the set of all functions has cardinality <span class="math inline">\(2^\mathfrak{c}\)</span>).<br />
+ <span class="math inline">\(\quad\)</span>[A continuous function on <span class="math inline">\(\mathbb{R}\)</span> is determined by its values at rational points.]</p>
+<p><span id="4.2"></span><strong>4.2.</strong> There are at least <span class="math inline">\(\mathfrak{c}\)</span> countable order-types of linearly ordered sets.<br />
+ <span class="math inline">\(\quad\)</span>[For every sequence <span class="math inline">\(a = \langle a_n : n\in\mathbb{N}\rangle\)</span> of natural numbers consider the order-type <span class="math display">\[
+\tau_a=a_0+\xi+a_1+\xi+a_2+\ldots
+\]</span> where <span class="math inline">\(\xi\)</span> is the order-type of the integers. Show that if <span class="math inline">\(a \neq b\)</span>, then <span class="math inline">\(\tau_a\neq\tau_b\)</span>.]</p>
+<p> <span class="math inline">\(\quad\)</span>A real number is algebraic if it is a root of a polynomial whose coefficients are integers. Otherwise, it is transcendental.</p>
+<p><span id="4.3"></span><strong>4.3.</strong> The set of all algebraic reals is countable.</p>
+<p><span id="4.4"></span><strong>4.4.</strong> If <span class="math inline">\(S\)</span> is a countable set of reals, then <span class="math inline">\(|\mathbb{R}-S|=\mathfrak{c}\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use <span class="math inline">\(\mathbb{R}\times\mathbb{R}\)</span> rather than <span class="math inline">\(\mathbb{R}\)</span> (because <span class="math inline">\(|\mathbb{R}\times \mathbb{R}|= 2^{\aleph_0}\)</span>).]</p>
+<p><span id="4.5"></span><strong>4.5.</strong> <span class="math inline">\(\quad\)</span>(i) The set of all irrational numbers has cardinality <span class="math inline">\(\mathfrak{c}\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>(ii) The set of all transcendental numbers has cardinality <span class="math inline">\(\mathfrak{c}\)</span>.</p>
+<p><span id="4.6"></span><strong>4.6.</strong> The set of all open sets of reals has cardinality <span class="math inline">\(\mathfrak{c}\)</span>.</p>
+<p><span id="4.7"></span><strong>4.7.</strong> The Cantor set is perfect.</p>
+<p><span id="4.8"></span><strong>4.8.</strong> If <span class="math inline">\(P\)</span> is a perfect set and <span class="math inline">\((a,b)\)</span> is an open interval such that <span class="math inline">\(P\cap (a,b)\neq\emptyset\)</span>, then <span class="math inline">\(|P\cap (a,b)| = \mathfrak{c}\)</span>.</p>
+<p><span id="4.9"></span><strong>4.9.</strong> If <span class="math inline">\(P_2\not\subset P_1\)</span> are perfect sets, then <span class="math inline">\(|P_2 - P_1| = \mathfrak{c}\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use Exercise 4.8.]</p>
+<p> <span class="math inline">\(\quad\)</span>If <span class="math inline">\(A\)</span> is a set of reals, a real number a is called a <em>condensation point</em> of <span class="math inline">\(A\)</span> if every neighborhood of a contains uncountably many elements of <span class="math inline">\(A\)</span>. Let <span class="math inline">\(A^\ast\)</span> denote the set of all condensation points of <span class="math inline">\(A\)</span>.</p>
+<p><span id="4.10"></span><strong>4.10.</strong> If <span class="math inline">\(P\)</span> is perfect then <span class="math inline">\(P^\ast = P\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use Exercise 4.8.]</p>
+<p><span id="4.11"></span><strong>4.11.</strong> If <span class="math inline">\(F\)</span> is closed and <span class="math inline">\(P\subset F\)</span> is perfect, then <span class="math inline">\(P\subset F^\ast\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[<span class="math inline">\(P=P^\ast\subset F^\ast\)</span>.]</p>
+<p><span id="4.12"></span><strong>4.12.</strong> If <span class="math inline">\(F\)</span> is an uncountable closed set and <span class="math inline">\(P\)</span> is the perfect set constructed in Theorem 4.6, then <span class="math inline">\(F^\ast\subset P\)</span>; thus <span class="math inline">\(F^\ast = P\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Every <span class="math inline">\(a\in F^\ast\)</span> is a limit point of <span class="math inline">\(P\)</span> since <span class="math inline">\(|F -P|\le\aleph_0\)</span>.]</p>
+<p><span id="4.13"></span><strong>4.13.</strong> If <span class="math inline">\(F\)</span> is an uncountable closed set, then <span class="math inline">\(F = F^\ast\cup (F - F^\ast )\)</span> is the unique partition of <span class="math inline">\(F\)</span> into a perfect set and an at most countable set.<br />
+ <span class="math inline">\(\quad\)</span>[Use Exercise 4.9.]</p>
+<p><span id="4.14"></span><strong>4.14.</strong> <span class="math inline">\(\mathbb{Q}\)</span> is not the intersection of a countable collection of open sets.<br />
+ <span class="math inline">\(\quad\)</span>[Use the Baire Category Theorem.]</p>
+<p><span id="4.15"></span><strong>4.15.</strong> If <span class="math inline">\(B\)</span> is Borel and <span class="math inline">\(f\)</span> is a continuous function then <span class="math inline">\(f_{-1}(B)\)</span> is Borel.</p>
+<p><span id="4.16"></span><strong>4.16.</strong> Let <span class="math inline">\(f:\mathbb{R}\to \mathbb{R}\)</span>. Show that the set of all <span class="math inline">\(x\)</span> at which <span class="math inline">\(f\)</span> is continuous is a <span class="math inline">\(G_\delta\)</span> set.</p>
+<p><span id="4.17"></span><strong>4.17.</strong> <span class="math inline">\(\quad\)</span>(i) <span class="math inline">\(\mathbb{N}\times \mathbb{N}\)</span> is homeomorphic to <span class="math inline">\(\mathbb{N}\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>(ii) <span class="math inline">\(\mathbb{N}^\omega\)</span> is homeomorphic to <span class="math inline">\(\mathbb{N}\)</span>.</p>
+<p><span id="4.18"></span><strong>4.18.</strong> The tree <span class="math inline">\(T_F\)</span> in (4.6) has no maximal node, i.e., <span class="math inline">\(s\in T\)</span> such that there is no <span class="math inline">\(t\in T\)</span> with <span class="math inline">\(s\subset t\)</span>. The map <span class="math inline">\(F\mapsto T_F\)</span> is a one-to-one correspondence between closed sets in <span class="math inline">\(\mathbb{N}\)</span> and sequential trees without maximal nodes.</p>
+<p><span id="4.19"></span><strong>4.19.</strong> Every perfect Polish space has a closed subset homeomorphic to the Cantor space.</p>
+<p><span id="4.20"></span><strong>4.20.</strong> Every Polish space is homeomorphic to a <span class="math inline">\(G_\delta\)</span> subspace of the Hilbert cube.<br />
+ <span class="math inline">\(\quad\)</span>[Let <span class="math inline">\(\{x_n :n\in \mathbb{N}\}\)</span> be a dense set, and define <span class="math inline">\(f(x)=\langle d(x,x_n):n\in \mathbb{N}\rangle\)</span>.]</p>
+</body>
+</html>
