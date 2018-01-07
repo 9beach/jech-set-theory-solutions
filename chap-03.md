@@ -264,10 +264,10 @@ set is D-finite.\
 &nbsp;$\quad$(iii) The union of a disjoint D-finite family of D-finite sets
 is D-finite.
 
-&nbsp;$\quad$_As for now, I don't understand a case where D-finite
+&nbsp;$\quad$_**FIXME:** As for now, I don't understand a case where D-finite
 but infinite, and so I'm not sure my solutions below. But I tried not to
 regard D-finite as finite._\
-**_Proof._**&nbsp;$\quad$&nbsp;$\quad$(i) Suppose that $X\subset A\cup B$
+**_Proof._**&nbsp;$\quad$&nbsp;(i) Suppose that $X\subset A\cup B$
 is countable.
 Then since a subset of a countable set is at most countable,
 $X\cap A$ and $X\cap B$ are at most countable. Since
@@ -284,7 +284,7 @@ for some finite $m, n$.
 Thus $\{\alpha_i:i<\omega\}\subset A$ or $\{\beta_i:i<\omega\}\subset B$
 are countable. A contradiction.\
 &nbsp;$\quad$(ii) Let $A$ be a D-finite set.
-Suppose that for some $i\in \omega$,
+Suppose that for each $i\in \omega$,
 $X_i=\langle x^i_k\in A:k<p,\text{ for some }p<\omega\rangle$
 be a finite one-to-one
 sequence in $A$, and $X=\{X_i: i<\omega\}$
@@ -303,10 +303,10 @@ $\{\alpha_n:n<\omega\}\subset A$, also a contradiction.
 &nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}\{X_i\}$ be a union of a disjoint
 D-finite family of D-finite sets. Suppose that $S=\{\alpha_i:i<\omega\}\subset
 X$ is countable. Then since $X_i$ is disjoint for all $i\in I$, we have
-a countable sequence $\langle\beta_i\in I:i<\omega\rangle$ where $\beta_n$
+a countable sequence $\langle\beta_i\in I:i<\omega\rangle$ where $\beta_n\in I$
 is the least index such that $\beta_n\notin\{\beta_i\in I:i<n\}$ and
 $\alpha_n\notin X_{\beta_n}$ for all $n<\omega$. Otherwise,
-$I$ is finite, or $\alpha_n\in X_i$ for all $i\ge n$. The latter is
+$I$ is finite, or $\alpha_n\in X_i$ for all $i\ge \beta_n$. The latter is
 impossible. Since by (i), a finite union of D-finite
 sets is D-finite, if the former is true, $S\subset X$ is D-finite; a contradiction. Thus we have a
 countable sequence $\langle\beta_i\in I:i<\omega\rangle$, also a contradiction.
