@@ -219,9 +219,18 @@ $\omega_\alpha$ = cf $\alpha$; $\omega_\alpha$ is the limit of
 a cofinal sequence $\langle\omega_\xi :\xi <\text{cf }\alpha\rangle$
 of cardinals.
 
-**_Proof._**&nbsp;$\quad$For $\beta<\omega_\alpha$, there is $\xi$ such
-that $\omega_\xi > \beta$ and $\xi < \text{cf }\alpha$. Therefore,
-cf $\omega_\alpha$ = cf $\alpha$.$\quad\square$
+**_Proof._**&nbsp;$\quad$cf $\omega_\alpha=$ cf cf $\alpha=$ cf
+$\alpha$.$\quad\square$
+
+It's clear that, for each limit ordinal
+$\alpha$, a increasing $\beta$-sequence
+$\langle\alpha_\xi:\xi<\beta\rangle$ is cofinal in $\alpha$ if and only if
+it is cofinal in $\omega_\alpha$
+
+ αξ : ξ<β  such that
+$\text{lim}_{\xi\to\beta}\alpha_\xi=\omega_\alpha$,
+if and only if there is increasing $\beta$-sequence
+such that $\text{lim}_{\xi\to\beta}\alpha_\xi=\alpha$.$\quad\square$
 
 
 **3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable
@@ -264,53 +273,46 @@ set is D-finite.\
 &nbsp;$\quad$(iii) The union of a disjoint D-finite family of D-finite sets
 is D-finite.
 
-&nbsp;$\quad$_**FIXME:** As for now, I don't understand a case where D-finite
-but infinite, and so I'm not sure my solutions below. But I tried not to
-regard D-finite as finite._\
-**_Proof._**&nbsp;$\quad$&nbsp;(i) Suppose that $X\subset A\cup B$
+**_Proof._**&nbsp;$\quad$(i) Suppose that $X\subset A\cup B$
 is countable.
 Then since a subset of a countable set is at most countable,
 $X\cap A$ and $X\cap B$ are at most countable. Since
 $X=(X\cap A)\cup(X\cap B)$, and the union of a finite set of finite sets
 is finite, $X\cap A$ or $X\cap B$ are countable. Thus $A$ or $B$
 are D-infinite. A contradiction.
-Suppose that there is a countable $X=\{(x_i, y_i):i<\omega\}\subset
-A\times B$. Then we have a set $\{\alpha_i:\alpha_i=x_k$ where $k$ is the
-least index such that $x_k\notin\{\alpha_j:j<i\}$ for all $i<\omega\}$
-or  $\{\beta_i:\beta_i=y_k$ where $k$ is the
-least index such that $y_k\notin\{\beta_j:j<i\}$ for all $i<\omega\}$;
-otherwise $X\subset\{\alpha_i:i<m\}\times\{\beta_i:i<n\}$
-for some finite $m, n$.
-Thus $\{\alpha_i:i<\omega\}\subset A$ or $\{\beta_i:i<\omega\}\subset B$
-are countable. A contradiction.\
-&nbsp;$\quad$(ii) Let $A$ be a D-finite set.
-Suppose that for each $i\in \omega$,
-$X_i=\langle x^i_k\in A:k<p,\text{ for some }p<\omega\rangle$
-be a finite one-to-one
-sequence in $A$, and $X=\{X_i: i<\omega\}$
-is countable. Let $\alpha_0=x^0_0$; for $n>0$,
-let $\alpha_n$ = $x^k_i$ where $k$ and $i$ is the least index such that
-$\text{ran}(X_k)\not\subset\{\alpha_0,\ldots,\alpha_{n-1}\}$ and
-$x^k_i\notin\{\alpha_0,\ldots,\alpha_{n-1}\}$.
-Then for $n<\omega$, $\alpha_n$ is well-defined. Otherwise,
-for some $n<\omega$, $\text{ran}(X_k)\subset\{\alpha_0,\ldots,\alpha_{n-1}\}$
-for all $k<\omega$. Then since $X_i$ is a finite one-to-one sequence for all
-$i<\omega$, $X_i \in \bigcup\{A, A^2,\ldots A^n\}$, and so
-$X\subset\bigcup\{A, A^2,\ldots A^n\}$. But by (i), and induction
-of $n$, $\bigcup\{A, A^2,\ldots A^n\}$ is D-finite; a contradiction. Thus
-$\{\alpha_n:n<\omega\}\subset A$, also a contradiction.
+Suppose that $X=\{(x_i, y_i):i<\omega\}\subset
+A\times B$ is countable.
+Consider $C=\{x \in A:(x, y)\in X$ for some $y\}$ and
+$D=\{y \in A:(x, y)\in X$ for some $x\}$. Since $\aleph_0=|X|\le
+|C|\times|D|$, $|C|\le|X|=\aleph_0$, and,
+$|D|\le|X|=\aleph_0$, $C$ or $D$ are countable.
+But $C\subset A$ and $D\subset B$, a contradiction.
 \
-&nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}\{X_i\}$ be a union of a disjoint
-D-finite family of D-finite sets. Suppose that $S=\{\alpha_i:i<\omega\}\subset
-X$ is countable. Then since $X_i$ is disjoint for all $i\in I$, we have
-a countable sequence $\langle\beta_i\in I:i<\omega\rangle$ where $\beta_n\in I$
-is the least index such that $\beta_n\notin\{\beta_i\in I:i<n\}$ and
-$\alpha_n\notin X_{\beta_n}$ for all $n<\omega$. Otherwise,
-$I$ is finite, or $\alpha_n\in X_i$ for all $i\ge \beta_n$. The latter is
-impossible. Since by (i), a finite union of D-finite
-sets is D-finite, if the former is true, $S\subset X$ is D-finite; a contradiction. Thus we have a
-countable sequence $\langle\beta_i\in I:i<\omega\rangle$, also a contradiction.
-$\quad\square$
+&nbsp;$\quad$(ii) Let $A$ be a D-finite set;
+let $X=\{X_i: i<\omega\}$ be a subset of all finite one-to-one
+sequences in $A$. Suppose that $X$ is countable.
+Consider the cardinality of $S=\bigcup_{i<\omega}\text{ran}(X_i)$.
+Since $X_i$ is finite for all $i<\omega$,
+$|S|\le|\omega|\cdot|\omega|=\aleph_0$.
+So suppose that $|S|=n<\omega$. then $X_i \in
+\bigcup\{S^1, S^2,\ldots S^n\}$ for all $i<\omega\Leftrightarrow
+X\subset \bigcup\{S^1, S^2,\ldots S^n\}$. By (i), and induction
+of $n$, the union of a finite family of D-finite sets is D-finite,
+and a finite product of D-finite sets is D-finite,
+thus $\bigcup\{S, S^2,\ldots S^n\}$ is
+D-finite. But $X\subset \bigcup\{S, S^2,\ldots S^n\}$,
+a contradiction. Thus $S$ is countable. But
+$S\subset A$, also a contradiction.
+\
+&nbsp;$\quad$(iii) Let, for some D-finite $I$, $X=\bigcup_{i\in I}X_i$
+be a union of a disjoint
+D-finite family of D-finite sets. Suppose that $S=\{\alpha_n:n<\omega\}\subset
+X$ is countable. Consider the cardinality of
+$T=\{i\in I:\alpha_{i}\in S\}$.
+Since $X_i$ is disjoint for each $i\in I$, $|T|\le|S|=\aleph_0$.
+Now suppose that $|T|=n<\omega$. Then $S$ is a union of a finite family of
+D-finite set, thus finite; a contradiction. So $T$ is countable. But
+$T\subset I$, also a contradiction.$\quad\square$
 
 &nbsp;$\quad$On the other hand, one cannot prove without the Axiom of Choice
 that a projection, power set, or the set of all finite subsets of a D-finite
