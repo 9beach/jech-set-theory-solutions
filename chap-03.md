@@ -248,9 +248,9 @@ hence every $S$ such that $|S|\ge\aleph_0$, is D-infinite.
 &nbsp;$\quad$[If $S$ is D-infinite, let $f:S\to X\subset S$ be one-to-one.
 Let $x_0\in S-X$ and $x_{n+1}=f(x_n)$. Then $S\supset\{x_n:n<\omega\}$.]
 
-**_Proof._**&nbsp;$\quad$If $S$ is D-infinite, since $f$ is one-to-one, for each $m$
-and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus we have a
-countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
+**_Proof._**&nbsp;$\quad$If $S$ is D-infinite, since $f$ is one-to-one,
+for each $m$ and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus we
+have a countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
 &nbsp;$\quad$Conversely, if $S$ has a countable subset $X=\{x_n:n<\omega\}$.
 We have a one-to-one mapping of $S$ onto $S\smallsetminus\{x_0\}$ given by
 $x\mapsto x$ if $x\notin X$; otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
@@ -281,7 +281,7 @@ But $C\subset A$ and $D\subset B$, a contradiction.
 let $X=\{X_i: i<\omega\}$ be a subset of all finite one-to-one
 sequences in $A$. Suppose that $X$ is countable.
 Consider the cardinality of $S=\bigcup_{i<\omega}\text{ran}(X_i)$.
-Since $X_i$ is finite for all $i<\omega$,
+Since $X_i$ is a finite one-to-one sequence for all $i<\omega$,
 $|S|\le|\omega|\cdot|\omega|=\aleph_0$.
 So suppose that $|S|=n<\omega$. then $X_i \in
 \bigcup\{S^1, S^2,\ldots S^n\}$ for all $i<\omega\Leftrightarrow
@@ -293,11 +293,10 @@ D-finite. But $X\subset \bigcup\{S, S^2,\ldots S^n\}$,
 a contradiction. Thus $S$ is countable. But
 $S\subset A$, also a contradiction.
 \
-&nbsp;$\quad$(iii) Let, for some D-finite $I$, $X=\bigcup_{i\in I}X_i$
-be a union of a disjoint
-D-finite family of D-finite sets. Suppose that $S=\{\alpha_n:n<\omega\}\subset
-X$ is countable. Consider the cardinality of
-$T=\{i\in I:\alpha_{i}\in S\}$.
+&nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}X_i$ for some D-finite $I$
+be a union of a disjoint D-finite family of D-finite sets. Suppose that
+$S=\{\alpha_n:n<\omega\}\subset X$ is countable. Consider the cardinality of
+$T=\{i\in I:i$ such that $\alpha\in X_i$ for some $\alpha\in S\}$.
 Since $X_i$ is disjoint for each $i\in I$, $|T|\le|S|=\aleph_0$.
 Now suppose that $|T|=n<\omega$. Then $S$ is a union of a finite family of
 D-finite set, thus finite; a contradiction. So $T$ is countable. But
