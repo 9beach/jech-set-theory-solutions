@@ -222,17 +222,6 @@ of cardinals.
 **_Proof._**&nbsp;$\quad$cf $\omega_\alpha=$ cf cf $\alpha=$ cf
 $\alpha$.$\quad\square$
 
-It's clear that, for each limit ordinal
-$\alpha$, a increasing $\beta$-sequence
-$\langle\alpha_\xi:\xi<\beta\rangle$ is cofinal in $\alpha$ if and only if
-it is cofinal in $\omega_\alpha$
-
- αξ : ξ<β  such that
-$\text{lim}_{\xi\to\beta}\alpha_\xi=\omega_\alpha$,
-if and only if there is increasing $\beta$-sequence
-such that $\text{lim}_{\xi\to\beta}\alpha_\xi=\alpha$.$\quad\square$
-
-
 **3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable
 sets.\
 &nbsp;$\quad$[Assume that $\omega_2=\bigcup_{n<\omega}S_n$ with $S_n$
