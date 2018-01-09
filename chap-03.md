@@ -20,16 +20,19 @@ set, and $f_{i}$ be a function of $S_i$ onto a finite ordinal $n_i$ for
 each $i<p$. Let $S=\bigcup_{i<p}S_i$; let $f:S\to\sum_{i<p}n_i$ given by
 $x\mapsto\sum_{i<k}n_i+f_k(x)$ where $k$ is the least number such that
 $x\in S_k$. Then $f$ is one-to-one function of $S$ into $\sum_{i<p}n_i$
-which is bounded. Thus $S$ is finite.\
-&nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}<\aleph_0$; and
-each subset of $X$ is finite. $P(X)$ is a finite set of finite sets.\
+which is bounded. Thus $S$ is finite.
+\
+&nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}<\aleph_0$.
+\
 &nbsp;$\quad$(iv) Let $f$ be a function of a finite set $X$ onto $Y$.
 Then there is a one-to-one function $g$ of $X$ onto $n<\omega$. Clearly, a
 function $h$ of $f(X)$ into $n$ given by
-$y\mapsto\bigcap{g_{-1}\cdot f_{-1}(y)}$ exists.$\quad\square$
+$y\mapsto\bigcap{g_{-1}\circ f_{-1}(y)}$ exists.$\quad\square$
 
-**3.2.**&nbsp;$\quad$(i) A subset of a countable set is at most countable.\
-&nbsp;$\quad$(ii) The union of a finite set of countable sets is countable.\
+**3.2.**&nbsp;$\quad$(i) A subset of a countable set is at most countable.
+\
+&nbsp;$\quad$(ii) The union of a finite set of countable sets is countable.
+\
 &nbsp;$\quad$(iii) The image of a countable set (under a mapping) is at most
 countable.
 
@@ -38,18 +41,20 @@ Then there is a one-to-one function $f$ of $X$ onto $\omega$.
 Let $id_Y$ be a function of $Y$ into $X$ given by $x\mapsto x$. Clearly
 the function $f\cdot id_Y$ is a function of $Y$ into $\omega$, and so
 $|Y|\le\aleph_0$. Therefore, by definition of $\aleph_0$, $Y$ is at most
-countable.\
-&nbsp;$\quad$(ii) For $p$ such that $0<p<\omega$, for each $i<p$,
-let $S_{i}$ is a countable set, and $f_{i}$ be a function of $S_i$ onto
-$\omega$.
-Let $S=\bigcup_{i<p}S_i$; let
+countable.
+\
+&nbsp;$\quad$(ii) For some $n$ such that $0<n<\omega$,
+Let $S=\bigcup_{i<n}S_i$ where $S_{i}$ is a countable set;
+for each $I<n$, let $f_{i}$ be a function of $S_i$ onto $\omega$.
+Let $S=\bigcup_{i<n}S_i$; let
 $f:S\to\omega$ given by $x\mapsto 2^i 3^{f_i(x)}$ where
 $i$ is the least number $x\in S_i$. Then $f$ is one-to-one function
-of $S$ into $\omega$. Thus $S$ is countable.\
+of $S$ into $\omega$. Thus $S$ is countable.
+\
 &nbsp;$\quad$(iii) Let $f$ be a function of a countable set $X$ onto $Y$.
 Then there is a one-to-one function $g$ of $X$ onto $\omega$.
 Clearly, a function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
-\bigcap{g_{-1}\cdot f_{-1}(y)}$ exists.$\quad\square$
+\bigcap{g_{-1}\circ f_{-1}(y)}$ exists.$\quad\square$
 
 **3.3.** $\mathbb{N}\times\mathbb{N}$ is countable.\
 &nbsp;$\quad$[$f (m, n) = 2^m (2n + 1) - 1$.]
