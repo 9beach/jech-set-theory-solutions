@@ -64,8 +64,8 @@ $a_0 >a_1 >a_2 >\ldots.$
 
 **_Proof._**&nbsp;$\quad$Otherwise there is no least element.$\quad\square$
 
-**2.6.** There are arbitrarily large limit ordinals; i.e., $\forall\alpha\exists
-\beta >\alpha$ ($\beta$ is a limit).\
+**2.6.** There are arbitrarily large limit ordinals; i.e.,
+$\forall\alpha\exists\beta >\alpha$ ($\beta$ is a limit).\
 &nbsp;$\quad$[Consider $\lim_{n\to\omega}\alpha_n$, where $\alpha_{n+1} =
 \alpha_n + 1$.]
 
