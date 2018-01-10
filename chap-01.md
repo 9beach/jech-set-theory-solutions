@@ -24,7 +24,8 @@ $\{c\} = \{a\}$ and $\{a,b\} = \{c,d\}$; thus $c=a$ and $d=b$.$\quad\square$
 function $f$ from $X$ onto $P(X)$. But the set $Y = \{x\in X : x\notin
 f(x) \}$ is not in the range of $f$: If $z\in X$ were such
 that $f(z)=Y$, then $z\in Y$ if and only if $z \notin Y$, a contradiction.
-Thus $f$ is not a function of $X$ onto $P(X)$; also a contradiction.$\quad\square$
+Thus $f$ is not a function of $X$ onto $P(X)$; also a
+contradiction.$\quad\square$
 
 &nbsp;$\quad$Let
 $$

@@ -224,7 +224,12 @@ $\omega_\alpha$ = cf $\alpha$; $\omega_\alpha$ is the limit of
 a cofinal sequence $\langle\omega_\xi :\xi <\text{cf }\alpha\rangle$
 of cardinals.
 
-**_Proof._**&nbsp;$\quad$cf $\omega_\alpha=$ cf cf $\alpha=$ cf
+**_Proof._**&nbsp;$\quad$A increasing sequence $A$ is in $B$, and $B$ is
+the supremacy of a increasing sequence $C$, and also sup $A=B$ $\Leftrightarrow$
+A increasing sequence $C$ is in $B$, and $B$ is the supremacy of
+a increasing sequence $A$, and also sup $C=B$.
+So clearly cf $A=$ cf $C$. Thus
+cf $\omega_\alpha=$ cf cf $\alpha=$ cf
 $\alpha$.$\quad\square$
 
 **3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable

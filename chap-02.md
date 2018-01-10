@@ -79,9 +79,9 @@ $\alpha_n$ such that $\alpha_n>\gamma$; otherwise $\gamma\ge\text{sup }
 Thus $\gamma+1<\alpha_n+1=\alpha_{n+1}<\beta$, and so
 $\beta$ is a limit ordinal. Therefore, there are arbitrarily large limit ordinals.$\quad\square$
 
-**2.7.** Every normal sequence $\langle\gamma_\alpha :\alpha\in Ord\rangle$ has
-arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha =
-\alpha$.\
+**2.7.** Every normal sequence $\langle\gamma_\alpha :\alpha\in Ord\rangle$
+has arbitrarily large _fixed points_, i.e., $\alpha$ such that $\gamma_\alpha
+=\alpha$.\
 &nbsp;$\quad$[Let $\alpha_{n+1}=\gamma_{\alpha_n}$, and $\alpha=\lim_{n\to
 \omega}\alpha_n$.]
 
@@ -114,19 +114,20 @@ $\alpha\cdot\lim_{\xi\to\gamma}(\beta+\xi)$ $=$
 $\lim_{\xi\to\gamma}\alpha\cdot(\beta+\xi)$ $=$
 $\lim_{\xi\to\gamma}(\alpha\cdot\beta+\alpha\cdot\xi)$ $=$
 $\alpha\cdot\beta+\lim_{\xi\to\gamma}(\alpha\cdot\xi)$
-$=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi$ $=$ $\alpha\cdot\beta+
-\alpha\cdot\gamma$\
+$=$ $\alpha\cdot\beta+\alpha\cdot\lim_{\xi\to\gamma}\xi$ $=$
+$\alpha\cdot\beta+\alpha\cdot\gamma$\
 &nbsp;$\quad$_Case (ii) and (iii)._ Similarly to the previous.$\quad\square$
 
-**2.9.**&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot 2$.\
+**2.9.**&nbsp;$\quad$(i) Show that $(\omega+1)\cdot 2\neq\omega\cdot 2+1\cdot
+2$.\
 &nbsp;$\quad$(ii) Show that $(\omega\cdot 2)^2\neq\omega^2\cdot 2^2$.
 
 **_Proof._**&nbsp;$\quad$_Case (i)._ $(\omega+1)\cdot 2=\omega+1+\omega
-+1=\omega+\omega+1=\omega\cdot 2 + 1 <\omega\cdot 2 + 2 =\omega\cdot 2
++1=$ $\omega+\omega+1=\omega\cdot 2 + 1$ $<\omega\cdot 2 + 2 =\omega\cdot 2
 +1\cdot 2$\
 &nbsp;$\quad$_Case (ii)._ $(\omega\cdot 2)^2=\omega\cdot 2\cdot\omega\cdot
-2=\omega\cdot (2\cdot\omega)\cdot 2=\omega\cdot\omega\cdot 2<\omega\cdot\omega\cdot 4=\omega^2\cdot 2^2$
- $\quad\square$
+2=\omega\cdot (2\cdot\omega)\cdot 2=\omega\cdot\omega\cdot 2$
+$<\omega\cdot\omega\cdot 4=\omega^2\cdot 2^2$$\quad\square$
 
 **2.10.** If $\alpha<\beta$ then $\alpha+\gamma\le\beta+\gamma$, $\alpha
 \cdot\gamma\le\beta\cdot\gamma$, and $\alpha^{\gamma}\le\beta^{\gamma}$.
@@ -173,9 +174,9 @@ since $\alpha_{n-1}<\varepsilon$, a contradiction.$\quad\square$
 there exist no $\alpha <\gamma$ and $\beta <\gamma$ such that
 $\alpha+\beta=\gamma$.
 
-**2.13.** A limit ordinal $\gamma > 0$ is indecomposable if and only if $\alpha
-+\gamma =\gamma$ for all $\alpha <\gamma$ if and only if $\gamma
-=\omega^{\alpha}$ for some $\alpha$.
+**2.13.** A limit ordinal $\gamma > 0$ is indecomposable if and only if
+$\alpha+\gamma =\gamma$ for all $\alpha <\gamma$ if and only if
+$\gamma=\omega^{\alpha}$ for some $\alpha$.
 
 **_Proof._**&nbsp;$\quad$$\gamma > 0$ is indecomposable
 if and only if $\alpha+\beta<\gamma$ for all
@@ -192,8 +193,8 @@ for all $\alpha <\gamma$ and $\beta <\gamma$, $\alpha+\beta<\gamma$.\
 &nbsp;$\quad$Let $\gamma=\omega^{\beta_1}\cdot k_1
 +\ldots+\omega^{\beta_n}\cdot k_n$ be Cantor's normal form.
 If a limit ordinal $\gamma\ne\omega^\alpha$ for
-all $\alpha$, i.e., $n>1$ or $k_n>1$ for some $n$ then clearly not indecomposable, i.e.,
-_decomposable_.
+all $\alpha$, i.e., $n>1$ or $k_n>1$ for some $n$ then clearly not
+indecomposable, i.e., _decomposable_.
 Conversely, let $\beta_1,\beta_2<\gamma=\omega^\alpha$ for all $\alpha>0$.
 There exist $\alpha'<\alpha$ and $k<\omega$ such
 that $\beta_1,\beta_2<\omega^{\alpha'}\cdot k$ (Consider Cantor’s
@@ -207,9 +208,9 @@ $\langle a_n : n\in\mathbb{N}\rangle$ in $P$ such that $a_1\,E\,a_0,
 **_Proof._**&nbsp;$\quad$Otherwise, $\cdots\,E\,\,a_3\,E\,a_2\,E\,a_1\,E\,
 a_0$; there is no $E$-minimal elements.$\quad\square$
 
-**2.15.** (Well-Founded Recursion). Let $E$ be a well-founded relation on a set
-$P$, and let $G$ be a function. Then there exists a function $F$ such that
-for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
+**2.15.** (Well-Founded Recursion). Let $E$ be a well-founded relation on
+a set $P$, and let $G$ be a function. Then there exists a function $F$ such
+that for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
 
 **_Proof._**&nbsp;$\quad$A set $B\subset A$ is called $E$-transitive in $A$
 if $\{y\in A:y\,E\,x\}\subset B$ holds for all $x\in B$. Let $T =\{g : g$
@@ -222,8 +223,8 @@ $E$-transitive, and a function $g$ of $\{m\}$ is given by $m\mapsto G(m,
 There is a $E$-minimal element $m$ of the set
 $\{x\in\text{dom}(g_1)\cap\text{dom}(g_2) : g_1(x)\neq g_2(x)$
 for some $g_1, g_2\in T\}$.
-Then $g_1(m)$ $=$ $G(m, g_1\upharpoonright\{y\in\text{dom}(g_1): y\,E\,m\})$ $=$
-$G(m, g_1\upharpoonright\{y\in\text{dom}(g_2): y\,E\,m\})$ $=$
+Then $g_1(m)$ $=$ $G(m, g_1\upharpoonright\{y\in\text{dom}(g_1): y\,E\,m\})$
+$=$ $G(m, g_1\upharpoonright\{y\in\text{dom}(g_2): y\,E\,m\})$ $=$
 $G(m, g_2\upharpoonright\{y\in\text{dom}(g_2): y\,E\,m\})$ $=$
 $g_2(m)$,
 a contradiction. Similarly, dom($\bigcup T)=P$. Therefore,
