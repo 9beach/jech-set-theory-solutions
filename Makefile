@@ -4,13 +4,21 @@ PDF		= $(shell basename $(shell pwd)).pdf
 PDF_KINDLE	= $(shell basename $(shell pwd))-kindle.pdf
 
 %.html: %.md
-	cat $< | sed -e 's:(\([^)]*\).md):(\1.html):' -e\
-		's:^\*\*\([0-9][0-9]*\.*[0-9]*\).*\.\*\*:<span id="\1"></span>&:' |\
+	cat $< | sed -e 's:(\([^)]*\).md):(\1.html):'\
+	       	-e 's:^\*\*\([0-9][0-9]*\.*[0-9]*\).*\.\*\*:<span \
+		id="\1"></span>&:' |\
 		pandoc -o $@ -f markdown -s --mathjax
 
-all: $(HTMLS)
+html: $(HTMLS)
 
-pdf: $(SRCS) template.tex
+pdf: $(PDF) $(PDF_KINDLE)
+
+all: html pdf
+
+clean:
+	rm -f $(HTMLS) $(PDF) $(PDF_KINDLE)
+
+$(PDF) $(PDF_KINDLE): $(SRCS) template.tex
 	mkdir -p .build
 	for i in *md; do\
 		sed -e 's:^# .*:\\newpage:' < $$i |\
@@ -31,6 +39,3 @@ pdf: $(SRCS) template.tex
 		-V geometry:"top=0.2cm,bottom=0.4cm,left=0.15cm,right=0.15cm"\
 		-V papersize:a6paper -V fontsize=12pt
 	rm -rf .build
-
-clean:
-	rm -f $(HTMLS) $(PDF) $(PDF_KINDLE)
