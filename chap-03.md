@@ -59,7 +59,7 @@ a one-to-one function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
 **3.3.** $\mathbb{N}\times\mathbb{N}$ is countable.\
 &nbsp;$\quad$[$f (m, n) = 2^m (2n + 1) - 1$.]
 
-**_Proof._**&nbsp;$\quad$(i) Let $f$ be the function of
+**_Proof._**&nbsp;$\quad$Let $f$ be the function of
 $\mathbb{N}\times\mathbb{N}$ into $\mathbb{N}$ given by
 $(m,n)\mapsto 2^m (2n + 1) - 1$.
 Let $x\in\omega$, and $m=$ sup $\{a\in\omega:2^a$ divides $x + 1\}$. Then
