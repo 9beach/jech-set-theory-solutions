@@ -11,24 +11,25 @@ author: https://github.com/9beach
 &nbsp;$\quad$(iii) The power set of a finite set is finite.\
 &nbsp;$\quad$(iv) The image of a finite set (under a mapping) is finite.
 
-**_Proof._**&nbsp;$\quad$(i) Let $X$ be a finite set, and $Y\subset X$.
-Suppose that $Y$ is infinite. Then $Y$ is T-infinite, so there is
+**_Proof._**&nbsp;$\quad$(i) Let $X$ be a finite set and $Y\subset X$.
+Suppose that $Y$ is infinite. $Y$ is T-infinite, thus there is
 $S\subset P(Y)$ such that $S$ has no $\subset$-maximal element. But by
-definition, $P(Y)\subset P(X)$, and so $S\subset P(X)$, a contradiction.\
+definition, $P(Y)\subset P(X)$, and so $S\subset P(X)$, a contradiction.
+\
 &nbsp;$\quad$(ii) Let $p$ be a finite number; for
-each $i<p$, let $S_{i}$ be a finite set, and $f_{i}$ be a function of
-$S_i$ onto a finite ordinal $n_i$. Let $S=\bigcup_{i<p}S_i$; let
+each $i<p$, let $S_{i}$ be a finite set and $f_{i}$ be a function of
+$S_i$ onto some finite ordinal $n_i$. Let $S=\bigcup_{i<p}S_i$, and let
 $f$ be the function of $S$ given by
 $x\mapsto\sum_{i<k}n_i+f_k(x)$ where $k$ is the least number such that
-$x\in S_k$. Then $f$ is a one-to-one function of $S$ into $\sum_{i<p}n_i$
-which is bounded. Thus $S$ is finite.
+$x\in S_k$. $f$ is a one-to-one function of $S$ into $\sum_{i<p}n_i$
+that is bounded. Therefore, $S$ is finite.
 \
 &nbsp;$\quad$(iii) Let $X$ be a finite set. $|P(X)|=2^{|X|}<\aleph_0$.
 \
-&nbsp;$\quad$(iv) Let $f$ be a function of a finite set $X$ onto $Y$.
-Then there is a one-to-one function $g$ of $X$ onto $n<\omega$. Clearly, the
-function $h$ of $f(X)$ into $n$ given by
-$y\mapsto\bigcap{g_{-1}\circ f_{-1}(y)}$ exists.$\quad\square$
+&nbsp;$\quad$(iv) If $f$ is a function of a finite set $X$,
+then there is a one-to-one function $g$ of $X$ onto some $n<\omega$, and so
+there is a one-to-one function of $f(X)$ into $n$ given by
+$y\mapsto\bigcap{(g_{-1}\circ f_{-1})(\{y\})}$.$\quad\square$
 
 **3.2.**&nbsp;$\quad$(i) A subset of a countable set is at most countable.
 \
@@ -37,24 +38,24 @@ $y\mapsto\bigcap{g_{-1}\circ f_{-1}(y)}$ exists.$\quad\square$
 &nbsp;$\quad$(iii) The image of a countable set (under a mapping) is at most
 countable.
 
-**_Proof._**&nbsp;$\quad$(i) Let $X$ be a countable set, and $Y\subset X$.
-Then there is a one-to-one function $f$ of $X$ onto $\omega$.
-Let $id_Y$ be the function of $Y$ into $X$ given by $x\mapsto x$. Clearly
-the function $f\cdot id_Y$ is a function of $Y$ into $\omega$, and so
+**_Proof._**&nbsp;$\quad$(i) Let $X$ be a countable set and $Y\subset X$.
+There is a one-to-one function $f$ of $X$ onto $\omega$.
+Let $id_Y$ be the function of $Y$ into $X$ given by $x\mapsto x$.
+$f\cdot id_Y$ is a function of $Y$ into $\omega$, thus
 $|Y|\le\aleph_0$. Therefore, by definition of $\aleph_0$, $Y$ is at most
 countable.
 \
-&nbsp;$\quad$(ii) Let $n$ be a finite number;
-let $S=\bigcup_{i<n}S_i$ be a union of a finite family of countable sets;
-let $f_{i}$ be a function of $S_i$ onto $\omega$ for each $i<n$.
+&nbsp;$\quad$(ii) Let $n$ be a finite number,
+and let $S=\bigcup_{i<n}S_i$ be a union of a finite family of countable sets,
+and let $f_{i}$ be a function of $S_i$ onto $\omega$ for each $i<n$.
 If we let $f:S\to\omega$ be the function given by $x\mapsto 2^i 3^{f_i(x)}$
 where $i$ is the least number $x\in S_i$, then $f$ is a one-to-one function
 of $S$ into $\omega$. Thus $S$ is countable.
 \
-&nbsp;$\quad$(iii) Let $f$ be a function of a countable set $X$.
-Then there is a one-to-one function $g$ of $X$ onto $\omega$, and so
-a one-to-one function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
-\bigcap{(g_{-1}\circ f_{-1})(\{y\})}$ exists.$\quad\square$
+&nbsp;$\quad$(iii) If $f$ is a function of a countable set $X$,
+then there is a one-to-one function $g$ of $X$ onto $\omega$, and so
+there is a one-to-one function of $f(X)$ into $\omega$ given by $y\mapsto
+\bigcap{(g_{-1}\circ f_{-1})(\{y\})}$.$\quad\square$
 
 **3.3.** $\mathbb{N}\times\mathbb{N}$ is countable.\
 &nbsp;$\quad$[$f (m, n) = 2^m (2n + 1) - 1$.]
@@ -62,14 +63,13 @@ a one-to-one function $h$ of $f(X)$ into $\omega$ given by $y\mapsto
 **_Proof._**&nbsp;$\quad$Let $f$ be the function of
 $\mathbb{N}\times\mathbb{N}$ into $\mathbb{N}$ given by
 $(m,n)\mapsto 2^m (2n + 1) - 1$.
-Let $x\in\omega$, and $m=$ sup $\{a\in\omega:2^a$ divides $x + 1\}$. Then
-$(x+1)/{2^m}$ is odd, so there is $n\in\omega$
-such that $2n + 1=(x+1)/{2^m}$.
-Thus $f$ is a function onto $\mathbb{N}$.
+Let $x\in\omega$ and $m=$ sup $\{a\in\omega:2^a$ divides $x + 1\}$.
+$(x+1)/{2^m}$ is odd, thus there is $n\in\omega$
+such that $2n + 1=(x+1)/{2^m}$,
+and so $f$ is a function onto $\mathbb{N}$.
 Suppose that $2^{m_1} (2{n_1} + 1)=2^{m_2}(2{n_2} + 1)$. Since
-$2{x} + 1\neq2y$ for all $x,y\in\mathbb{N}$,
-the prime factorization of $2{x} + 1$
-does not have $2$ as a factor. Thus $m_1=m_2$ and $n_1=n_2$, and so
+$2$ is not a prime factor of $2{x} + 1$ for all $x\in\mathbb{N}$,
+$m_1=m_2$ and $n_1=n_2$, thus
 $f$ is a one-to-one function onto $\mathbb{N}$. Therefore,
 $\mathbb{N}\times\mathbb{N}$ is countable.$\quad\square$
 
@@ -78,18 +78,18 @@ countable.\
 &nbsp;$\quad$(ii) The set of all finite subsets of a countable set is
 countable.
 
-**_Proof._**&nbsp;$\quad$(i) Let $f$ be the of all finite
+**_Proof._**&nbsp;$\quad$(i) Let $f$ be the function of all finite
 sequences in $\mathbb{N}$ into $\mathbb{N}$ given by, for some $k\in
 \mathbb{N}$, $\langle s_i\in\mathbb{N}:i<k\rangle\mapsto
 \prod_{i<k}p_{i+1}^{s_i+1}-1$ where $p_i$ is the $i$-th prime number.
-Clearly, $f$ is a one-to-one function onto $\mathbb{N}$.\
-&nbsp;$\quad$(ii) Let $X$ be a countable set; let $Y$ be a
-set of all finite subsets of $X$. Then there is a one-to-one
-function $f$ of $X$ onto $\mathbb{N}$ given by $x\mapsto n$ for
-some $n<\omega$, and so for $S\in Y$, there is
+Clearly, $f$ is a one-to-one function onto $\mathbb{N}$.
+\
+&nbsp;$\quad$(ii) Let $X$ be a countable set, and let $Y$ be a
+set of all finite subsets of $X$. There is a one-to-one
+function $f$ of $X$ onto $\mathbb{N}$, thus for each $S\in Y$, there is
 a unique increasing finite
-sequence $\langle f(x): x\in S\rangle$. Thus there is a one-to-one function
-of $Y$ into all finite sequences in $\mathbb{N}$; $Y\le\aleph_0$,
+sequence $\langle f(x): x\in S\rangle$, and so there is a one-to-one function
+of $Y$ into all finite sequences in $\mathbb{N}$; $Y\le\aleph_0$
 and $\aleph_0=|X|=\{S\in Y:S\text{ is singleton}\}\subset Y$; thus
 $\aleph_0\le Y$. Therefore, $Y=\aleph_0$.$\quad\square$
 
@@ -128,7 +128,7 @@ $$
 &nbsp;$\quad$Let $X$ be the class of all finite sequences
 of ordinals. The relation $<$ defined above is a linear ordering of $X$.
 Moreover, if $S\subset X$ is nonempty,
-then $S$ has a least element. If we let
+then $S$ has the least element. If we let
 $\Gamma(\alpha)=$ the order-type of the set
 $\{\beta\in X:\beta<\alpha\}$ for $\alpha\in X$,
 then $\Gamma$ is a one-to-one mapping of $X$ onto $Ord$.
@@ -138,11 +138,11 @@ and so $\langle\omega\rangle$ is the least element $\alpha$ of $X$
 such that $\alpha$ is not a finite sequence in $\omega$; thus
 $\Gamma(\langle\omega\rangle)=\omega$.\
 &nbsp;$\quad$Let $\gamma(\alpha)=\Gamma(\langle\alpha\rangle)$.
-Note that $\gamma(\alpha)$ is an increasing function of $\alpha$, and
+Note that $\gamma(\alpha)$ is an increasing function of $\alpha$ and
 also that since each infinite cardinal is indecomposable,
 by definition of $(X,<)$, $\gamma(\omega_\alpha)$ is the set of all
 finite sequences in $\omega_\alpha$. Let $\eta(\alpha)=$ the order-type
-of the set of all finite sequences in $\alpha$. Then
+of the set of all finite sequences in $\alpha$.
 $\gamma(\alpha)\le\eta(\alpha)$ and $\gamma(\omega_\alpha)
 =\eta(\omega_\alpha)$ for each $\alpha$. We show that
 $\gamma(\omega_\alpha)=\omega_\alpha$ by induction
@@ -154,12 +154,12 @@ and so there is a sequence $\beta$ such that
 $\Gamma(\beta)=\omega_\alpha$ and $\beta<\langle\omega_\alpha\rangle$.
 Then there is an ordinal $\delta$ such that
 $\beta<\langle\delta\rangle<\langle\omega_\alpha\rangle$; thus
-$\Gamma(\beta)=\omega_\alpha<\gamma(\delta)\le\eta(\delta)$
-$\Leftrightarrow$ $\aleph_\alpha\le|\eta(\delta)|$ $=$ $|\eta(|\delta|)|
+$\Gamma(\beta)=\omega_\alpha<\gamma(\delta)\le\eta(\delta)$,
+and so $\aleph_\alpha\le|\eta(\delta)|$ $=$ $|\eta(|\delta|)|
 \le\eta(|\delta|)$.
 But since $\delta<\omega_\alpha$, by the minimality of $\alpha$,
-$\eta(|\delta|)=|\delta|<\aleph_\alpha$.
-A contradiction. Finally, by definition of $\gamma$,
+$\eta(|\delta|)=|\delta|<\aleph_\alpha$, a contradiction.
+Finally, by definition of $\gamma$,
 for each nonzero limit ordinal $\alpha$, $\gamma(\omega_\alpha)=
 \text{sup }\{\gamma(\omega_\xi):\xi<\alpha\}=\omega_\alpha$.$\quad\square$
 
@@ -175,18 +175,18 @@ proved without the Axiom of Choice.
 $|B|\le\aleph_\alpha$.
 
 **_Proof._**&nbsp;$\quad$Let $f$ be a function of $\omega_\alpha$ onto $B$.
-Then a one-to-one function $g$ of $B$ into $\omega_\alpha$ is given by
-$x\mapsto \text{min }f_{-1}(x)$.$\quad\square$
+There is a one-to-one function of $B$ into $\omega_\alpha$ given by
+$b\mapsto\bigcap f_{-1}(\{b\})$.$\quad\square$
 
 **3.8.** The set of all finite subsets of $\omega_\alpha$ has cardinality
 $\aleph_\alpha$.\
 &nbsp;$\quad$[The set is a projection of the set of finite sequences.]
 
 **_Proof._**&nbsp;$\quad$Let $X$ be the set of all finite sequences in
-$\omega_\alpha$; let $Y$ be the set of all finite subsets of $\omega_\alpha$.
-Then the function of $X$ onto $Y$ given by
-$\langle\alpha_0,\ldots\alpha_n\rangle\mapsto\{\alpha_0,\ldots\alpha_n\}$
-exits. Thus $\aleph_\alpha = |X|\ge|Y|$. But there is a one-to-one mapping of
+$\omega_\alpha$, and let $Y$ be the set of all finite subsets of
+$\omega_\alpha$. There is a function of $X$ onto $Y$ given by
+$\langle\alpha_0,\ldots\alpha_n\rangle\mapsto\{\alpha_0,\ldots\alpha_n\}$.
+Thus $\aleph_\alpha = |X|\ge|Y|$. But there is a one-to-one mapping of
 $S\subset Y$ such that each $x\in S$ is singleton onto a set of cardinality
 $\aleph_\alpha$. Thus $Y\ge\aleph_\alpha$. Therefore,
 $|Y|=\aleph_\alpha$.$\quad\square$
@@ -208,7 +208,7 @@ a set of possible well-orderings of subsets of $X$ such that
 $|X| = \aleph_\alpha$, there is
 $R\in P(\omega_\alpha\times\omega_\alpha)$ such that $f(R)=\beta$
 for each $\beta\in\omega_{\alpha+1}$. Let
-$g(R)=f(R)$ if $R$ is a well-ordering; otherwise $g(R)=0$. Then we have
+$g(R)=f(R)$ if $R$ is a well-ordering, otherwise $g(R)=0$. There is
 the mapping of $P(\omega_\alpha\times\omega_\alpha)$ onto $\omega_{\alpha+1}$
 given by $R\mapsto g(R)$.$\quad\square$
 
@@ -224,12 +224,7 @@ $\omega_\alpha$ = cf $\alpha$; $\omega_\alpha$ is the limit of
 a cofinal sequence $\langle\omega_\xi :\xi <\text{cf }\alpha\rangle$
 of cardinals.
 
-**_Proof._**&nbsp;$\quad$A increasing sequence $A$ is in $B$, and $B$ is
-the supremacy of a increasing sequence $C$, and also sup $A=B$ $\Leftrightarrow$
-A increasing sequence $C$ is in $B$, and $B$ is the supremacy of
-a increasing sequence $A$, and also sup $C=B$.
-So clearly cf $A=$ cf $C$. Thus
-cf $\omega_\alpha=$ cf cf $\alpha=$ cf
+**_Proof._**&nbsp;$\quad$cf $\omega_\alpha=$ cf cf $\alpha=$ cf
 $\alpha$.$\quad\square$
 
 **3.13 (ZF).** Show that $\omega_2$ is not a countable union of countable
@@ -242,9 +237,9 @@ and there is a mapping of $\omega\times\alpha$ onto $\omega_2$.]
 **_Proof._**&nbsp;$\quad$We can assume that $S_n$ is disjoint
 for each $n\le\omega$. Then we have the one-to-one function of
 $\omega\times\alpha$ onto $\omega_2$ given by $(n,\beta)\mapsto$
-the $\beta$-th element of $S_n$ if $\beta\in\alpha_n$ otherwise
-$0$. Thus $\aleph_2=|\omega_2|\le|\omega\times\alpha|\le\aleph_0\cdot
-\aleph_1=\aleph_1$. A contradiction.$\quad\square$
+the $\beta$-th element of $S_n$ if $\beta\in\alpha_n$, otherwise
+$(n,\beta)\mapsto 0$. Thus $\aleph_2=|\omega_2|\le|\omega\times\alpha|\le\aleph_0\cdot
+\aleph_1=\aleph_1$, a contradiction.$\quad\square$
 
 &nbsp;$\quad$A set $S$ is _Dedekind-finite_ (D-finite) if there is no
 one-to-one mapping of $S$ onto a proper subset of $S$. Every finite set is
@@ -258,12 +253,13 @@ hence every $S$ such that $|S|\ge\aleph_0$, is D-infinite.
 &nbsp;$\quad$[If $S$ is D-infinite, let $f:S\to X\subset S$ be one-to-one.
 Let $x_0\in S-X$ and $x_{n+1}=f(x_n)$. Then $S\supset\{x_n:n<\omega\}$.]
 
-**_Proof._**&nbsp;$\quad$If $S$ is D-infinite, since $f$ is one-to-one,
-for each $m$ and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus we
-have a countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
-&nbsp;$\quad$Conversely, if $S$ has a countable subset $X=\{x_n:n<\omega\}$.
-We have the one-to-one mapping of $S$ onto $S\smallsetminus\{x_0\}$ given by
-$x\mapsto x$ if $x\notin X$; otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
+**_Proof._**&nbsp;$\quad$If $S$ is D-infinite, then since $f$ is one-to-one,
+for all $m$ and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus there
+is a countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
+&nbsp;$\quad$Conversely, if $S$ has a countable subset $X=\{x_n:n<\omega\}$,
+then there is the one-to-one mapping of $S$ onto $S\smallsetminus\{x_0\}$
+given by
+$x\mapsto x$ if $x\notin X$, otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
 
 **3.15.**&nbsp;$\quad$(i) If $A$ and $B$ are D-finite, then $A\cup B$ and
 $A\times B$ are D-finite.\
@@ -274,28 +270,28 @@ is D-finite.
 
 **_Proof._**&nbsp;$\quad$(i) Suppose that $X\subset A\cup B$
 is countable.
-Then since a subset of a countable set is at most countable,
+Since a subset of a countable set is at most countable,
 $X\cap A$ and $X\cap B$ are at most countable. Since
-$X=(X\cap A)\cup(X\cap B)$, and the union of a finite set of finite sets
+$X=(X\cap A)\cup(X\cap B)$ and the union of a finite set of finite sets
 is finite, $X\cap A$ or $X\cap B$ are countable. Thus $A$ or $B$
-are D-infinite. A contradiction.
-Suppose that $X=\{(x_i, y_i):i<\omega\}\subset
+are D-infinite, a contradiction.
+Suppose that $X=\{(x_i, y_i):i<\omega\}$ $\subset
 A\times B$ is countable.
 Consider $C=\{x \in A:(x, y)\in X$ for some $y\}$ and
 $D=\{y \in A:(x, y)\in X$ for some $x\}$. Since $\aleph_0=|X|\le
-|C|\times|D|$, $|C|\le|X|=\aleph_0$, and,
+|C|\times|D|$ and $|C|\le|X|=\aleph_0$ and
 $|D|\le|X|=\aleph_0$, $C$ or $D$ are countable.
 But $C\subset A$ and $D\subset B$, a contradiction.
 \
-&nbsp;$\quad$(ii) Let $A$ be a D-finite set;
+&nbsp;$\quad$(ii) Let $A$ be a D-finite set, and
 let $X=\{X_i: i<\omega\}$ be a subset of all finite one-to-one
 sequences in $A$. Suppose that $X$ is countable.
 Consider the cardinality of $S=\bigcup_{i<\omega}\text{ran}(X_i)$.
 Since $X_i$ is a finite one-to-one sequence for all $i<\omega$,
 $|S|\le|\omega|\cdot|\omega|=\aleph_0$.
-So suppose that $|S|=n<\omega$. then $X_i \in
-\bigcup\{S^1, S^2,\ldots S^n\}$ for all $i<\omega\Leftrightarrow
-X\subset \bigcup\{S^1, S^2,\ldots S^n\}$. By (i), and induction
+If $|S|=n$ for some $n<\omega$, then $X_i \in
+\bigcup\{S^1, S^2,\ldots S^n\}$ for all $i<\omega$, thus
+$X\subset \bigcup\{S^1, S^2,\ldots S^n\}$. By (i), and induction
 of $n$, the union of a finite family of D-finite sets is D-finite,
 and a finite product of D-finite sets is D-finite,
 thus $\bigcup\{S, S^2,\ldots S^n\}$ is
@@ -303,7 +299,7 @@ D-finite. But $X\subset \bigcup\{S, S^2,\ldots S^n\}$,
 a contradiction. Thus $S$ is countable. But
 $S\subset A$, also a contradiction.
 \
-&nbsp;$\quad$(iii) Let $X=\bigcup_{i\in I}X_i$ for some D-finite $I$
+&nbsp;$\quad$(iii) For some D-finite $I$, let $X=\bigcup_{i\in I}X_i$
 be a union of a disjoint D-finite family of D-finite sets. Suppose that
 $S=\{\alpha_n:n<\omega\}\subset X$ is countable. Consider the cardinality of
 $T=\{i\in I:i$ such that $\alpha\in X_i$ for some $\alpha\in S\}$.
