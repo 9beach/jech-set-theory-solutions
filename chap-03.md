@@ -283,7 +283,7 @@ $D=\{y \in A:(x, y)\in X$ for some $x\}$. Since $\aleph_0=|X|\le
 $|D|\le|X|=\aleph_0$, $C$ or $D$ are countable.
 But $C\subset A$ and $D\subset B$, a contradiction.
 \
-&nbsp;$\quad$(ii) Let $A$ be a D-finite set, and
+&nbsp;$\quad$(ii) Let $A$ be a D-finite set and
 let $X=\{X_i: i<\omega\}$ be a subset of all finite one-to-one
 sequences in $A$. Suppose that $X$ is countable.
 Consider the cardinality of $S=\bigcup_{i<\omega}\text{ran}(X_i)$.
