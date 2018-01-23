@@ -17,8 +17,8 @@ $S\subset P(Y)$ such that $S$ has no $\subset$-maximal element. But by
 definition, $P(Y)\subset P(X)$, and so $S\subset P(X)$, a contradiction.
 \
 &nbsp;$\quad$(ii) Let $p$ be a finite number; for
-each $i<p$, let $S_{i}$ be a finite set and $f_{i}$ be a function of
-$S_i$ onto some finite ordinal $n_i$. Let $S=\bigcup_{i<p}S_i$, and let
+each $i<p$, let $S_{i}$ be a finite set and let $f_{i}$ be a function of
+$S_i$ onto some finite ordinal $n_i$. Let $S=\bigcup_{i<p}S_i$ and let
 $f$ be the function of $S$ given by
 $x\mapsto\sum_{i<k}n_i+f_k(x)$ where $k$ is the least number such that
 $x\in S_k$. $f$ is a one-to-one function of $S$ into $\sum_{i<p}n_i$
@@ -84,7 +84,7 @@ sequences in $\mathbb{N}$ into $\mathbb{N}$ given by, for some $k\in
 \prod_{i<k}p_{i+1}^{s_i+1}-1$ where $p_i$ is the $i$-th prime number.
 Clearly, $f$ is a one-to-one function onto $\mathbb{N}$.
 \
-&nbsp;$\quad$(ii) Let $X$ be a countable set, and let $Y$ be a
+&nbsp;$\quad$(ii) Let $X$ be a countable set and let $Y$ be a
 set of all finite subsets of $X$. There is a one-to-one
 function $f$ of $X$ onto $\mathbb{N}$, thus for each $S\in Y$, there is
 a unique increasing finite
@@ -183,7 +183,7 @@ $\aleph_\alpha$.\
 &nbsp;$\quad$[The set is a projection of the set of finite sequences.]
 
 **_Proof._**&nbsp;$\quad$Let $X$ be the set of all finite sequences in
-$\omega_\alpha$, and let $Y$ be the set of all finite subsets of
+$\omega_\alpha$ and let $Y$ be the set of all finite subsets of
 $\omega_\alpha$. There is a function of $X$ onto $Y$ given by
 $\langle\alpha_0,\ldots\alpha_n\rangle\mapsto\{\alpha_0,\ldots\alpha_n\}$.
 Thus $\aleph_\alpha = |X|\ge|Y|$. But there is a one-to-one mapping of
@@ -208,7 +208,7 @@ a set of possible well-orderings of subsets of $X$ such that
 $|X| = \aleph_\alpha$, there is
 $R\in P(\omega_\alpha\times\omega_\alpha)$ such that $f(R)=\beta$
 for each $\beta\in\omega_{\alpha+1}$. Let
-$g(R)=f(R)$ if $R$ is a well-ordering, otherwise $g(R)=0$. There is
+$g(R)=f(R)$ if $R$ is a well-ordering; otherwise $g(R)=0$. There is
 the mapping of $P(\omega_\alpha\times\omega_\alpha)$ onto $\omega_{\alpha+1}$
 given by $R\mapsto g(R)$.$\quad\square$
 
@@ -237,7 +237,7 @@ and there is a mapping of $\omega\times\alpha$ onto $\omega_2$.]
 **_Proof._**&nbsp;$\quad$We can assume that $S_n$ is disjoint
 for each $n\le\omega$. Then we have the one-to-one function of
 $\omega\times\alpha$ onto $\omega_2$ given by $(n,\beta)\mapsto$
-the $\beta$-th element of $S_n$ if $\beta\in\alpha_n$, otherwise
+the $\beta$-th element of $S_n$ if $\beta\in\alpha_n$; otherwise
 $(n,\beta)\mapsto 0$. Thus $\aleph_2=|\omega_2|\le|\omega\times\alpha|\le\aleph_0\cdot
 \aleph_1=\aleph_1$, a contradiction.$\quad\square$
 
@@ -254,12 +254,12 @@ hence every $S$ such that $|S|\ge\aleph_0$, is D-infinite.
 Let $x_0\in S-X$ and $x_{n+1}=f(x_n)$. Then $S\supset\{x_n:n<\omega\}$.]
 
 **_Proof._**&nbsp;$\quad$If $S$ is D-infinite, then since $f$ is one-to-one,
-for all $m$ and $n$ such that $0\le m < n<\omega$, $x_m\neq x_n$. Thus there
+$x_m\neq x_n$ for all $m$ and $n$ such that $0\le m < n<\omega$. Thus there
 is a countable set $X=\{x_n:n<\omega\}\subsetneq S$.\
 &nbsp;$\quad$Conversely, if $S$ has a countable subset $X=\{x_n:n<\omega\}$,
 then there is the one-to-one mapping of $S$ onto $S\smallsetminus\{x_0\}$
 given by
-$x\mapsto x$ if $x\notin X$, otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
+$x\mapsto x$ if $x\notin X$; otherwise $x_n\mapsto x_{n+1}$.$\quad\square$
 
 **3.15.**&nbsp;$\quad$(i) If $A$ and $B$ are D-finite, then $A\cup B$ and
 $A\times B$ are D-finite.\

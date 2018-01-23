@@ -110,7 +110,7 @@ inductive ($t$ is $\in$-_minimal_ in $z$ if there is no $s\in z$ such
 that $s\in t$).
 
 **_Proof._**&nbsp;$\quad$Let $P(x)$ be the property "every nonempty $z
-\subset x$ has an $\in$-minimal element", and let $Y =\{x\in X : x$ is
+\subset x$ has an $\in$-minimal element" and let $Y =\{x\in X : x$ is
 transitive and $P(x)\}$.
 $\emptyset\in Y$. Let $y\in Y$. Since $Y\subset X$ and $X$ is
 inductive, $y\in X$ and $y\cup\{y\}\in X$. We already have that $y
@@ -144,7 +144,7 @@ previous, a contradiction.$\quad\square$
 \{y\}$ for some $y\}$. Hence each $n\ne 0$ is $m + 1$ for some $m$.
 
 **_Proof._**&nbsp;$\quad$Let $A =\{x\in X:x=\emptyset\text{ or }x=
-y\cup\{y\}$ for some $y\}$, and let $a\in A$ where $a\neq\emptyset$. Since $a = y\cup
+y\cup\{y\}$ for some $y\}$ and let $a\in A$ such that $a\neq\emptyset$. Since $a = y\cup
 \{y\}$ for some $y$, so is $a\cup\{a\}$ for $a$, thus
 $a\cup\{a\}\in A$. Therefore, $A$ is inductive, and each $n\ne 0$ is
 $m + 1$ for some $m$.$\quad\square$
@@ -169,7 +169,7 @@ with $u\subset v$ and $u\ne v$. $S$ is T-_infinite_ if it is not T-finite.
 T-finite}\}$. We show that $A =\mathbb{N}$ by induction.\
 &nbsp;$\quad$$P(\emptyset) =\{\emptyset\}$ has the only nonempty
 subset $\{\emptyset\}$ that has a $\subset$-maximal element $\emptyset$.\
-&nbsp;$\quad$Let $n\in A$, and let $X\subset P(n + 1)$, and let $Y\subset
+&nbsp;$\quad$Let $n\in A$, $X\subset P(n + 1)$, and $Y\subset
 P(n)$. $X$ is either $Y$ or $\{x\cup\{n\} : x\in Y$\}. For the latter,
 let $a$ be a $\subset$-maximal element of $Y$. Then it's clear that
 $a\cup\{n\}$ is a $\subset$-maximal element of $Z$. Therefore, $X$ is
@@ -188,9 +188,10 @@ has no $\subset$-maximal element.$\quad\square$\
 
 **_Proof._**&nbsp;$\quad$If $F$ is a finite set, then
 there is a one-to-one mapping $f$ of $F$ onto some $n\in\mathbb{N}$.
-Let ${A}\subset P(F)$ be a nonempty set, and let ${B} =
+Let ${A}\subset P(F)$ be a nonempty set and let ${B} =
 \{ f(X)\subset P(n) : X\in {A}\}$. $B$ has
-a $\subset$-maximal element. It's clear that for any $X,Y\in A$, $X\subset Y$
+a $\subset$-maximal element. It's clear that for any $X$ and $Y\in A$,
+$X\subset Y$
 if and only if $f(X)\subset f(Y)$. Therefore, ${A}$ has a $\subset$-maximal
 element.$\quad\square$
 

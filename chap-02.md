@@ -48,7 +48,7 @@ finite subsets of $X$.]
 **_Proof._**&nbsp;$\quad$_Case (i)$\implies$(ii)._ By exercise 1.11, there
 exists an inductive T-infinite set $\mathbb{N}$, and by exercise 1.12 and
 1.13, $\mathbb{N}$ is infinite.\
-&nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $X$ be an infinite set, and let
+&nbsp;$\quad$_Case (ii)$\implies$(iii)._ Let $X$ be an infinite set and let
 $Y =\{x\subset X : x\text{ is a
 finite set}\}$. $Y\subset P(X)$ is a set, and since $x\in Y$ is finite,
 there is the mapping $f$ of $Y$ into $\omega$ given by $x\mapsto n$ where
@@ -213,7 +213,7 @@ $\langle a_n : n\in\mathbb{N}\rangle$ in $P$ such that $a_1\,E\,a_0,
 a_0$; there is no $E$-minimal elements.$\quad\square$
 
 **2.15.** (Well-Founded Recursion). Let $E$ be a well-founded relation on
-a set $P$, and let $G$ be a function. Then there is a function $F$ such
+a set $P$ and let $G$ be a function. Then there is a function $F$ such
 that for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
 
 **_Proof._**&nbsp;$\quad$A set $B\subset A$ is _$E$-transitive_ in $A$
