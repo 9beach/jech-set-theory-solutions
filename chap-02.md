@@ -161,9 +161,9 @@ $\omega^{\varepsilon}=\varepsilon$.
 
 **_Proof._**&nbsp;$\quad$$\varepsilon_0=\text{sup }\{\omega,\omega^\omega,
 \omega^{\omega^\omega},\ldots\}=\text{sup }\{\omega^\omega,
-\omega^{\omega^\omega},\omega^{\omega^{\omega^\omega}},\ldots\}=
+\omega^{\omega^\omega},\omega^{\omega^{\omega^\omega}},\ldots\}$ $=
 \omega^{\text{sup }\{\omega,\omega^\omega,
-\omega^{\omega^\omega},\ldots\}}=\omega^{\varepsilon_0}$.\
+\omega^{\omega^\omega},\ldots\}}$ $=\omega^{\varepsilon_0}$.\
 &nbsp;$\quad$Suppose that there is $\varepsilon <\varepsilon_0$
 such that $\omega^{\varepsilon}=\varepsilon$. Since for every finite
 number $a$, $a\neq\omega^a$, $\varepsilon\ge\omega$, thus there
@@ -216,10 +216,10 @@ a_0$; there is no $E$-minimal elements.$\quad\square$
 a set $P$ and let $G$ be a function. Then there is a function $F$ such
 that for all $x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})$.
 
-**_Proof._**&nbsp;$\quad$A set $B\subset A$ is _$E$-transitive_ in $A$
-if $\{y\in A:y\,E\,x\}\subset B$ holds for all $x\in B$. Let $T =\{g : g$
+**_Proof._**&nbsp;$\quad$We say that a set $B\subset A$ is _$E$-transitive_
+in $A$ if $\{y\in A:y\,E\,x\}\subset B$ holds for all $x\in B$. Let $T=\{g:g$
 is a function such that $\text{dom}(g)$ is $E$-transitive in $P$ and
-$g(x) = G(x, g\upharpoonright x)$ for all $x\in\text{ dom}(g)\}$.
+$g(x)=G(x,g\upharpoonright x)$ for all $x\in\text{ dom}(g)\}$.
 Since for every $E$-miminal element $m\in P$, $\{m\}$ is
 $E$-transitive and the function $g$ of $\{m\}$ is given by $m\mapsto G(m,
 \emptyset)$, $T$ is nonempty.\
