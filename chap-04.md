@@ -213,12 +213,19 @@ $\mathcal{N}$.\
 **_Proof._**&nbsp;$\quad$(i) Let $f:\mathcal{N}\times \mathcal{N}\to\mathcal{N}$
 be the function given by $(\langle a_n:n\in\mathbb{N} \rangle,\langle b_n :n\in\mathbb{N}\rangle)
 \mapsto \langle c_n :n\in\mathbb{N}\rangle$ where $c_{2n}=a_n$ and
-$c_{2n+1}=b_n$. It is easy to see that $f$ is a bijection. Moreover,
-$O\subset\mathcal{N}$ is a basis if and only if
-$f_{-1}(O)\subset\mathcal{N}\times \mathcal{N}$ is a basis. Thus any
-preimages of bases of $\mathcal{N}\times \mathcal{N}$ and $\mathcal{N}$
-are open. Therefore, $\mathcal{N}\times \mathcal{N}$ is homeomorphic to
-$\mathcal{N}$.\
+$c_{2n+1}=b_n$. It is easy to see that $f$ is a bijection thus we let
+we let $g=f^{-1}$.
+If $O\subset\mathcal{N}$ is a basis, then $f_{-1}(O)$ is clearly a basis;
+thus open. If $O\subset\mathcal{N}\times \mathcal{N}$ is a basis, then
+for some finite $k$ and
+all $\langle b_n :n\in\mathbb{N}\rangle \in g_{-1}(O)$, $b_{i}$ for $i<k$ is
+either fixed or arbitrary, and $b_{j}$ for $j\ge k$ is arbitrary.
+Thus $g_{-1}(O)$ is the countable unions of bases and
+so open. For example, if $b_0=2, b_1=3,b_3=5$ and $b_5=7$, then
+$\bigcup_{s\in I}O(s)$ where $I=\{\langle 2,3,m,5,n,7 \rangle
+:m,n\in\mathbb{N}\}$. Therefore, $\mathcal{N}\times \mathcal{N}$ is
+homeomorphic to $\mathcal{N}$.
+\
 &nbsp;$\quad$(ii) Let $f:\mathcal{N}^\omega\to\mathcal{N}$
 be the function given by $\langle\langle a_{m,n}:n\in\mathbb{N}
 \rangle:m
@@ -234,11 +241,8 @@ $f_{-1}(O)$ is open for the product topology. Conversely, if
 $O\in\mathcal{N}^\omega$ is a basis, then for some finite $k$ and
 all $\langle b_n :n\in\mathbb{N}\rangle \in g_{-1}(O)$, $b_{i}$ for $i<k$ is
 either fixed or arbitrary, and $b_{j}$ for $j\ge k$ is arbitrary.
-Thus $g_{-1}(O)$
-is the finite intersections of the countable unions of bases and so open.
-For example, if $b_0=2, b_2=3$ and $b_3=5$, then $g_{-1}(O)
-=O(\langle 2\rangle)\cap \bigcup_{s\in I}O(s)$ where $I=\{\langle m,n,
-3,5\rangle:m,n\in\mathbb{N}\}$.
+Similarly to the previous, $g_{-1}(O)$
+is the countable unions of bases and so open.
 Therefore, $\mathcal{N}^\omega$ is homeomorphic to
 $\mathcal{N}$.$\quad\square$
 
