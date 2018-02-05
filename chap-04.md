@@ -248,7 +248,10 @@ sequential trees without maximal nodes.
 **_Proof._**&nbsp;$\quad$Notice that $F$ is closed if and only if
 $\left[T_F\right]=F$. Thus
 for closed $F_1$ and $F_2$, if $F_1\neq F_2$ then $[T_{F_1}]\neq [T_{F_2}]$;
-thus $T_{F_1}\neq T_{F_2}$.$\quad\square$
+thus $T_{F_1}\neq T_{F_2}$. On the other hand, for each tree $T$
+without maximal nodes,
+$[T]$ is closed and there is $S=\{f\in\mathcal{N}:t\subset f$
+for some $t\in T\}$ such that $T=T_S$.$\quad\square$
 
 **4.19.** Every perfect Polish space has a closed subset homeomorphic to the Cantor space.
 
