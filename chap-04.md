@@ -225,16 +225,18 @@ be the function given by $\langle\langle a_{m,n}:n\in\mathbb{N}
 \in\mathbb{N} \rangle
 \mapsto \langle b_n :n\in\mathbb{N}\rangle$ where
 $b_0=a_{0,0},b_1=a_{1,0},b_2=a_{0,1},b_3=a_{2,0},b_4=a_{1,1},
-b_5=a_{0,2},\ldots$. $f$ is also a bijection. If $O\subset\mathcal{N}$ is a
-basis, then for some finite $k\in\mathbb{N}$ and all $\langle\langle
-a_{m,n}:n\in\mathbb{N} \rangle:m \in\mathbb{N} \rangle\in f_{-1}(O)$,
-$a_{x<k,1}$ is fixed and the others are arbitrary; thus
+b_5=a_{0,2},\ldots$. $f$ is also a bijection thus we let $g=f^{-1}$.
+If $O\subset\mathcal{N}$ is a
+basis, then for some finite $k\in\mathbb{N}$, the projection
+$\pi_{i}(f_{-1}(O))=O(s)$ for $i<k$, where $s$ is some finite
+sequence, and $\pi_{j}(f_{-1}(O))=\mathcal{N}$ for $j\ge k$; thus
 $f_{-1}(O)$ is open for the product topology. Conversely, if
-$O\in\mathcal{N}^\omega$ is a basis, then for some finite $k$ and all
-$\langle b_n :n\in\mathbb{N}\rangle \in (f^{-1})_{-1}(O)$, $b_{x<k}$ is either
-fixed or arbitrary, and $b_{x\ge k}$ is arbitrary. Thus $(f^{-1})_{-1}(O)$
+$O\in\mathcal{N}^\omega$ is a basis, then for some finite $k$ and
+all $\langle b_n :n\in\mathbb{N}\rangle \in g_{-1}(O)$, $b_{i}$ for $i<k$ is
+either fixed or arbitrary, and $b_{j}$ for $j\ge k$ is arbitrary.
+Thus $g_{-1}(O)$
 is the finite intersections of the countable unions of bases and so open.
-For example, if $b_0=2, b_2=3$ and $b_3=5$, then $(f^{-1})_{-1}(O)
+For example, if $b_0=2, b_2=3$ and $b_3=5$, then $g_{-1}(O)
 =O(\langle 2\rangle)\cap \bigcup_{s\in I}O(s)$ where $I=\{\langle m,n,
 3,5\rangle:m,n\in\mathbb{N}\}$.
 Therefore, $\mathcal{N}^\omega$ is homeomorphic to
