@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="https://github.com/9beach" />
+  <title>5. The Axiom of Choice and Cardinal Arithmetic</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="a-solutions-manual-for-set-theory-by-thomas-jech"><a href="README.html">A solutions manual for Set Theory by Thomas Jech</a></h1>
+<h3 id="the-axiom-of-choice-and-cardinal-arithmetic">5. The Axiom of Choice and Cardinal Arithmetic</h3>
+<p><span id="5.1"></span><strong>5.1.</strong> There exists a set of reals of cardinality <span class="math inline">\(2^\aleph_0\)</span> without a perfect subset.<br />
+ <span class="math inline">\(\quad\)</span>[Let <span class="math inline">\(\langle P_\alpha :\alpha &lt; 2^{\aleph_0}\rangle\)</span> be an enumeration of all perfect sets of reals. Construct disjoint <span class="math inline">\(A=\{a_\alpha :\alpha &lt;2\aleph_0\}\)</span> and <span class="math inline">\(B=\{b_\alpha :\alpha &lt;2^\aleph_0\}\)</span> as follows: Pick <span class="math inline">\(a_\alpha\)</span> such that <span class="math inline">\(a_\alpha\notin \{a_\xi :\xi &lt;\alpha \}\cup \{b_\xi :\xi &lt;\alpha \}\)</span>, and <span class="math inline">\(b_\alpha\)</span> such that <span class="math inline">\(b_\alpha\in P_\alpha -\{a_\xi :\xi\le\alpha \}\)</span>. Then <span class="math inline">\(A\)</span> is the set.]</p>
+<p><span id="5.2"></span><strong>5.2.</strong> If <span class="math inline">\(X\)</span> is an infinite set and <span class="math inline">\(S\)</span> is the set of all finite subsets of <span class="math inline">\(X\)</span>, then <span class="math inline">\(|S| = |X|\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use <span class="math inline">\(|X| =\aleph_\alpha\)</span>.]</p>
+<p><span id="5.3"></span><strong>5.3.</strong> Let <span class="math inline">\((P, &lt;)\)</span> be a linear ordering and let <span class="math inline">\(\kappa\)</span> be a cardinal. If every initial segment of <span class="math inline">\(P\)</span> has cardinality <span class="math inline">\(&lt; \kappa\)</span>, then <span class="math inline">\(|P |\le \kappa\)</span>.</p>
+<p><span id="5.4"></span><strong>5.4.</strong> If <span class="math inline">\(A\)</span> can be well-ordered then <span class="math inline">\(P(A)\)</span> can be linearly ordered.<br />
+ <span class="math inline">\(\quad\)</span>[Let <span class="math inline">\(X &lt; Y\)</span> if the least element of <span class="math inline">\(X\bigtriangleup Y\)</span> belongs to <span class="math inline">\(X\)</span>.]</p>
+<p><span id="5.5"></span><strong>5.5.</strong> Prove the Axiom of Choice from Zorn’s Lemma.<br />
+ <span class="math inline">\(\quad\)</span>[Let <span class="math inline">\(S\)</span> be a family of nonempty sets. To find a choice function on <span class="math inline">\(S\)</span>, let <span class="math inline">\(P = \{f : f\)</span> is a choice function on some <span class="math inline">\(Z\subset S\}\)</span>, and apply Zorn’s Lemma to the partially ordered set <span class="math inline">\((P,\subset)\)</span>.]</p>
+<p><span id="5.6"></span><strong>5.6.</strong> The countable AC implies that every infinite set has a countable subset.<br />
+ <span class="math inline">\(\quad\)</span>[If <span class="math inline">\(A\)</span> is infinite, let <span class="math inline">\(A_n = \{s : s\)</span> is a one-to-one sequence in <span class="math inline">\(A\)</span> of length <span class="math inline">\(n\}\)</span> for each <span class="math inline">\(n\)</span>. Use a choice function for <span class="math inline">\(S = \{A_n : n\in N \}\)</span> to obtain a countable subset of <span class="math inline">\(A\)</span>.]</p>
+<p><span id="5.7"></span><strong>5.7.</strong> Use DC to prove the countable AC.<br />
+ <span class="math inline">\(\quad\)</span>[Given <span class="math inline">\(S = \{An : n\in N\}\)</span>, consider the set <span class="math inline">\(A\)</span> of all choice functions on some <span class="math inline">\(S_n = \{A_i : i\le n\}\)</span>, with the binary relation <span class="math inline">\(\supset\)</span>.]</p>
+<p><span id="5.8"></span><strong>5.8 (The Milner-Rado Paradox).</strong> For every ordinal <span class="math inline">\(\alpha &lt; \kappa^+\)</span> there are sets <span class="math inline">\(X_n\subset\alpha (n\in N)\)</span> such that <span class="math inline">\(\alpha =S X_n\)</span>, and for each <span class="math inline">\(n\)</span> the order-type of <span class="math inline">\(X_n\)</span> is <span class="math inline">\(\le \kappa^n\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[By induction on <span class="math inline">\(\alpha\)</span>, choosing a sequence cofinal in <span class="math inline">\(\alpha\)</span>.]</p>
+<p><span id="5.9"></span><strong>5.9.</strong> If <span class="math inline">\(\{Xi :i\in I\}\)</span> and <span class="math inline">\(\{Yi :i\in I\}\)</span> are two disjoint families such that <span class="math inline">\(|X_i|=|Y_i|\)</span> for each <span class="math inline">\(i\in I\)</span>, then <span class="math inline">\(|\bigcup_{i\in I} X_i| = |\bigcup_{i\in I} Y_i|\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use AC.]<br />
+<span id="5.10"></span><strong>5.10.</strong> If <span class="math inline">\(\{X_i :i\in I\}\)</span> and <span class="math inline">\(\{Y_i :i\in I\}\)</span> are such that <span class="math inline">\(|X_i|=|Y_i|\)</span> for each <span class="math inline">\(i\in I\)</span>, then <span class="math inline">\(|\prod_{i\in I} X_i| = |\prod_{i\in I} Y_i|\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Use AC.]</p>
+<p><span id="5.11"></span><strong>5.11.</strong> <span class="math inline">\(\prod_{0&lt;n&lt;\omega}n=2^{\aleph_0}\)</span></p>
+<p><span id="5.12"></span><strong>5.12.</strong> <span class="math inline">\(\prod_{n&lt;\omega}\aleph_n=\aleph^{\aleph_0}_\omega\)</span></p>
+<p><span id="5.13"></span><strong>5.13.</strong> <span class="math inline">\(\prod_{\alpha&lt;\omega+\omega}\aleph_\alpha=\aleph^{\aleph_0}_{ \omega+\omega}\)</span></p>
+<p><span id="5.14"></span><strong>5.14.</strong> If GCH holds then<br />
+ <span class="math inline">\(\quad\)</span>(i) <span class="math inline">\(2^{&lt;\kappa} =\kappa\)</span> for all <span class="math inline">\(\kappa\)</span>, and<br />
+ <span class="math inline">\(\quad\)</span>(ii) <span class="math inline">\(\kappa^{&lt;\kappa} = \kappa\)</span> for all regular <span class="math inline">\(\kappa\)</span>.</p>
+<p><span id="5.15"></span><strong>5.15.</strong> If <span class="math inline">\(\beta\)</span> is such that <span class="math inline">\(2^{\aleph_\alpha} =\aleph_{\alpha +\beta}\)</span> for every <span class="math inline">\(\alpha\)</span>, then <span class="math inline">\(\beta &lt;\omega\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[Let <span class="math inline">\(\beta\ge\omega\)</span>. Let <span class="math inline">\(\alpha\)</span> be least such that <span class="math inline">\(\alpha +\beta &gt;\beta\)</span>. We have <span class="math inline">\(0 &lt;\alpha\le\beta\)</span>, and <span class="math inline">\(\alpha\)</span> is limit. Let <span class="math inline">\(\kappa =\aleph_{\alpha +\alpha}\)</span>; since cf <span class="math inline">\(\kappa=\)</span> cf <span class="math inline">\(\alpha\le\alpha &lt; \kappa\)</span>, <span class="math inline">\(\kappa\)</span> is singular. For each <span class="math inline">\(\xi &lt;\alpha\)</span>, <span class="math inline">\(\xi +\beta =\beta\)</span>, and so <span class="math inline">\(2^{\aleph_\alpha +\xi} =\aleph_{\alpha +\xi +\beta} =\aleph_{\alpha +\beta}\)</span>. By Corollary 5.17, <span class="math inline">\(2^\kappa= \aleph_{\alpha +\beta}\)</span>, a contradiction, since <span class="math inline">\(\aleph_{\alpha +\beta} &lt;\aleph_{\alpha +\alpha +\beta}\)</span>.]</p>
+<p><span id="5.16"></span><strong>5.16.</strong> <span class="math inline">\(\prod_{\alpha&lt;\omega_1+\omega}\aleph_\alpha=\aleph^{\aleph_1}_{\omega_1+ \omega}\)</span>.<br />
+ <span class="math inline">\(\quad\)</span>[<span class="math inline">\(\aleph^{\aleph_1}_{\omega_1+\omega}\le(\prod^\infty_{n=0} \aleph_{\omega_1+n})^{\aleph_1}=\prod_n\aleph^{\aleph_1}_{\omega_1+n}=\)</span> <span class="math inline">\(\prod_n(\aleph^{\aleph_1}_{\omega_1}\cdot\aleph_{\omega_1+n})=\)</span> <span class="math inline">\(\aleph^{\aleph_1}_{\omega_1}\cdot\prod_n\aleph_{\omega_1+n}=\)</span> <span class="math inline">\(\prod_{\alpha&lt;\omega_1+\omega}\aleph_{\alpha}\)</span>.]</p>
+<p><span id="5.17"></span><strong>5.17.</strong> If <span class="math inline">\(\kappa\)</span> is a limit cardinal and <span class="math inline">\(\lambda&lt;\)</span> cf <span class="math inline">\(\kappa\)</span>, then <span class="math inline">\(\kappa^\lambda =\sum_{\alpha &lt;\kappa}|\alpha|^\lambda\)</span>.</p>
+<p><span id="5.18"></span><strong>5.18.</strong> <span class="math inline">\(\aleph^{\aleph_1}_\omega =\aleph^{\aleph_0}_\omega\cdot 2^{ \aleph_1}\)</span>.</p>
+<p><span id="5.19"></span><strong>5.19.</strong> If <span class="math inline">\(\alpha &lt;\omega_1\)</span>, then <span class="math inline">\(\aleph_\alpha^{\aleph_1} = \aleph^{\aleph_0}_\alpha\cdot 2^{\aleph_1}\)</span>.</p>
+<p><span id="5.20"></span><strong>5.20.</strong> If <span class="math inline">\(\alpha &lt;\omega_2\)</span>, then <span class="math inline">\(\aleph_\alpha^{\aleph_2} = \aleph^{\aleph_1}_\alpha\cdot 2^{\aleph_2}\)</span>.</p>
+<p><span id="5.21"></span><strong>5.21.</strong> If <span class="math inline">\(\kappa\)</span> is regular and limit, then <span class="math inline">\(\kappa^{&lt;\kappa}= 2^{&lt;\kappa}\)</span>. If <span class="math inline">\(\kappa\)</span> is regular and strong limit then <span class="math inline">\(\kappa^{&lt;\kappa} = \kappa\)</span>.</p>
+<p><span id="5.22"></span><strong>5.22.</strong> If <span class="math inline">\(\kappa\)</span> is singular and is not strong limit, then <span class="math inline">\(\kappa ^{&lt;\kappa} = 2^{&lt;\kappa} &gt; \kappa\)</span>.</p>
+<p><span id="5.23"></span><strong>5.23.</strong> If <span class="math inline">\(\kappa\)</span> is singular and strong limit, then <span class="math inline">\(2^{&lt;\kappa}=\kappa\)</span> and <span class="math inline">\(\kappa &lt;\kappa = \kappa^{\text{cf }\kappa}\)</span>.</p>
+<p><span id="5.24"></span><strong>5.24.</strong> If <span class="math inline">\(2^{\aleph_0} &gt;\aleph_\omega\)</span>, then <span class="math inline">\(\aleph^{\aleph_0}_\omega = 2^{\aleph_0}\)</span>.</p>
+<p><span id="5.25"></span><strong>5.25.</strong> If <span class="math inline">\(2^{\aleph_1}=\aleph_2\)</span> and <span class="math inline">\(\aleph^{\aleph_0}_\omega&gt; \aleph_{\omega_1}\)</span>, then <span class="math inline">\(\aleph^{\aleph_1}_{\omega_1}= \aleph^{\aleph_0}_{\omega}\)</span>.</p>
+<p><span id="5.26"></span><strong>5.26.</strong> If <span class="math inline">\(2^{\aleph_0}\ge\aleph_{\omega_1}\)</span>, then <span class="math inline">\(\gimel(\aleph_{\omega_1})=2^{\aleph_0}\)</span> and <span class="math inline">\(\gimel(\aleph_{\omega_1})= 2^{\aleph_1}\)</span>.</p>
+<p><span id="5.27"></span><strong>5.27.</strong> If <span class="math inline">\(2^{\aleph_1}=\aleph_2\)</span>, then <span class="math inline">\(\aleph^{\aleph_0}\neq\aleph_ {\omega_1}\)</span>.</p>
+<p><span id="5.28"></span><strong>5.28.</strong> If <span class="math inline">\(\kappa\)</span> is a singular cardinal and if <span class="math inline">\(\kappa &lt;\gimel(\lambda)\)</span> for some <span class="math inline">\(\lambda&lt;\kappa\)</span> such that cf <span class="math inline">\(\kappa \le\)</span> cf <span class="math inline">\(\lambda\)</span> then <span class="math inline">\(\gimel(\kappa )\le\gimel(\lambda)\)</span>.</p>
+<p><span id="5.29"></span><strong>5.29.</strong> If <span class="math inline">\(\kappa\)</span> is a singular cardinal such that <span class="math inline">\(2^{ \text{cf }\kappa}&lt;\kappa \le \lambda^{\text{cf }\kappa}\)</span> for some <span class="math inline">\(\lambda&lt;\kappa\)</span>, then <span class="math inline">\(\gimel(\kappa)=\gimel(\lambda)\)</span> where <span class="math inline">\(\lambda\)</span> is the least <span class="math inline">\(\lambda\)</span> such that <span class="math inline">\(\kappa\le\lambda^{\text{cf }\kappa}\)</span>.</p>
+</body>
+</html>
