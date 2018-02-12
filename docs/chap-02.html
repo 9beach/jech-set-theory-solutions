@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="https://github.com/9beach" />
-  <title>2. Ordinal Numbers</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      div.line-block{white-space: pre-line;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
 <h1 id="a-solutions-manual-for-set-theory-by-thomas-jech"><a href="README.html">A solutions manual for Set Theory by Thomas Jech</a></h1>
 <h3 id="ordinal-numbers">2. Ordinal Numbers</h3>
 <p><span id="2.1"></span><strong>2.1.</strong> The relation “<span class="math inline">\((P,&lt;)\)</span> is isomorphic to <span class="math inline">\((Q,&lt;)\)</span>” is an equivalence relation (on the class of all partially ordered sets).</p>
@@ -77,5 +57,3 @@ finite set}\}\)</span>. <span class="math inline">\(Y\subset P(X)\)</span> is a 
 <p><span id="2.15"></span><strong>2.15.</strong> (Well-Founded Recursion). Let <span class="math inline">\(E\)</span> be a well-founded relation on a set <span class="math inline">\(P\)</span> and let <span class="math inline">\(G\)</span> be a function. Then there is a function <span class="math inline">\(F\)</span> such that for all <span class="math inline">\(x\in P, F(x)=G(x,F\upharpoonright\{y\in P:y\,E\,x\})\)</span>.</p>
 <p><strong><em>Proof.</em></strong> <span class="math inline">\(\quad\)</span>We say that a set <span class="math inline">\(B\subset A\)</span> is <em><span class="math inline">\(E\)</span>-transitive</em> in <span class="math inline">\(A\)</span> if <span class="math inline">\(\{y\in A:y\,E\,x\}\subset B\)</span> holds for all <span class="math inline">\(x\in B\)</span>. Let <span class="math inline">\(T=\{g:g\)</span> is a function such that <span class="math inline">\(\text{dom}(g)\)</span> is <span class="math inline">\(E\)</span>-transitive in <span class="math inline">\(P\)</span> and <span class="math inline">\(g(x)=G(x,g\upharpoonright x)\)</span> for all <span class="math inline">\(x\in\text{ dom}(g)\}\)</span>. Since for every <span class="math inline">\(E\)</span>-miminal element <span class="math inline">\(m\in P\)</span>, <span class="math inline">\(\{m\}\)</span> is <span class="math inline">\(E\)</span>-transitive and the function <span class="math inline">\(g\)</span> of <span class="math inline">\(\{m\}\)</span> is given by <span class="math inline">\(m\mapsto G(m, \emptyset)\)</span>, <span class="math inline">\(T\)</span> is nonempty.<br />
  <span class="math inline">\(\quad\)</span>We claim that <span class="math inline">\(\bigcup T\)</span> is a function. Suppose not. There is a <span class="math inline">\(E\)</span>-minimal element <span class="math inline">\(m\)</span> of the set <span class="math inline">\(\{x\in\text{dom}(g_1)\cap\text{dom}(g_2) : g_1(x)\neq g_2(x)\)</span> for some <span class="math inline">\(g_1, g_2\in T\}\)</span>. Then <span class="math inline">\(g_1(m)\)</span> <span class="math inline">\(=\)</span> <span class="math inline">\(G(m, g_1\upharpoonright\{y\in\text{dom}(g_1): y\,E\,m\})\)</span> <span class="math inline">\(=\)</span> <span class="math inline">\(G(m, g_1\upharpoonright\{y\in\text{dom}(g_2): y\,E\,m\})\)</span> <span class="math inline">\(=\)</span> <span class="math inline">\(G(m, g_2\upharpoonright\{y\in\text{dom}(g_2): y\,E\,m\})\)</span> <span class="math inline">\(=\)</span> <span class="math inline">\(g_2(m)\)</span>, a contradiction. Similarly, dom(<span class="math inline">\(\bigcup T)=P\)</span>. Therefore, <span class="math inline">\(\bigcup T=F\)</span>.<span class="math inline">\(\quad\square\)</span></p>
-</body>
-</html>
