@@ -68,11 +68,12 @@ for each $i\in I$, then $|\prod_{i\in I} X_i| = |\prod_{i\in I} Y_i|$.
 \
 &nbsp;$\quad$[Use AC.]
 
-**5.11.** $\prod_{0<n<\omega}n=2^{\aleph_0}$
+**5.11.** $\prod_{0<n<\omega}n=2^{\aleph_0}$.
 
-**5.12.** $\prod_{n<\omega}\aleph_n=\aleph^{\aleph_0}_\omega$
+**5.12.** $\prod_{n<\omega}\aleph_n=\aleph^{\aleph_0}_\omega$.
 
-**5.13.** $\prod_{\alpha<\omega+\omega}\aleph_\alpha=\aleph^{\aleph_0}_{ \omega+\omega}$
+**5.13.** $\prod_{\alpha<\omega+\omega}\aleph_\alpha=\aleph^{\aleph_0}_{
+\omega+\omega}$.
 
 **5.14.** If GCH holds then
 \
