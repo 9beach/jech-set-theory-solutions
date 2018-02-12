@@ -10,6 +10,9 @@ PDF_KINDLE	= $(shell basename $(shell pwd))-kindle.pdf
 		pandoc -o $@ -f markdown -s --mathjax
 
 html: $(HTMLS)
+	rm -f README.html
+	cp -f *html README.md docs
+	rm -f *html
 
 pdf: $(PDF) $(PDF_KINDLE)
 
