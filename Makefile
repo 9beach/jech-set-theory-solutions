@@ -7,11 +7,10 @@ PDF_KINDLE	= $(shell basename $(shell pwd))-kindle.pdf
 	cat $< | sed -e 's:(\([^)]*\).md):(\1.html):'\
 	       	-e 's:^\*\*\([0-9][0-9]*\.*[0-9]*\).*\.\*\*:<span \
 		id="\1"></span>&:' |\
-		pandoc -o $@ -f markdown --mathjax
+		pandoc -o $@ -f markdown -s --mathjax
 
 html: $(HTMLS)
 	mv -f *html docs
-	mv docs/README.html docs/index.html
 
 pdf: $(PDF) $(PDF_KINDLE)
 
