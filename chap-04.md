@@ -86,7 +86,7 @@ $\quad\square$
 
 **_Proof._**&nbsp;$\quad$Every open set is a union of a family of
 open intervals with rational end-points. There are $\aleph_0$ open intervals
-with ratinal end-poins, and so $2^{\aleph_0}$ such families. Thus there
+with rational end-poins, and so $2^{\aleph_0}$ such families. Thus there
 are at most $2^{\aleph_0}$ open sets. On the other hand, for
 all $x\in\mathbb{R}$, consider the open interval $(-\infty, x)$. They are
 all distict open sets. Thus there are at least $2^{\aleph_0}$ open sets.
@@ -97,7 +97,7 @@ $\mathfrak{c}$.$\quad\square$
 
 **_Proof._**&nbsp;$\quad$Cantor set is the intersection
 $C=\bigcap_{n=0}^\infty C_n$ where $C_n$ is some finite union of closed
-intervals. Thus $C$ is a intersection of closed set and so closed.
+intervals. Thus $C$ is a intersection of closed set, and so closed.
 Let $x\in C$ and $\epsilon >0$.
 Fix $n$ so large that $1/3^n<\epsilon$. $x$ lies in one of intervals of
 $C_n$, and the end-points of the interval is in $C$. In this way,
@@ -214,13 +214,13 @@ $\mathcal{N}$.\
 be the function given by $(\langle a_n:n\in\mathbb{N} \rangle,\langle b_n :n\in\mathbb{N}\rangle)
 \mapsto \langle c_n :n\in\mathbb{N}\rangle$ where $c_{2n}=a_n$ and
 $c_{2n+1}=b_n$. It is easy to see that $f$ is a bijection thus we let
-we let $g=f^{-1}$.
+$g=f^{-1}$.
 If $O\subset\mathcal{N}$ is a basis, then $f_{-1}(O)$ is clearly a basis;
 thus open. If $O\subset\mathcal{N}\times \mathcal{N}$ is a basis, then
 for some finite $k$ and
 all $\langle b_n :n\in\mathbb{N}\rangle \in g_{-1}(O)$, $b_{i}$ for $i<k$ is
 either fixed or arbitrary, and $b_{j}$ for $j\ge k$ is arbitrary.
-Thus $g_{-1}(O)$ is the countable unions of bases and
+Thus $g_{-1}(O)$ is the countable unions of bases, and
 so open. For example, if $b_0=2, b_1=3,b_3=5$ and $b_5=7$, then
 $\bigcup_{s\in I}O(s)$ where $I=\{\langle 2,3,m,5,n,7 \rangle
 :m,n\in\mathbb{N}\}$. Therefore, $\mathcal{N}\times \mathcal{N}$ is
